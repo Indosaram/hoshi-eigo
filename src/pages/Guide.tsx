@@ -18,7 +18,7 @@ const BASICS = `
 | 대문(大問) 수 | 최근 3년 모두 **I~IX, 9개** |
 | 합격선(참고) | 학원 분석으로는 **65% 전후** 득점이면 합격권 |
 
-> 💡 **B방식은 대학 독자 시험만으로 뽑는 방식**이고 정원도 가장 많습니다. A방식(共通テスト만), S방식(共通テスト+독자 화학)에서는 영어 독자 시험이 없습니다. 즉, **星薬 독자 영어 시험을 보는 일반선발은 B방식뿐**입니다.
+> **B방식은 대학 독자 시험만으로 뽑는 방식**이고 정원도 가장 많습니다. A방식(共通テスト만), S방식(共通テスト+독자 화학)에서는 영어 독자 시험이 없습니다. 즉, **星薬 독자 영어 시험을 보는 일반선발은 B방식뿐**입니다.
 
 ## 2. 실제 경쟁률 (대학 공식 「最近3ヵ年の入試結果」)
 
@@ -77,12 +77,12 @@ export default function Guide() {
   return (
     <div className="mx-auto max-w-4xl">
       <PageTitle kicker="시험 분석" title="星薬科大学 一般選抜B方式 英語 완전 분석" />
-      <div className="rounded-2xl bg-white border p-5 sm:p-7">
+      <div className="rounded-2xl bg-white border border-slate-200 p-5 sm:p-8 shadow-sm">
         <Md text={BASICS} />
-        <h2 className="text-xl font-bold mt-8 mb-3 pb-1 border-b">7. 연도별 실제 구성 (사이트 수록 기출 기준)</h2>
+        <h2 className="text-xl font-bold text-slate-900 mt-9 mb-3 pb-2 border-b border-slate-200">7. 연도별 실제 구성 (사이트 수록 기출 기준)</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {papers.map((p) => (
-            <div key={p.year} className="rounded-xl border p-3">
+            <div key={p.year} className="rounded-xl border border-slate-200 bg-stone-50 p-4">
               <Link to={`/papers/${p.year}`} className="font-bold text-indigo-700">{p.year}年度 →</Link>
               <table className="w-full text-sm mt-2">
                 <tbody>
@@ -102,7 +102,7 @@ export default function Guide() {
             </div>
           ))}
         </div>
-        <h2 className="text-xl font-bold mt-8 mb-3 pb-1 border-b">출처</h2>
+        <h2 className="text-xl font-bold text-slate-900 mt-9 mb-3 pb-2 border-b border-slate-200">출처</h2>
         <ul className="text-sm list-disc pl-5 space-y-1">
           <li><a className="text-indigo-700 underline" href="https://www.hoshi.ac.jp/admission/nyushi/exam/" target="_blank" rel="noreferrer">星薬科大学 入学試験過去問題</a> (공식 기출 PDF)</li>
           <li><a className="text-indigo-700 underline" href="https://www.hoshi.ac.jp/admission/nyushi/" target="_blank" rel="noreferrer">星薬科大学 入学試験概要</a></li>

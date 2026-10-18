@@ -1,4 +1,7 @@
 import type { VocabItem } from "./types";
+import extraExamples from "./vocab-examples.json";
+
+const extra: Record<string, string[]> = extraExamples;
 
 type Row = [string, string, string, string];
 type Example = [string, string];
@@ -44,7 +47,7 @@ const frames = [
 ];
 
 const make = (tag: string, rows: Row[], offset = 0): VocabItem[] => rows.map(([word, pos, ko, ja], i) => {
-  const known = examples[word];
+  const known = examples[word] ?? (extra[word] as Example | undefined);
   const example = known?.[0] ?? frames[(i + offset) % frames.length](word);
   const exampleKo = known?.[1] ?? (pos === "동사"
     ? `그 사례는 ${ko}라는 행동이 결과에 어떤 영향을 주는지 보여 준다.`

@@ -4,7 +4,7 @@ export interface ResourceGroup { title: string; intro: string; items: Resource[]
 
 export const resourceGroups: ResourceGroup[] = [
   {
-    title: "📄 기출문제 (원본)",
+    title: "기출문제 (원본)",
     intro: "가장 중요한 자료입니다. 대학 공식 사이트는 최근 3개년만 무료 공개하므로, 더 오래된 연도는 아래 서비스나 赤本을 이용하세요.",
     items: [
       { name: "星薬科大学 入学試験過去問題 (공식)", url: "https://www.hoshi.ac.jp/admission/nyushi/exam/", desc: "2024~2026년도 학교추천·B방식·S방식 문제 PDF. 정답은 미공개. 이 사이트의 기출 3개년은 여기서 가져왔습니다.", tags: ["무료", "공식"] },
@@ -18,7 +18,7 @@ export const resourceGroups: ResourceGroup[] = [
     ],
   },
   {
-    title: "📊 입시 정보 · 출제 경향 분석",
+    title: "입시 정보 · 출제 경향 분석",
     intro: "이 사이트의 시험 분석 페이지는 아래 자료를 참고했습니다.",
     items: [
       { name: "星薬科大学 入学試験概要 (공식)", url: "https://www.hoshi.ac.jp/admission/nyushi/", desc: "일정·과목·배점·출원 방법. 반드시 최신 학생모집요항(募集要項)으로 확인.", tags: ["공식"] },
@@ -36,7 +36,7 @@ export const resourceGroups: ResourceGroup[] = [
     ],
   },
   {
-    title: "🧱 왕기초 문법 (무료 온라인)",
+    title: "왕기초 문법 (무료 온라인)",
     intro: "이 사이트의 문법 코스와 함께 보면 좋은 무료 자료입니다. 한국어 설명 위주.",
     items: [
       { name: "EBSi (한국교육방송 고교 강의)", url: "https://www.ebsi.co.kr/", desc: "고교 영문법 기초 무료 강의 다수. '기초 영문법' 검색.", tags: ["무료", "한국어", "동영상"] },
@@ -47,7 +47,7 @@ export const resourceGroups: ResourceGroup[] = [
     ],
   },
   {
-    title: "🗂️ 어휘 · 사전",
+    title: "어휘 · 사전",
     intro: "星薬 영어의 어휘는 '표준 수준 + 숙어'가 중심입니다. 의약 전문 용어는 시험지에 주석이 달립니다.",
     items: [
       { name: "네이버 영어사전", url: "https://en.dict.naver.com/", desc: "한국어 뜻 + 발음 + 예문. 숙어 검색도 강력.", tags: ["무료", "한국어"] },
@@ -59,7 +59,7 @@ export const resourceGroups: ResourceGroup[] = [
     ],
   },
   {
-    title: "🧪 의약 · 과학 영어 읽기 연습",
+    title: "의약 · 과학 영어 읽기 연습",
     intro: "星薬 장문은 의학·약학·생명과학 뉴스 기사와 비슷한 글이 많습니다. 쉬운 것부터 매일 1편.",
     items: [
       { name: "VOA Learning English – Health & Lifestyle", url: "https://learningenglish.voanews.com/z/955", desc: "쉬운 영어로 쓴 건강·의학 뉴스. 음성·스크립트 제공. 입문 최적.", tags: ["무료", "쉬움"] },

@@ -61,7 +61,7 @@ export default function Plan() {
   return (
     <div className="mx-auto max-w-4xl">
       <PageTitle kicker="학습 로드맵" title="문법 0 → 합격권까지 6개월 계획" />
-      <div className="rounded-2xl bg-white border p-5 sm:p-7"><Md text={PLAN} /></div>
+      <div className="rounded-2xl bg-white border border-slate-200 p-5 sm:p-8 shadow-sm"><Md text={PLAN} /></div>
     </div>
   );
 }

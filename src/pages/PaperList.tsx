@@ -1,5 +1,6 @@
+import { FileText } from "lucide-react";
 import { papers } from "../data";
-import { Card, PageTitle } from "../components/ui";
+import { Bar, Card, PageTitle } from "../components/ui";
 import { useProgress } from "../progress";
 
 export default function PaperList() {
@@ -20,13 +21,13 @@ export default function PaperList() {
               badge={`${p.year}년도`}
               title={`${p.year}年度 一般選抜（B方式）英語`}
               desc={`대문 ${p.sections.length}개 · ${qs.length}문항 · 70분`}
-              extra={<p className="mt-2 text-xs text-slate-500">풀이 {solved}/{qs.length}</p>}
+              extra={<Bar value={solved} total={qs.length} label="풀이" />}
             />
           );
         })}
       </div>
-      <div className="mt-8 rounded-2xl bg-white border border-slate-200 p-5 text-sm leading-relaxed">
-        <h2 className="font-bold mb-2">📄 원본 PDF로 실전 연습하기</h2>
+      <div className="mt-10 rounded-2xl bg-white border border-slate-200 p-6 text-sm leading-relaxed">
+        <h2 className="flex items-center gap-2 font-bold text-slate-900 mb-2"><FileText aria-hidden className="size-5 text-indigo-700" />원본 PDF로 실전 연습하기</h2>
         <p>실제 시험처럼 풀어 보려면 원본 PDF를 인쇄해서 <b>70분 타이머</b>를 켜고 푼 뒤, 이 사이트에서 채점·해설을 확인하세요.</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
           {papers.map((p) => (
