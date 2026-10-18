@@ -5,59 +5,50 @@ export const lesson: Lesson = {
   level: 3,
   title: "도치, 강조, 생략, 부정",
   summary: "어순이 바뀌거나 일부가 생략된 특수 구문을 원래 문장으로 되돌려 읽는다.",
-  body: `## 한 줄로 말하면
-도치, 강조, 생략, 부정은 문장의 핵심 정보나 대비를 눈에 띄게 만드는 장치이므로, 낯선 어순을 보면 먼저 평서문으로 되돌려 읽습니다.
+  body: `:::analogy 특수구문은 '중요한 말에 스포트라이트를 비추려고 순서를 바꾼 문장'입니다
+부정어(\`Never\`, \`Rarely\`)나 강조하고 싶은 말을 맨 앞으로 끌어오면 영어는 뒤의 어순까지 바뀝니다.
+해석할 때는 **원래 순서로 되돌려 놓기**만 하면 됩니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式 지문은 약물 연구나 환자 치료의 결과를 대조합니다. **Only after the trial did the researchers change the dose.**처럼 부사구가 앞에 오면 조동사와 주어의 순서를 묻습니다. **It was the lower dose that reduced nausea.**는 강조를 보여 줍니다. 부정어 뒤 도치와 do의 유무를 확인하면 빈칸, 오류, 정렬 문제를 함께 풀 수 있습니다.
+:::formula 특수구문 4대 공식
+부정어 도치: [Never / Rarely / Little / Not only / No sooner] + [조동사/be동사/do] + [주어] + [동사] => 의문문 어순!
+강조 구문: [It is / was] + [강조할 말] + [that] + [나머지] => 바로 ~가 …이다
+동사 강조: [do / does / did] + [동사원형] => 정말로 ~하다 (예: He did take the pill.)
+부분 부정: [not + all / always / every] => 모두 ~인 것은 아니다
+:::
 
-## 개념 설명
-**도치(inversion, 주어와 동사의 순서를 바꾸는 것)**는 질문이 아닌데도 동사가 주어보다 먼저 오는 현상입니다. **The nurse did not leave until midnight.**는 **Not until midnight did the nurse leave.**로 바뀝니다. 부정어 또는 제한어(범위를 좁히는 말)가 앞에 오면 조동사(시제나 가능성을 돕는 동사)가 주어 앞에 옵니다. **Never has the patient missed a dose.**에서 has가 앞선 이유입니다.
+## 특수구문 한눈에 정리
 
-**강조(emphasis, 특정 부분을 두드러지게 하는 것)**에는 it-cleft와 do 강조가 자주 나옵니다. **It was the pharmacist who explained the label.**의 it은 형식상의 주어이고, 강조 대상은 the pharmacist입니다. **did explain**처럼 did 뒤에는 동사원형이 옵니다.
-
-**생략(ellipsis, 반복되는 말을 빼는 것)**은 문장을 짧게 합니다. **The first tablet caused dizziness, and the second did, too.**에서 동사 caused dizziness가 생략되었습니다. **When ready**는 **When it is ready**에서 주어와 be동사가 빠진 형태입니다. 문맥으로 빠진 말을 복원합니다.
-
-**부정(negation, 사실이 아님을 나타내는 것)**은 not, never, no, neither로 만듭니다. **no**는 명사 앞에, **not**은 동사나 형용사 앞에 옵니다. 과거 일반동사 부정은 **did not + 동사원형**입니다. **Neither the doctor nor the nurse was available.**처럼 가까운 주어의 수를 확인합니다.
-
-## 형태 정리
-| 기능 | 핵심 형태 | 실제 예문 |
+| 구문 | 모양 | 해석 |
 |---|---|---|
-| 제한 도치 | Only after + 절 + do/did + 주어 + 동사 | Only then did she agree. |
-| 부정 도치 | Never/Rarely + 조동사 + 주어 + 동사 | Never has he omitted a dose. |
-| it 강조 | It is/was + 대상 + that/who + 절 | It was the nurse who called. |
-| do 강조 | do/does/did + 동사원형 | She did follow the advice. |
-| 부정 | did not + 동사원형, neither A nor B | The drug did not work. |
-| 생략 | When + p.p. + 주절 | When stored cold, the sample lasts longer. |
+| **부정어 도치** | \`Never have I seen ~\` | 나는 한 번도 ~본 적 없다 |
+| **Only 도치** | \`Only then did he realize ~\` | 그때서야 비로소 그는 깨달았다 |
+| **It ~ that 강조** | \`It was the vitamin that helped.\` | 도움이 된 것은 바로 그 비타민이었다 |
+| **부분 부정** | \`Not all drugs are safe.\` | 모든 약이 안전한 것은 아니다 |
+| **생략** | \`When (it is) heated, ice melts.\` | 가열되면 얼음은 녹는다 |
 
-## 예문으로 익히기
-1. **Only after the meal did the patient take the capsule.**  Only after the meal(식사 후에야) / did(도치 조동사) / the patient(주어) / take(동사원형) / the capsule(목적어). 자연스러운 해석: 환자는 식사 후에야 캡슐을 먹었다. 메모: did 뒤 동사는 take입니다.
-2. **Never has the doctor ignored a serious symptom.**  Never(결코) / has(조동사) / the doctor(주어) / ignored(과거분사) / a serious symptom(목적어). 자연스러운 해석: 그 의사는 심각한 증상을 결코 무시한 적이 없다. 메모: has가 도치되었습니다.
-3. **It was the cold storage that preserved the vaccine.**  It was(강조 틀) / the cold storage(강조 대상) / that(연결어) / preserved(동사) / the vaccine(목적어). 자연스러운 해석: 백신을 보존한 것은 냉장 보관이었다. 메모: it은 강조 틀입니다.
-4. **The pharmacist did check the expiration date.**  The pharmacist(주어) / did(강조) / check(동사원형) / the expiration date(목적어). 자연스러운 해석: 약사는 유효기간을 분명히 확인했다. 메모: did 뒤는 원형입니다.
-5. **When mixed with water, the powder becomes cloudy.**  When mixed with water(when it is mixed의 생략: 물과 섞이면) / the powder(주어) / becomes(동사) / cloudy(보어). 자연스러운 해석: 물과 섞이면 그 가루는 흐려진다. 메모: 생략된 주어는 주절의 the powder와 같아야 합니다.
-6. **Neither the tablet nor the syrup was given to the child.**  Neither the tablet nor the syrup(정말 주어: 정제도 시럽도) / was given(수동태 동사) / to the child(대상). 자연스러운 해석: 그 아이에게 정제도 시럽도 주어지지 않았다. 메모: 가까운 syrup이 단수라 was입니다.
-7. **Rarely do people read every warning on a medicine label.**  Rarely(좀처럼, 부정에 가까운 부사) / do(도치 조동사) / people(주어) / read(동사원형) / every warning(목적어). 자연스러운 해석: 사람들은 약 라벨의 모든 경고를 좀처럼 읽지 않는다. 메모: 일반동사 read를 위해 do가 필요합니다.
-8. **The first scan showed no lesion, and the second did, too.**  The first scan(주어) / showed(동사) / no lesion(목적어) / and / the second(주어) / did(앞의 showed를 대신하는 생략) / too(또한). 자연스러운 해석: 첫 번째 스캔은 병변을 보이지 않았고 두 번째도 그랬다. 메모: did 뒤에 showed가 반복되지 않았습니다.
+:::train 문장 블록 기차로 도치 되돌리기
+Rarely(부정어 맨 앞:거의 ~않다) | does this drug(도우미+주어:이 약은) | cause(동사원형:일으킨다) | side effects(목적어:부작용을) => 이 약은 부작용을 거의 일으키지 않는다.
+It was the new vaccine(강조:바로 그 새 백신이었다) | that saved(that+동사:구한 것은) | many lives(목적어:많은 생명을) => 많은 생명을 구한 것은 바로 그 새 백신이었다.
+Not all patients(부분 부정 주어:모든 환자가 ~인 것은 아니다) | respond(동사:반응한다) | to this treatment(수식어:이 치료에) => 모든 환자가 이 치료에 반응하는 것은 아니다.
+:::
 
-## 헷갈리는 포인트 / 자주 하는 실수
-1. 부정어 도치에서 조동사를 빼면 안 됩니다. **Never the patient missed a dose.**는 틀리고, **Never did the patient miss a dose.**가 맞습니다.
-2. do 강조 뒤에는 동사원형을 씁니다. **The nurse did checked the pulse.**는 틀리고, **The nurse did check the pulse.**가 맞습니다. did가 이미 과거를 표시합니다.
-3. 제한어가 문장 앞에 없으면 일반 어순입니다. **Only after the test did he rest.**는 맞지만, **After the test did he rest.**는 보통 틀립니다.
-4. neither A nor B의 동사를 무조건 복수로 쓰지 않습니다. **Neither the doctor nor the nurses was ready.**는 틀리고, **Neither the doctor nor the nurses were ready.**가 맞습니다. 가까운 nurses에 맞춥니다.
-5. 분사 생략의 주어를 바꾸면 뜻이 어색해집니다. **When stored properly, the technician labels the sample.**은 technician이 보관된 것처럼 읽힙니다. 주절 주어를 보관 대상과 맞춥니다.
+:::transform 원래 문장 → 도치 문장
+I have [never] seen such a case. || [Never have I] seen such a case. || Never가 앞으로 가면 have가 주어 I 앞으로 튀어나옵니다.
+He [rarely takes] medicine. || [Rarely does he take] medicine. || 일반동사는 도우미 does를 앞세우고 동사는 원형(take)이 됩니다.
+:::
 
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸은 **Only after the results were reviewed (　　) the team approve the new dose.**처럼 제한어와 도치를 한꺼번에 확인하게 합니다. 주어 the team 앞에 did를 넣고, did 뒤에는 approve 원형을 고릅니다. 먼저 Only after를 표시하고, 문장을 **The team approved the new dose only after...**로 되돌리면 흔들리지 않습니다.
+:::vs 특수구문 단골 함정 O / X
+Never [I have] seen such a fast recovery. || Never [have I] seen such a fast recovery. || 부정어가 맨 앞이면 조동사가 주어 앞으로 갑니다.
+Little [he knew] about the risk. || Little [did he know] about the risk. || 일반동사 knew는 did + 주어 + know로 바뀝니다.
+It was yesterday [which] I met the doctor. || It was yesterday [that] I met the doctor. || 강조 구문은 It was ~ that입니다.
+:::
 
-오류 찾기에서는 **It was the low dose which reduced nausea**와 같이 강조 대상 뒤의 관계사를 묻거나, **Never has the patient forgot the instruction**처럼 현재완료의 과거분사를 묻습니다. 강조 구조는 it was와 that/who 사이를 한 덩어리로 묶고, 도치는 조동사 뒤 주어를 찾은 뒤 본동사 형태를 점검합니다. 의약 지문에서는 not, no, hardly를 먼저 표시해 결과의 방향을 거꾸로 읽지 않는 것이 핵심입니다.
-
-## 3줄 요약
-1. Only, never, rarely, not until 같은 말이 앞에 오면 조동사와 주어를 도치합니다.
-2. It was A that/who와 do + 동사원형은 특정 정보를 강조합니다.
-3. 생략은 앞의 말을 복원하고, not/no/neither의 범위와 가까운 주어를 확인합니다.
-
-`,
+:::steps 특수구문 3초 풀이법
+1. 부정어 맨 앞 확인 | Never, Rarely, Seldom, Little, Not only, Only가 문장 맨 앞인지 봅니다. | Seldom ~
+2. 의문문 어순 고르기 | 그 뒤가 조동사/do + 주어 + 동사 순서인 보기를 고릅니다. | does it occur (O)
+3. It ~ that 지워 보기 | It is와 that을 지워도 문장이 성립하면 강조 구문입니다. | The vaccine saved lives (O)
+:::`,
   quiz: [
     {
       prompt: "Only after the safety data were checked (　　) the researchers increase the dose.",

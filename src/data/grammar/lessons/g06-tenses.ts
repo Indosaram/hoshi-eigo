@@ -5,99 +5,49 @@ export const lesson: Lesson = {
   level: 2,
   title: "시제: 현재, 과거, 미래, 진행형",
   summary: "동사의 모양으로 일이 언제 일어났고 지금 진행 중인지 판단한다.",
-  body: `## 한 줄로 말하면
+  body: `:::analogy 시제는 동사에 붙이는 시간 도장입니다
+사건이 **어제 끝난 일(과거)**인지, **원래 늘 그런 사실(현재)**인지, **지금 눈앞에서 벌어지는 중(진행형)**인지, **내일 일어날 일(미래)**인지에 따라 동사 모양이 달라집니다.
+문장 속 시간 단서(\`yesterday\`, \`every day\`, \`right now\`, \`when ~\`)가 정답을 알려 주는 힌트입니다.
+:::
 
-시제는 동사의 모양을 바꾸어 어떤 일이 언제 일어나는지, 또는 그때 진행 중인지 보여 주는 장치입니다.
+:::formula 시제 기본 공식 4가지
+과거 단서 (yesterday, in 2020, ago) => 과거형 동사 (took, started, was)
+평소·과학 사실 (every day, usually) => 현재형 동사 (takes, boils, is)
+진행 중 (now, at the moment) => [be동사 + V-ing] (is taking, was resting)
+시간·조건 부사절 (when, if, before, after, until + 주어 + 현재형) => 미래 일이어도 will 대신 현재형!
+:::
 
-## 왜 배우나요?
+## 시제별 모양과 시간 단서 표
 
-星薬科大学 B方式의 빈칸 문제에서는 시간 표현과 동사의 모양을 함께 보고 정답을 고릅니다. *yesterday*가 보이면 과거, *every day*면 현재의 반복, *next week*면 미래를 먼저 의심합니다. 의약 지문에서도 “환자가 복용했다”, “약이 작용하고 있다”, “연구가 시작될 것이다”를 구별해야 실험 결과의 순서를 놓치지 않습니다. 오류 찾기에서는 주어가 아니라 시간 표현에 맞지 않는 동사를 찾게 됩니다.
-
-## 개념 설명
-
-시제(시간 표현)는 사건을 시간표에 붙이는 표지입니다. 현재형은 지금의 사실, 습관, 변하지 않는 설명에 씁니다. *Patients take this medicine daily.*는 환자들이 매일 복용한다는 뜻입니다. 과거형은 이미 끝난 일에 씁니다. 미래는 보통 **will + 동사원형(동사의 기본 모양)**으로 말합니다. *The trial will begin next month.*에서 *will* 뒤에는 *begins*가 아니라 *begin*이 옵니다.
-
-진행형(어떤 시점에 진행 중인 일)은 **be동사 + 동사-ing**입니다. 현재진행형은 지금, 과거진행형은 과거 특정 순간에 진행 중인 일을 나타냅니다. be동사는 주어에 따라 *am, is, are* 또는 과거형 *was, were*로 바뀝니다. 시간표를 확인한 뒤 주어에 맞는 be동사를 고릅니다.
-
-현재형의 3인칭 단수(he, she, it처럼 한 사람이나 하나의 사물)는 동사에 *-s*를 붙입니다. *The drug reduces pain.*처럼 *drug*가 하나이므로 *reduce*가 *reduces*가 됩니다. 그러나 *does, did, will* 뒤에는 동사원형을 씁니다. *will*이 이미 미래를 표시하므로 *will reduce*가 맞습니다.
-
-## 형태 정리
-
-| 의미 | 기본 형태 | 예시 | 자주 만나는 시간 표현 |
+| 시제 | 동사 모양 | 함께 나오는 시간 단서 | 핵심 의미 |
 |---|---|---|---|
-| 현재의 사실, 습관 | 주어 + 동사, 3인칭 단수는 동사-s | The nurse checks the dose. | every day, usually, often |
-| 끝난 과거 | 주어 + 과거형 | The patient visited the clinic. | yesterday, last week, ago |
-| 미래의 예상, 계획 | 주어 + will + 동사원형 | The study will continue. | tomorrow, next month, soon |
-| 지금 진행 중 | 주어 + am/is/are + 동사-ing | The doctor is examining him. | now, at present, Look! |
-| 과거 특정 시점에 진행 중 | 주어 + was/were + 동사-ing | They were testing the sample. | at 9 yesterday, when |
+| **현재** | \`V\` / \`V-s\` | \`every day\`, \`usually\`, \`often\` | 반복 습관, 변하지 않는 과학·의학 사실 |
+| **과거** | \`V-ed\` / 불규칙 | \`yesterday\`, \`last week\`, \`~ ago\`, \`in 2024\` | 과거 특정 시점에 이미 끝난 일 |
+| **미래** | \`will + V\` | \`tomorrow\`, \`next month\`, \`soon\` | 앞으로 일어날 일이나 예측 |
+| **진행형** | \`be + V-ing\` | \`now\`, \`right now\`, \`at that time\` | 그 시점에 한창 하고 있는 중 |
 
-과거형은 규칙동사라면 *-ed*를 붙이지만 *take, give, go*처럼 모양이 달라지는 불규칙동사도 있습니다. *take, took*처럼 단어 자체를 익혀야 합니다. 이 단원에서는 과거형 *took*를 고르는지가 핵심입니다.
+:::train 문장 블록 기차로 시제 단서 읽기
+Water(주어:물은) | freezes(현재동사:언다) | at zero degrees Celsius(수식어:섭씨 0도에서) => 물은 섭씨 0도에서 언다 (과학적 사실은 언제나 현재시제!).
+The patient(주어:환자는) | was sleeping(과거진행:자고 있는 중이었다) | when the nurse entered(시간절:간호사가 들어왔을 때) => 간호사가 들어왔을 때 환자는 자고 있었다.
+Please take(명령문:복용하세요) | this pill(목적어:이 알약을) | before you go to bed(시간절:잠자리에 들기 전에) => 잠자리에 들기 전에 이 알약을 복용하세요 (시간절 현재형 go!).
+:::
 
-## 예문으로 익히기
+:::transform 시험 1순위 규칙: 때·조건의 부사절에서는 미래에도 현재형!
+주절(미래): You [will feel] better || 조건절(현재형!): if you [take] this medicine tomorrow. || [if / when / before / after / as soon as / until]이 이끄는 절 안에서는 내일 일이어도 will을 빼고 현재형(take)을 씁니다!
+상태동사: I [know] the answer now. || 진행형 불가: I [am knowing] (X) || know, have(소유), like, belong, consist는 이미 지속되는 상태라 -ing 진행형을 쓰지 않습니다.
+:::
 
-1. **The pharmacist checks the label every morning.**  
-The pharmacist(주어) / checks(현재형 동사) / the label(목적어) / every morning(반복 시간)  
-약사는 매일 아침 라벨을 확인한다.  
-매일 반복되는 일이므로 현재형이며, pharmacist가 하나라서 *checks*입니다.
+:::vs 시제 함정 O / X
+If the fever [will continue] tomorrow, see a doctor. || If the fever [continues] tomorrow, see a doctor. || 조건을 나타내는 if절 안에서는 미래 일이어도 현재형(continues)을 씁니다.
+Please wait here until the doctor [will call] you. || Please wait here until the doctor [calls] you. || 시간을 나타내는 until절 안에서도 will 대신 현재형(calls)을 씁니다.
+This tablet [is containing] 500mg of vitamin C. || This tablet [contains] 500mg of vitamin C. || 포함하다(contain), 구성되다(consist of) 같은 상태동사는 진행형(be + -ing)으로 쓰지 않습니다.
+:::
 
-2. **The patient took the tablet after dinner.**  
-The patient(주어) / took(과거형 동사) / the tablet(목적어) / after dinner(시간)  
-환자는 저녁 식사 후 그 정제를 복용했다.  
-이미 끝난 일이고 *took*는 *take*의 과거형입니다.
-
-3. **The new vaccine will protect many children.**  
-The new vaccine(주어) / will protect(미래 조동사 + 동사원형) / many children(목적어)  
-새 백신은 많은 어린이를 보호할 것이다.  
-미래를 나타내는 *will* 뒤에는 반드시 원형 *protect*를 둡니다.
-
-4. **The nurse is measuring the patient's temperature now.**  
-The nurse(주어) / is measuring(현재진행형) / the patient's temperature(목적어) / now(현재 시점)  
-간호사는 지금 환자의 체온을 재고 있다.  
-지금 진행 중이므로 *is + measuring*입니다.
-
-5. **Researchers were observing the cells at noon yesterday.**  
-Researchers(주어) / were observing(과거진행형) / the cells(목적어) / at noon yesterday(과거 시점)  
-연구자들은 어제 정오에 세포를 관찰하고 있었다.  
-과거의 특정 순간에 진행 중인 일이므로 복수 주어에 *were observing*을 씁니다.
-
-6. **Water boils at 100 degrees Celsius.**  
-Water(주어) / boils(현재형 동사) / at 100 degrees Celsius(조건)  
-물은 섭씨 100도에서 끓는다.  
-과학적 사실은 현재형입니다.
-
-7. **The trial will start when the approval arrives.**  
-The trial(주어) / will start(주절의 미래) / when the approval arrives(시간절: 승인이 도착할 때)  
-승인이 도착하면 임상시험이 시작될 것이다.  
-시간을 나타내는 *when*절에서는 미래 의미라도 *will arrive*가 아니라 현재형 *arrives*를 씁니다.
-
-8. **The medicine was reducing the fever when the doctor entered.**  
-The medicine(주어) / was reducing(과거진행형) / the fever(목적어) / when the doctor entered(끼어든 과거 사건)  
-의사가 들어왔을 때 그 약은 열을 낮추고 있었다.  
-진행 중인 배경은 과거진행형, 그 사이 일어난 짧은 사건은 과거형입니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **will 뒤에 -s를 붙이지 않습니다.** *The drug will reduces pain.*은 틀리고 *The drug will reduce pain.*이 맞습니다. *will*이 미래와 조동사 역할을 이미 맡습니다.
-
-2. **현재형 3인칭 단수를 놓치지 않습니다.** *The tablet dissolve quickly.*는 틀리고 *The tablet dissolves quickly.*가 맞습니다. 하나의 tablet은 *it*처럼 취급합니다.
-
-3. **진행형에서 be동사를 빼지 않습니다.** *The patient taking the medicine now.*는 문장의 동사가 없으므로 틀리고 *The patient is taking the medicine now.*가 맞습니다.
-
-4. **시간절의 미래를 will로 만들지 않습니다.** *When the nurse will arrive, we will begin.*보다 *When the nurse arrives, we will begin.*이 맞습니다. 주절에는 *will*, *when*절에는 현재형을 둡니다.
-
-5. **과거형과 과거진행형을 구별합니다.** *At 8 p.m. they tested the sample*은 단순히 시험했다는 완료 사실이고, 그 시각에 한창 진행 중이었다면 *were testing*입니다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-B方式의 문법 빈칸은 시간 표현을 단서로 주고, 현재형, 과거형, *will + 원형*, 진행형을 섞어 선택하게 만들 수 있습니다. *The researchers (　　) the samples yesterday*라면 *examined*, *The drug (　　) effective next year*라면 *will become*을 고릅니다.
-
-오류 찾기에서는 네 부분의 시간 표현과 동사를 먼저 대조합니다. *The nurse is recorded the result now*라면 *now*에 맞는 *is recording*을 찾아야 합니다. 시간 표현, be동사, 동사 모양 순서로 확인하면 빠릅니다.
-
-## 3줄 요약
-
-1. 현재형은 사실과 습관, 과거형은 끝난 일, *will + 원형*은 미래를 나타냅니다.  
-2. 진행 중이면 *be동사 + 동사-ing*이며, be동사는 주어와 시점에 맞춥니다.  
-3. 빈칸에서는 시간 표현을 먼저 찾고, *will* 뒤 원형과 3인칭 단수 *-s*를 확인합니다.`,
+:::steps 시제 문제 3초 풀이법
+1. 시간 단서 밑줄 | 문장에서 yesterday, ago, since, when, if 같은 시간 단서를 먼저 찾습니다. | ~ two days ago
+2. 때·조건 절 확인 | 빈칸이 when/if/until/before 절 안에 있으면 will을 지우고 현재형을 고릅니다. | when he arrives (O)
+3. 상태동사 확인 | know, contain, belong, resemble는 진행형(-ing) 보기를 지웁니다. | contains (O)
+:::`,
   quiz: [
     {
       prompt: "The patient (　　) the medicine yesterday.",

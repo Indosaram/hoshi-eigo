@@ -104,8 +104,16 @@ horizontal chip strip under the header (scrolls horizontally inside itself).
 |---|---|---|---|
 | Micro | 150ms | ease-out | button press, hover wash |
 | Standard | 200ms | ease-out | card lift, explanation reveal (opacity + translateY 4px) |
+| Spring morph | 320ms | `cubic-bezier(0.22, 1, 0.36, 1)` | sentence train step-play, active/passive swap, blank slot fill, timeline glide |
 
-Only transform/opacity animate. `prefers-reduced-motion`: reveal becomes opacity only, card lift disabled.
+Only `transform` and `opacity` animate. `prefers-reduced-motion: reduce` collapses all positional/scale transitions to instant or opacity-only crossfades while keeping active state highlights intact.
+
+### Visual Explanation Primitives (`VisualBlocks`, `GrammarLab`, `ExplanationView`)
+- **GrammarLab**: Per-lesson interactive SVG/motion simulator at the top of each lesson (`g01`–`g27`) with step-play and state toggles (`aria-pressed`).
+- **Sentence Train (`:::train`)**: Role-colored cars (`주어` sky, `동사` indigo, `목적어` emerald, `보어` amber, `수식어` stone) with coupler arrows and a step-by-step play mode.
+- **Transform Motion (`:::transform`)**: Interactive Before ↔ After state switcher highlighting moved/morphed tokens.
+- **O / X Comparison (`:::vs`)**: Side-by-side wrong (`rose-50` + X) vs right (`emerald-50` + Check) visual cards.
+- **ExplanationView**: Parses quiz/paper explanations into an animated blank-fill prompt bar, sentence-skeleton chips, translation card, wrong-choice elimination grid, and formula stamp.
 
 ## 7. Depth & Surface
 

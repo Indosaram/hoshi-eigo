@@ -5,103 +5,50 @@ export const lesson: Lesson = {
   level: 3,
   title: "관계부사, what, 복합관계사",
   summary: "장소, 시간, 이유, 방법을 잇는 관계부사와 선행사 없이 쓰는 what의 구조를 구별한다.",
-  body: `## 한 줄로 말하면
+  body: `:::analogy 빈방이 있으면 관계대명사(which), 방이 꽉 찼으면 관계부사(where/when), 앞 명사까지 삼킨 상자는 what입니다
+학생들이 가장 많이 헷갈리는 **\`which\` vs \`where\`**는 앞 단어("병원")만 보면 절대 못 풉니다!
+"병원" 뒤 문장에 **명사 빈칸(\`visited [ ]\`)이 비어 있으면 \`which\`**, 빈칸 없이 **완전한 문장(\`works\`)이면 \`where\`**입니다.
+그리고 **\`what\`**은 앞 명사까지 자기 배 속에 삼킨 **\`the thing which(~하는 것)\`**입니다!
+:::
 
-관계부사 **where, when, why, how**는 앞의 명사를 뒤 절과 이어 주고, **what**은 앞 명사 없이 그 자체로 ‘것’을 뜻한다.
+:::formula which vs where/when & what 1초 구별 공식
+[선행사 명사] + [which / who] + [불완전한 문장 (주어나 목적어 빠짐!)]
+[선행사 명사] + [where / when / why / how] + [완전한 문장 (빠진 명사 없음!)]
+[선행사 없음!] + [what] + [불완전한 문장] => 해석: ~하는 것 (= the thing that)
+[the way] vs [how] => 둘 중 하나만 써야 함! (the way how 나란히 쓰기 절대 금지!)
+:::
 
-## 왜 배우나요?
+## 관계대명사 vs 관계부사 vs what 한눈에 비교표
 
-의약 지문에는 흡수 장소, 증상 시점, 부작용 원인을 설명하는 문장이 많다. 빈칸에서는 where, why, what을 구별한다. 오류 찾기에서는 **the way how** 같은 중복을 노린다.
+| 구분 | **앞에 명사(선행사)** | **뒤 문장 상태** | 대표 단어 |
+|---|---|---|---|
+| **관계대명사** | **있음** (\`the clinic\`) | **불완전** (주어·목적어 중 하나 비어 있음) | \`who\`, \`which\`, \`that\` |
+| **관계부사** | **있음** (\`the clinic\`, \`the day\`) | **완전** (주어·동사·목적어 모두 꽉 참) | \`where\`(= in/at which), \`when\`, \`why\`, \`how\` |
+| **관계대명사 \`what\`** | **없음!** (동사·전치사 뒤) | **불완전** (주어·목적어 중 하나 비어 있음) | **\`what\`** (= \`the thing which\`) |
+| **접속사 \`that\`** | **없음!** (동사 뒤 명사절) | **완전** (빠진 성분 없음) | **\`that\`** (~라는 것) |
 
-## 개념 설명
+:::train 문장 블록 기차로 which / where / what 비교하기
+This is the hospital(주절:이곳이 병원이다) | which she visited(관계대명사절:그녀가 방문했던 [목적어 비어 있음]) => 이곳이 그녀가 방문했던 병원이다.
+This is the hospital(주절:이곳이 병원이다) | where she works(관계부사절:그녀가 일하는 [완전한 문장]) => 이곳이 그녀가 일하는 병원이다.
+What the patient needs(what 명사절:환자가 필요로 하는 것은) | is(동사:이다) | plenty of rest(보어:충분한 휴식) => 환자가 필요로 하는 것은 충분한 휴식이다.
+:::
 
-먼저 **선행사(뒤에서 설명을 받는 앞의 명사)**를 찾는다. “the clinic where I work”에서 *the clinic*이 선행사이고, *where I work*가 그 병원을 설명하는 관계부사절(관계부사가 이끄는 작은 문장)이다. 한국어는 “내가 일하는 병원”이지만 영어는 뒤에 설명을 붙인다.
+:::transform 전치사 + which가 합쳐지면 관계부사가 됩니다
+장소: the lab [which] he works [in] || the lab [in which] he works = the lab [where] he works || 끝에 있던 전치사 [in]이 which 앞으로 오면 합쳐져서 [where]가 됩니다!
+방법: This is [the way] the drug works. || This is [how] the drug works. || [the way]와 [how]는 둘 다 쓰면 틀리고 반드시 둘 중 하나만 씁니다!
+:::
 
-관계부사는 선행사와 절 속의 장소, 시간, 이유, 방법을 함께 나타낸다. **where = in which**, **when = at or on which**, **why = for which**로 바꿔 볼 수 있다. 뒤에는 주어와 동사가 온다.
+:::vs 관계부사·what 단골 함정 O / X
+The pharmacy [where] I bought the medicine was closed. (O) vs The pharmacy [where] I visited was closed. (X) ||The pharmacy [which] I visited was closed. || visited는 '~을 방문하다'라는 타동사라 뒤에 목적어가 비어 있습니다. 따라서 where가 아니라 which를 씁니다!
+Tell me the thing [what] you saw. || Tell me [what] you saw. / Tell me the thing [that] you saw. || what 안에는 이미 the thing이 들어 있으므로 앞에 명사(선행사)가 있으면 쓸 수 없습니다.
+Can you explain [the way how] this vaccine works? || Can you explain [the way] / [how] this vaccine works? || the way와 how는 절대 나란히 함께 쓰지 않습니다.
+:::
 
-**what**은 선행사가 필요 없는 관계대명사다. “what I need”는 “내가 필요한 것”이며, *what* 안에 “the thing that”의 뜻이 들어 있다. 그러므로 “the thing what I need”처럼 앞에 명사를 또 쓰면 안 된다. what절(what이 이끄는 명사 역할의 절)은 주어, 목적어, 보어가 될 수 있다.
-
-**복합관계사(관계사와 ever가 합쳐진 표현)**도 나온다. *wherever*는 “어디든지”, *whenever*는 “언제든지”, *whatever*는 “무엇이든지”이다. “Whatever the result is, record it.”처럼 양보나 명사로 쓴다.
-
-## 형태 정리
-
-| 표현 | 선행사 | 절에서 맡는 뜻 | 바꾸어 읽기 | 예문 |
-|---|---|---|---|---|
-| where | place, clinic, site | 장소 | in which | the ward where patients rest |
-| when | time, day, period | 시간 | at or on which | the time when fever began |
-| why | reason | 이유 | for which | the reason why the dose changed |
-| how | 보통 the way | 방법 | the way in which | how the virus spreads |
-| what | 없음 | 것, 하는 일 | the thing that | what the scan revealed |
-| wherever | 없음 | 어디든지 | at any place where | wherever the drug is stored |
-| whenever | 없음 | 언제든지 | at any time when | whenever pain returns |
-| whatever | 없음 | 무엇이든지 | anything that | whatever the label says |
-
-## 예문으로 익히기
-
-1. **The clinic where I work opens at eight.**  
-The clinic(선행사, 장소) / where I work(관계부사절: 그 병원을 설명) / opens(동사) / at eight(시간).  
-내가 일하는 병원은 8시에 문을 연다.  
-메모: where 뒤에는 주어 I와 동사 work가 온다.
-
-2. **The day when my cough improved was memorable.**  
-The day(선행사, 시간) / when my cough improved(관계부사절: 그날을 설명) / was(동사) / memorable(보어).  
-내 기침이 나아진 날은 기억에 남았다.  
-메모: when은 day와 함께 시간을 만든다.
-
-3. **The reason why the dose was reduced was kidney damage.**  
-The reason(선행사, 이유) / why the dose was reduced(관계부사절: 이유를 설명) / was(동사) / kidney damage(보어).  
-용량이 줄어든 이유는 신장 손상이었다.  
-메모: why 뒤의 수동태를 한 덩어리로 읽는다.
-
-4. **This is how the pharmacist checks the label.**  
-This(주어) / is(동사) / how the pharmacist checks the label(보어인 how절: 방법).  
-이것이 약사가 라벨을 확인하는 방법이다.  
-메모: how와 the way를 함께 쓰지 않는다.
-
-5. **What the blood test revealed surprised the doctor.**  
-What the blood test revealed(주어인 what절: 혈액 검사가 밝혀낸 것) / surprised(동사) / the doctor(목적어).  
-혈액 검사가 밝혀낸 것이 의사를 놀라게 했다.  
-메모: what절 전체가 주어다.
-
-6. **The storage room where vaccines are kept must stay cold.**  
-The storage room(선행사, 장소) / where vaccines are kept(관계부사절: 보관실을 설명) / must stay(동사) / cold(보어).  
-백신을 보관하는 저장실은 차갑게 유지되어야 한다.  
-메모: are kept는 수동태다.
-
-7. **Whenever a patient feels dizzy, the nurse checks the dose.**  
-Whenever a patient feels dizzy(복합관계부사절: 언제든 어지러우면) / the nurse(주어) / checks(동사) / the dose(목적어).  
-환자가 어지러움을 느낄 때마다 간호사는 용량을 확인한다.  
-메모: whenever절은 반복 시점을 나타낸다.
-
-8. **Whatever the result, the researcher records it carefully.**  
-Whatever the result(복합관계사 표현: 결과가 무엇이든) / the researcher(주어) / records(동사) / it(목적어) / carefully(부사).  
-결과가 무엇이든 연구자는 그것을 주의 깊게 기록한다.  
-메모: whatever 뒤에 명사가 올 수도 있다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **선행사 유무**: 틀림: *The clinic what I visited was clean.* 정답: **The clinic that I visited was clean.** clinic이 이미 있으므로 what이 아니라 목적격 관계대명사 that을 쓴다.
-
-2. **what과 that의 역할**: 틀림: *I understood that the scan showed.* 정답: **I understood what the scan showed.** “스캔이 보여 준 것”이라는 목적어가 필요하므로 what절을 쓴다. that절은 “스캔이 보여 주었다는 사실”처럼 완전한 절을 이끈다.
-
-3. **how 중복**: 틀림: *This is the way how the tablet works.* 정답: **This is how the tablet works.** 또는 **This is the way the tablet works.** the way와 how를 함께 쓰지 않는다.
-
-4. **관계부사 뒤 절**: 틀림: *the lab where the technician* 정답: **the lab where the technician works**. 뒤에 주어와 동사가 있는지 확인한다.
-
-5. **복합관계사와 의문사**: “I don't know where the lab is”는 간접의문문이다. “Go wherever the map leads”는 어디든 가라는 복합관계부사절이다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-B方式의 빈칸은 긴 명사 뒤에 장소나 이유를 설명하는 절을 붙인다. “The laboratory (　　) the samples were stored was locked.”라면 선행사 laboratory가 장소이고 뒤 절이 완전하므로 **where**를 고른다. “The reason (　　) the patient stopped the medicine was unclear.”에서는 **why**를 찾는다.
-
-오류 찾기에서는 “The way how the drug enters cells is complex.”처럼 중복을 찾는다. 어순 문제에서는 주절 동사를 찾고, 명사 뒤 관계부사와 절을 묶는다. **what** 앞에 선행사가 있는지도 확인한다.
-
-## 3줄 요약
-
-1. where, when, why는 장소, 시간, 이유의 선행사와 뒤의 완전한 절을 잇는다.
-2. what은 선행사 없이 “것”을 뜻하며, what 앞에 the thing 같은 명사를 함께 쓰지 않는다.
-3. how는 the way와 겹쳐 쓰지 않고, wherever, whenever, whatever는 “어디든, 언제든, 무엇이든”이다.
-`,
+:::steps which / where / what / that 3초 판별법
+1. 빈칸 앞 명사 유무 확인 | 앞에 꾸밈을 받는 명사가 있으면 which/where 후보, 앞에 동사만 있으면 what/that 후보입니다. | 앞에 명사 없음 → what vs that
+2. 빈칸 뒤 완전성 검사 | 뒤 문장에 주어나 목적어가 빠져 있으면 불완전(which / what), 다 갖춰져 있으면 완전(where / 접속사 that)입니다. | needs [ ? ] → 목적어 빠짐 = what!
+3. the way how 체크 | the way 뒤에 how가 있으면 틀린 문장으로 바로 찾습니다. | the way how (X)
+:::`,
   quiz: [
     {
       prompt: "The hospital (　　) my sister works has a new pharmacy.",

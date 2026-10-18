@@ -5,91 +5,48 @@ export const lesson: Lesson = {
   level: 3,
   title: "분사·분사구문",
   summary: "동사의 -ing와 p.p.가 명사를 꾸미거나 문장을 짧게 연결하는 법을 익힌다.",
-  body: `## 한 줄로 말하면
-분사(동사에서 나온 형용사)는 명사의 상태나 행동을 설명하고, 분사구문은 두 문장의 공통 주어를 줄여 한 덩어리로 만든다.
+  body: `:::analogy 분사는 동사가 '형용사 변신 벨트'를 찬 것입니다 (-ing 능동 vs p.p. 수동)
+동사에 **\`-ing\`(현재분사)**를 붙이면 **"직접 ~하고 있는 / 감정을 주는(능동)"** 형용사가 되고, **\`p.p.\`(과거분사)**를 쓰면 **"~당한 / 감정을 느끼는(수동)"** 형용사가 됩니다.
+명사와 분사 사이에 **누가 누구에게 하느냐** 화살표를 그어 보면 1초 만에 구별됩니다!
+:::
 
-## 왜 배우나요?
-의약품 설명에서 *a drug used for diabetes*처럼 긴 관계대명사절을 짧게 줄인 표현이 자주 나온다. B方式의 빈칸에서는 **-ing인지 p.p.인지**, 그리고 분사구문이 문장 앞에서 어떤 시간이나 이유를 나타내는지 묻는다. 단어를 하나씩 번역하기보다 분사가 바로 뒤 명사를 꾸미는지, 앞 문장의 주어가 그 행동을 하는지 확인하면 독해와 오류 찾기가 빨라진다.
+:::formula 분사 & 분사구문 핵심 공식
+능동 화살표 (명사가 직접 함): [명사] → [V-ing] => 예: sleeping baby (자고 있는 아기), exciting news (흥미를 주는 소식)
+수동 화살표 (명사가 당함·느낌): [명사] ← [p.p.] => 예: injured patient (다친 환자), surprised doctor (놀란 의사)
+분사구문 만들기: [접속사 + 주어 + 동사], [주어 + 동사] => 접속사·주어를 지우고 동사를 [V-ing] (수동이면 [(Being) p.p.])로!
+with 부대상황: [with + 목적어 + -ing(능동) / p.p.(수동)] => ~한 채로 (예: with his eyes closed 눈을 감은 채로)
+:::
 
-## 개념 설명
-분사(동사의 성질을 남긴 형용사)는 두 종류다. 현재분사(-ing)는 명사가 **직접 하는 중인 행동**을 나타낸다. *a sleeping patient*는 “자고 있는 환자”다. 과거분사(p.p., 동사의 3번째 형태)는 명사가 **행동을 당한 상태**나 그 결과를 나타낸다. *a tested drug*는 “시험된 약”이다. 현재와 과거라는 시간이 아니라, 능동과 수동의 차이라고 기억하자.
+## 현재분사(-ing) vs 과거분사(p.p.) 핵심 비교표
 
-분사는 명사 앞에서 한 단어 형용사처럼 쓰이거나, 뒤에서 긴 설명을 붙인다. *an effective treatment*처럼 짧으면 앞에 놓고, *a treatment effective against resistant bacteria*처럼 길면 뒤에 놓는다. 뒤에 놓인 분사구는 관계대명사절을 줄인 경우가 많다. *the patients taking aspirin*은 *the patients who take aspirin*과 같다.
+| 구분 | **현재분사 (\`V-ing\`)** | **과거분사 (\`p.p.\`)** |
+|---|---|---|
+| **기본 의미** | **능동** (~하는) · **진행** (~하고 있는) | **수동** (~된, ~당한) · **완료** (이미 ~한) |
+| **감정 분사** | 남에게 감정을 **일으키는** (\`interesting\`, \`tiring\`, \`surprising\`) | 사람이 감정을 **느끼는** (\`interested\`, \`tired\`, \`surprised\`) |
+| **명사 수식 위치** | 1단어는 명사 앞, **길어지면 명사 뒤!** | 1단어는 명사 앞, **길어지면 명사 뒤!** (\`pills prescribed by ~\`) |
 
-분사구문(접속사와 주어를 줄인 부사절)은 두 절의 주어가 같을 때 쓴다. *Because she felt ill, she went home*에서 *Feeling ill, she went home*으로 줄일 수 있다. 현재분사형은 주절과 같은 때의 능동 행동, p.p.는 수동 의미를 나타낸다. 완료를 강조하면 *Having finished the trial, the researchers published the results*처럼 **having + p.p.**를 쓴다. 분사구문의 숨은 주어는 보통 주절의 주어와 같아야 한다.
+:::train 문장 블록 기차로 뒤에서 꾸미는 분사 읽기
+Patients(주어:환자들은) | taking this medicine(현재분사구:이 약을 복용하는) | should avoid(동사:피해야 한다) | driving(목적어:운전을) => 이 약을 복용하는 환자들은 운전을 피해야 한다.
+The medicine(주어:그 약은) | prescribed by the doctor(과거분사구:의사에 의해 처방된) | reduced(동사:줄였다) | the fever(목적어:열을) => 의사가 처방한 그 약은 열을 낮췄다.
+Compared with Pill A(과거분사구문:알약 A와 비교될 때) | Pill B(주어:알약 B는) | has fewer side effects(동사+목적어:부작용이 더 적다) => 알약 A와 비교하면 알약 B는 부작용이 더 적다.
+:::
 
-## 형태 정리
-| 쓰임 | 형태 | 실제 예 | 뜻과 판단 |
-|---|---|---|---|
-| 능동 명사 수식 | 명사 + V-ing | a **growing** tumor | 종양이 자라는 중 |
-| 수동 명사 수식 | 명사 + p.p. | a **prescribed** drug | 약이 처방됨 |
-| 뒤에서 명사 설명 | 명사 + V-ing/p.p. | cells **damaged by radiation** | 방사선에 손상된 세포 |
-| 동시 행동 | V-ing, 주절 | **Checking** the label, she found an error. | 라벨을 확인하며 |
-| 이유 | V-ing, 주절 | **Knowing** the risk, he stopped. | 위험을 알아서 |
-| 수동 분사구문 | p.p., 주절 | **Stored** in a cool place, the vaccine lasts longer. | 차갑게 보관되면 |
-| 먼저 끝난 능동 행동 | Having + p.p. | **Having completed** the test, they left. | 시험을 끝낸 뒤 |
+:::transform 긴 부사절이 짧은 분사구문으로 줄어드는 모션
+능동 분사구문: [When she took] the tablet, she drank water. || [Taking] the tablet, she drank water. || 주절 주어(she)가 직접 약을 복용(능동)했으므로 [-ing]로 줄어듭니다!
+수동 분사구문: [Because it is stored] in a cool place, the drug lasts long. || [(Being) Stored] in a cool place, the drug lasts long. || 주절 주어(the drug)가 보관되는 대상(수동)이므로 [p.p.]로 시작합니다!
+:::
 
-## 예문으로 익히기
-1. **The patient taking this medicine should drink plenty of water.**  
-The patient(주어) / taking this medicine(현재분사구: 환자를 설명) / should drink(동사) / plenty of water(목적어).  
-이 약을 복용하는 환자는 물을 많이 마셔야 한다.  
-\`taking\`의 주체가 patient이므로 능동인 -ing다.
+:::vs 분사 단골 함정 O / X
+The patients were [confusing] by the instructions. || The patients were [confused] by the instructions. || 사람(환자들)이 설명서 때문에 혼란을 '느낀' 것이므로 과거분사 confused가 맞습니다.
+The results of the study were very [encouraged]. || The results of the study were very [encouraging]. || 연구 결과가 사람들에게 희망을 '주는' 것이므로 현재분사 encouraging을 씁니다.
+She sat on the bed with her legs [crossing]. || She sat on the bed with her legs [crossed]. || 다리(her legs)는 사람에 의해 꼬아지는(교차되는) 대상이므로 수동인 crossed를 씁니다.
+:::
 
-2. **The medicine prescribed by the doctor reduced her fever.**  
-The medicine(주어) / prescribed by the doctor(과거분사구: 약을 설명) / reduced(동사) / her fever(목적어).  
-의사가 처방한 약은 그녀의 열을 낮췄다.  
-약은 처방하는 것이 아니라 처방을 받으므로 p.p.다.
-
-3. **The child was reading a book while waiting for the test result.**  
-The child(주어) / was reading(동사) / a book(목적어) / while waiting for the test result(분사구문: 동시에 한 일).  
-그 아이는 검사 결과를 기다리면서 책을 읽고 있었다.  
-\`waiting\`의 주어는 주절의 child와 같다.
-
-4. **The nurse found a bottle containing the wrong label.**  
-The nurse(주어) / found(동사) / a bottle(목적어) / containing the wrong label(현재분사구: 병을 설명).  
-간호사는 잘못된 라벨을 담은 병을 발견했다.  
-병이 라벨을 담고 있으므로 능동의 \`containing\`을 쓴다.
-
-5. **Damaged by heat, the vaccine must not be used.**  
-Damaged by heat(과거분사구문: 백신의 상태) / the vaccine(주어) / must not be used(수동 동사).  
-열에 손상되었으므로 그 백신은 사용하면 안 된다.  
-백신은 열에 손상을 당하므로 \`Damaged\`가 맞다.
-
-6. **Having completed the clinical trial, the researchers analyzed the data.**  
-Having completed the clinical trial(완료 분사구문: 먼저 끝난 일) / the researchers(주어) / analyzed(동사) / the data(목적어).  
-임상시험을 마친 뒤 연구자들은 자료를 분석했다.  
-시험 완료가 분석보다 먼저라서 \`Having completed\`를 쓴다.
-
-7. **The man injured in the accident was taken to the emergency room.**  
-The man(주어) / injured in the accident(과거분사구: 남자를 설명) / was taken(수동 동사) / to the emergency room(장소).  
-사고로 다친 남자는 응급실로 이송되었다.  
-남자는 다친 대상이므로 \`injured\`다.
-
-8. **Feeling dizzy after taking the tablet, she called the pharmacist.**  
-Feeling dizzy after taking the tablet(현재분사구문: 이유) / she(주어) / called(동사) / the pharmacist(목적어).  
-그녀는 그 정제를 먹은 뒤 어지러워서 약사에게 전화했다.  
-분사구문의 숨은 주어와 주절의 she가 같다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. **행동 주체를 뒤집지 말자.** \`The drug causing nausea\`는 “메스꺼움을 일으키는 약”이다. \`The drug caused by nausea\`는 “메스꺼움 때문에 생긴 약”이 된다. 약이 행동을 하면 -ing, 당하면 p.p.다.
-
-2. **분사와 본동사를 나란히 놓지 말자.** \`The doctor examining the patient prescribed a drug.\`는 맞지만, \`The doctor examining the patient prescribed a drug was careful.\`는 동사가 두 개다. 바르게 \`The doctor examining the patient was careful.\`로 고친다.
-
-3. **분사구문의 주어를 확인하자.** 틀린 문장: \`Walking into the lab, the experiment was started.\` 실험이 걸어 들어갈 수 없다. 바르게 \`Walking into the lab, the researcher started the experiment.\`로 주어를 맞춘다.
-
-4. **-ed가 항상 과거 시제는 아니다.** \`The broken tablet\`의 \`broken\`은 명사를 꾸미는 과거분사다. 본동사라면 \`The tablet broke\`처럼 주어 뒤에서 문장을 완성해야 한다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式의 빈칸은 \`The drug (　　) for children should be stored...\`처럼 명사 뒤에 분사를 둔다. drug가 “사용되는” 대상이면 **designed** 또는 **approved** 같은 p.p.를 고른다. 반대로 \`a drug (　　) nausea\`처럼 약이 메스꺼움을 일으키면 **causing**이다.
-
-오류 찾기에서는 문장 앞 분사구문과 주절 주어를 먼저 잇는다. \`Used properly, this device is safe\`는 device가 사용되는 대상이라 맞다. 1. 분사의 주체, 2. 본동사의 유무, 3. 주어 일치를 차례로 점검한다.
-
-## 3줄 요약
-1. -ing는 명사가 직접 하는 행동, p.p.는 명사가 당한 행동이나 결과다.
-2. 명사 뒤 분사구는 관계대명사절을 줄인 설명일 때가 많다.
-3. 분사구문은 주절과 주어가 같은지 먼저 확인하고, 먼저 끝난 일은 having + p.p.로 쓴다.
-
-`,
+:::steps -ing vs p.p. 3초 판별법
+1. 주인공(명사) 찾기 | 분사가 꾸미는 명사(또는 분사구문의 주절 주어)에 동그라미를 칩니다. | The medicine (　　) by doctors
+2. 능동·수동 화살표 확인 | 명사가 직접 하면 -ing(뒤에 목적어 있음), 당하면 p.p.(뒤에 목적어 없음·전치사구만 있음)입니다. | 약은 처방됨 + 뒤에 목적어 없음 = prescribed!
+3. 감정 단어 체크 | 사람이 주체면 p.p.(interested, satisfied, relieved), 사물·사건이 주체면 -ing(interesting, satisfying)입니다. | He was relieved (O)
+:::`,
   quiz: [
     {
       prompt: "The tablets (　　) by the pharmacist are safe for most adults.",

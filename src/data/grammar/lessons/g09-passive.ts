@@ -5,103 +5,50 @@ export const lesson: Lesson = {
   level: 2,
   title: "수동태",
   summary: "누가 했는지보다 무엇이 되었는지를 앞세울 때 be동사와 과거분사를 쓴다.",
-  body: `## 한 줄로 말하면
+  body: `:::analogy 카메라 주인공을 '한 사람'에서 '당한 대상'으로 바꾸는 것입니다
+"과학자들이 백신을 개발했다(능동태)"에서 카메라를 **백신** 쪽으로 돌리면 **"백신이 과학자들에 의해 개발되었다(수동태)"**가 됩니다.
+의학·약학 글에서는 누가 했는지보다 **약이 어떻게 흡수되고 치료가 어떻게 이루어지는지**가 중요해서 수동태(\`be동사 + p.p.\`)가 아주 자주 나옵니다.
+:::
 
-수동태는 행동을 한 사람보다 행동을 받은 대상에 초점을 두는 문장으로, **be동사 + 과거분사(p.p.)**가 중심입니다.
+:::formula 수동태 핵심 공식
+기본 수동태: [주어(대상)] + [be동사 (am/are/is/was/were)] + [p.p. (과거분사)] + [(by 행위자)]
+조동사 수동태: [조동사 (can/must/should)] + [be + p.p.] => 예: should be stored (보관되어야 한다)
+진행형 수동태: [be동사 + being + p.p.] => 예: is being tested (시험되는 중이다)
+완료형 수동태: [have/has/had + been + p.p.] => 예: has been used (사용되어 왔다)
+:::
 
-## 왜 배우나요?
+## 자주 나오는 by 이외의 전치사 수동태 표
 
-의약품 설명서와 논문은 “연구자가 약을 투여했다”보다 “약이 투여되었다”처럼 결과와 대상을 앞에 놓는 일이 많습니다. 예를 들어 *The tablet was tested in patients.*는 정제를 검사한 사람이 누구인지 몰라도 “정제가 환자들에게 검사되었다”는 핵심을 바로 보여 줍니다. 星薬科大学 B方式의 빈칸 문제에서는 be동사와 과거분사 중 하나를 고르게 하거나, 능동태와 수동태를 바꾸어 문장 흐름을 판단하게 합니다. 오류 찾기에서는 *was given*을 *was gave*로 잘못 쓴 형태가 자주 함정이 됩니다.
+| 표현 | 뜻 | 왜 \`by\`를 안 쓸까요? |
+|---|---|---|
+| \`be known to / for / as\` | ~에게 알려지다 / ~로 유명하다 / ~로서 알려지다 | 대상·이유·자격에 따라 전치사가 달라짐 |
+| \`be interested in\` | ~에 관심이 있다 | 마음속 방향(\`in\`)을 나타냄 |
+| \`be satisfied with\` | ~에 만족하다 | 함께하는 대상(\`with\`) |
+| \`be covered with\` / \`be filled with\` | ~로 덮여 있다 / ~로 가득 차다 | 재료·내용물(\`with\`) |
+| \`be composed of\` / \`be made of\` | ~로 구성되다 / ~로 만들어지다 | 구성 성분(\`of\`) |
 
-## 개념 설명
+:::train 문장 블록 기차로 수동태 구조 읽기
+The medicine(주어:그 약은) | is absorbed(수동태 동사:흡수된다) | into the bloodstream(수식어:혈류 속으로) | quickly(부사:빠르게) => 그 약은 혈류 속으로 빠르게 흡수된다.
+This tablet(주어:이 정제는) | should be stored(조동사 수동태:보관되어야 한다) | in a cool place(장소:서늘한 곳에) => 이 정제는 서늘한 곳에 보관되어야 한다.
+The patient(주어:환자는) | was advised(수동태:권고를 받았다) | to drink more water(보어:물을 더 마시라고) => 환자는 물을 더 마시라는 권고를 받았다.
+:::
 
-능동태(주어가 행동을 하는 문장)에서는 행동을 하는 사람이나 사물이 주어입니다. *The nurse gave the patient a dose.*에서 간호사가 행동의 주체입니다. 수동태(주어가 행동을 받는 문장)에서는 행동을 받은 대상이 주어가 됩니다. 같은 내용을 *The patient was given a dose by the nurse.*라고 말할 수 있습니다.
+:::transform 능동태 ↔ 수동태 변신과 수동태 불가 동사
+능동: Doctors [prescribe] this drug. (뒤에 목적어 있음!) || 수동: This drug [is prescribed] by doctors. (뒤에 목적어 없음!) || 타동사 뒤에 목적어가 없으면 수동태(be + p.p.) 자리입니다!
+자동사(수동태 절대 불가!): The side effect [appeared / occurred / happened]. || [was appeared / was occurred] (절대 불가 X) || appear, disappear, happen, occur, consist of, belong to는 원래 목적어가 없는 1형식 자동사라 수동태로 쓸 수 없습니다!
+:::
 
-수동태의 기본 틀은 **주어 + be동사 + 과거분사 + 나머지**입니다. 과거분사(동사의 세 번째 형태)는 행동을 받은 모양을 나타냅니다. *make, made, made*처럼 불규칙한 것도 있고, *test, tested, tested*처럼 ed를 붙이는 것도 있습니다. be동사는 주어와 시제에 맞춰 *is, are, was, were, be, been*으로 바뀌지만, 과거분사는 그대로 둡니다.
+:::vs 수동태 단골 함정 O / X
+An accident [was happened] near the hospital. || An accident [happened] near the hospital. || happen, occur, take place, appear, disappear는 자동사라 be + p.p. 수동태를 절대 만들 수 없습니다.
+This medicine [must store] in a dark bottle. || This medicine [must be stored] in a dark bottle. || 약(This medicine)은 스스로 보관하는 것이 아니라 보관되는 대상이므로 must be stored가 맞습니다.
+The body [is consisted of] trillions of cells. || The body [consists of] / [is composed of] trillions of cells. || consist of는 자동사라 수동태가 안 되고, 수동태로 쓰려면 be composed of를 씁니다.
+:::
 
-능동태의 목적어(행동을 받는 말)를 수동태의 주어 자리로 옮기면 됩니다. *Researchers tested the drug.*에서 *the drug*이 목적어이므로 *The drug was tested by researchers.*가 됩니다. 행위자를 굳이 말할 필요가 없으면 **by + 행위자**를 생략합니다.
-
-시제는 be동사가 맡습니다. 현재 수동은 *is tested*, 과거 수동은 *was tested*, 미래 수동은 *will be tested*입니다. 조동사(가능, 의무 등을 보태는 말) 뒤에서는 *can be used*, *must be stored*처럼 **조동사 + be + 과거분사**를 씁니다. 진행 수동은 *is being tested*, 완료 수동은 *has been tested*입니다.
-
-## 형태 정리
-
-| 의미와 시제 | 수동태 공식 | 예문 | 뜻 |
-|---|---|---|---|
-| 현재 | am/is/are + p.p. | The drug is stored here. | 그 약은 여기에 보관된다. |
-| 과거 | was/were + p.p. | The sample was analyzed. | 그 시료는 분석되었다. |
-| 미래 | will be + p.p. | The dose will be changed. | 용량은 바뀔 것이다. |
-| 조동사 뒤 | can/must/should be + p.p. | It must be taken daily. | 그것은 매일 복용되어야 한다. |
-| 현재완료 | has/have been + p.p. | The trial has been completed. | 시험은 완료되었다. |
-| 진행 중 | am/is/are being + p.p. | The patient is being examined. | 환자는 검사받는 중이다. |
-
-부정문은 be동사 뒤에 *not*을 넣습니다. *The medicine is not covered.* 의문문은 be동사를 앞으로 보냅니다. *Is the medicine covered?* 주어가 복수이면 *are, were*, 단수이면 *is, was*를 고르는 것이 첫 판단입니다.
-
-## 예문으로 익히기
-
-1. **The window was opened by Mina.**  
-The window(주어: 행동을 받음) / was(과거 be동사) / opened(과거분사) / by Mina(행위자)  
-미나에 의해 창문이 열렸다.  
-행동을 받은 window가 앞에 왔으므로 수동태입니다.
-
-2. **The prescription is checked by the pharmacist.**  
-The prescription(주어: 검사받는 대상) / is(현재 be동사) / checked(과거분사) / by the pharmacist(행위자)  
-그 처방전은 약사에 의해 확인된다.  
-단수 prescription이므로 is를 씁니다.
-
-3. **The patient was given a new dose.**  
-The patient(주어: 받는 사람) / was given(수동태 동사) / a new dose(받은 것)  
-환자는 새 용량을 받았다.  
-give는 *give + 사람 + 것* 구조가 수동태에서 사람 주어로도 바뀝니다.
-
-4. **These tablets must be stored in a cool place.**  
-These tablets(주어: 보관되는 대상) / must be stored(조동사 수동태) / in a cool place(장소)  
-이 정제들은 서늘한 곳에 보관되어야 한다.  
-must 뒤에는 be를 넣고 stored를 과거분사로 씁니다.
-
-5. **The nurse is washing the patient.**  
-The nurse(주어: 행동을 함) / is washing(현재진행 능동) / the patient(목적어)  
-간호사가 환자를 씻기고 있다.  
-이 문장은 능동태이며, 수동태는 *The patient is being washed*입니다.
-
-6. **The patient is being examined by a doctor.**  
-The patient(주어: 검사받는 대상) / is being examined(현재진행 수동) / by a doctor(행위자)  
-환자는 의사에게 검사받고 있는 중이다.  
-현재 진행 중인 수동은 being을 빼면 단순 현재 수동이 됩니다.
-
-7. **The new vaccine has been studied for five years.**  
-The new vaccine(주어: 연구된 대상) / has been studied(현재완료 수동) / for five years(기간)  
-새 백신은 5년 동안 연구되어 왔다.  
-현재완료 수동은 has been 뒤에 studied를 놓습니다.
-
-8. **The results were reported in a medical journal.**  
-The results(복수 주어: 보고된 대상) / were reported(과거 수동) / in a medical journal(매체)  
-그 결과들은 의학 저널에 보고되었다.  
-복수 results와 과거이므로 were reported가 맞습니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **be동사만 쓰고 과거분사를 빼지 마세요.** *The sample was analyze*는 틀리고 *The sample was analyzed*가 맞습니다. was는 시제, analyzed는 행동의 형태를 담당합니다.
-
-2. **과거분사를 과거형으로 착각하지 마세요.** *The drug was gave*는 틀립니다. *give*의 과거분사는 *given*이므로 *The drug was given*입니다.
-
-3. **조동사 뒤의 be를 잊지 마세요.** *The medicine must stored*가 아니라 *The medicine must be stored*입니다. must 뒤에는 동사원형 be가 필요합니다.
-
-4. **주어 수에 맞는 be를 고르세요.** *The tablets was tested*가 아니라 *The tablets were tested*입니다. tablets가 복수이기 때문입니다.
-
-5. **진행 수동에서 being을 빼지 마세요.** “검사받고 있는 중”은 *is being examined*이고, *is examined*는 보통 “검사받는다”라는 반복 또는 일반 사실입니다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-B方式 빈칸에서는 다음처럼 약품과 검사 결과를 주어로 내놓습니다. *The medicine (　　) in a dark bottle.* 선택지에 **is stored, stores, stored, storing**이 있다면 주어인 medicine이 보관하는 것이 아니라 보관되는 것이므로 수동태를 찾습니다. 현재 단수이므로 *is stored*입니다.
-
-오류 찾기에서는 *The samples were analyze by the technician.*처럼 be동사와 과거분사의 짝을 흔듭니다. 먼저 주어의 수와 시제로 were를 확인한 뒤, 그 뒤에는 analyze가 아니라 과거분사 analyzed가 와야 한다고 판단합니다. 독해에서 *was found to be effective*를 만나면 “효과가 있다고 밝혀졌다”처럼 수동 표현 전체를 한 덩어리로 읽으세요.
-
-## 3줄 요약
-
-1. 수동태는 행동을 받은 대상을 주어로 만들고 **be동사 + 과거분사**를 씁니다.
-2. 시제와 수는 be동사가, 행동의 형태는 과거분사가 담당합니다.
-3. 조동사 뒤는 **조동사 + be + 과거분사**, 진행 수동은 **be + being + 과거분사**입니다.
-`,
+:::steps 능동 vs 수동 3초 판별법
+1. 주어 확인 | 주어가 직접 행동을 하는 주체(의사·연구자)인지, 행동을 받는 대상(약·질병·결과)인지 봅니다. | The drug = 대상
+2. 빈칸 뒤 목적어 유무 확인 | 타동사 바로 뒤에 목적어(명사)가 없으면 수동태(be + p.p.), 있으면 능동태를 고릅니다. | (　　) in a cool place → 목적어 없음 → is stored!
+3. 자동사 함정 제거 | happen, occur, appear, belong to, consist of는 be + p.p. 보기를 즉시 지웁니다. | occurred (O)
+:::`,
   quiz: [
     {
       prompt: "The new drug (　　) by the hospital last year.",

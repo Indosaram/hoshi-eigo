@@ -5,53 +5,48 @@ export const lesson: Lesson = {
   level: 3,
   title: "to부정사",
   summary: "to + 동사원형이 명사, 형용사, 부사처럼 쓰이는 세 가지 역할을 구별한다.",
-  body: `## 한 줄로 말하면
-to부정사는 **to + 동사원형**을 한 덩어리로 읽어, 문장 속에서 명사, 형용사, 부사 역할을 하게 하는 표현입니다.
+  body: `:::analogy 동사 앞에 to를 붙이면 3가지 직업으로 변신하는 만능 블록이 됩니다
+동사(\`take\` 복용하다)는 원래 동사 자리에만 쓸 수 있습니다.
+하지만 앞에 **\`to\`**를 붙여 **\`to take\`**로 만들면 문장 안에서 **명사(~하는 것)**, **형용사(~할)**, **부사(~하기 위해)** 세 가지 역할로 자유롭게 변신합니다!
+:::
 
-## 왜 배우나요?
-약을 개발하는 이유, 환자에게 필요한 것, 실험 결과의 목적을 한 문장에 넣을 때 to부정사가 자주 쓰입니다. 星薬科大学 B方式에서는 빈칸 뒤에 동사원형을 넣을지, 동명사나 과거분사를 넣을지 묻고, to부정사의 세 역할을 이용해 긴 의약 문장의 구조를 확인하게 합니다. 예를 들어 The patient needs a device to measure blood pressure에서 to measure는 device를 설명하므로 뒤에서 앞으로 읽어야 합니다. 선택지의 뜻을 대충 고르기보다 to 뒤의 형태와 문장 안의 자리를 먼저 보세요.
+:::formula to부정사 핵심 공식 4가지
+명사 변신: [want / decide / plan / hope / expect] + [to + 동사원형] => ~하는 것을 (목적어)
+가주어·진주어: [It (가짜 주어)] + is + 형용사 + [(for 사람) + to + 동사원형 (진짜 주어)] => ~하는 것은 …하다
+형용사 변신: [명사] + [to + 동사원형 (+ 전치사)] => 뒤에서 앞 명사를 꾸밈 (~할 명사)
+너무 ~해서 못 하다: [too + 형용사/부사 + to + 동사원형] => 너무 ~해서 …할 수 없다!
+:::
 
-## 개념 설명
-부정사(동사를 다른 품사처럼 쓰는 형태)는 여기서 **to + 동사원형**입니다. 동사원형은 go, take, reduce처럼 아직 시제나 주어의 영향을 받지 않은 기본형입니다. to부정사는 이름에 부정이 들어가지만, not을 뜻하지 않습니다.
+## to부정사의 3가지 변신 비교표
 
-첫째, 명사적 용법(문장에서 명사처럼 주어, 목적어, 보어가 되는 쓰임)입니다. To exercise is useful는 운동하는 것은 유익하다라는 뜻이고, The pharmacist wants to check the label에서는 to check가 wants의 목적어입니다. 둘째, 형용사적 용법(앞의 명사를 설명하는 쓰임)입니다. a method to prevent infection은 감염을 막는 방법입니다. 셋째, 부사적 용법(동사나 형용사에 목적, 결과, 이유를 더하는 쓰임)입니다. The team met to discuss the data는 데이터를 논의하기 위해 만났다는 목적을 나타냅니다.
+| 역할 | 놓이는 자리 | 해석 공식 | 대표 예문 |
+|---|---|---|---|
+| **① 명사 역할** | 주어(\`It ~ to V\`), 목적어, 보어 | **~하는 것(은/을/이다)** | \`She decided to rest.\` (쉬기로 결정했다) |
+| **② 형용사 역할** | **명사 바로 뒤** | **~할 / ~하는 (명사)** | \`water to drink\` (마실 물), \`time to take\` (복용할 시간) |
+| **③ 부사 역할** | 문장 맨 앞·뒤, 형용사 뒤 | **~하기 위해(목적)** / ~해서(이유) | \`went to the hospital to see a doctor\` (진찰받기 위해) |
 
-to부정사의 의미상 주어(그 행동을 하는 사람)가 문장 주어와 다르면 for + 사람 + to부정사를 씁니다. It is important for patients to follow the schedule에서 follow하는 사람은 patients입니다. 목적어가 행동을 시키는 구조에서는 tell, ask, allow + 사람 + to부정사를 씁니다. The doctor told me to rest처럼 to 앞에 행동 주체가 옵니다.
+:::train 문장 블록 기차로 to부정사 읽기
+It(가주어:빈자리) | is important(동사+보어:중요하다) | for patients(의미상 주어:환자들이) | to drink enough water(진주어:충분한 물을 마시는 것은) => 환자들이 충분한 물을 마시는 것은 중요하다.
+Researchers(주어:연구자들은) | are working hard(동사:열심히 연구 중이다) | to find a cure(부사적 목적:치료법을 찾기 위해) => 연구자들은 치료법을 찾기 위해 열심히 연구하고 있다.
+The child(주어:그 아이는) | is too young(too+형용사:너무 어려서) | to swallow this large tablet(to부정사:이 큰 정제를 삼킬 수 없다) => 그 아이는 너무 어려서 이 큰 정제를 삼킬 수 없다.
+:::
 
-## 형태 정리
-| 역할 | 형태 | 실제 예 | 해석 단서 |
-| --- | --- | --- | --- |
-| 명사 | to + 동사원형 | to record symptoms | 증상을 기록하는 것 |
-| 형용사 | 명사 + to + 동사원형 | a tool to measure dose | 용량을 측정할 도구 |
-| 목적 부사 | 동사 + to + 동사원형 | returned to review data | 자료를 검토하기 위해 돌아왔다 |
-| 의미상 주어 | for + 사람 + to + 동사원형 | for nurses to check | 간호사가 확인하는 것 |
-| 목적어의 행동 | 동사 + 사람 + to + 동사원형 | advised him to wait | 그에게 기다리라고 조언했다 |
-| 부정 | not to + 동사원형 | not to touch the sample | 표본을 만지지 않도록 |
+:::transform 가주어 It 이동과 의미상 주어(for vs of)
+긴 주어: [To follow the correct dose] is important. || 가주어 It: [It] is important [to follow the correct dose]. || 주어가 너무 길면 자리에 가짜 주어 [It]을 세우고 진짜 주어 [to V]를 맨 뒤로 보냅니다!
+일반 형용사(important, easy, safe): It is safe [for] children to take it. || 사람 성격 형용사(kind, wise, careless): It is kind [of] you to help me. || to부정사의 행동을 누가 하는지 밝힐 때 보통은 [for + 목적격], 사람 성격을 칭찬·비판할 때만 [of + 목적격]을 씁니다!
+:::
 
-## 예문으로 익히기
-1. **To drink enough water is helpful.**  To drink enough water(주어: 물을 충분히 마시는 것) / is(동사) / helpful(보어)  물을 충분히 마시는 것은 도움이 된다.  문장 맨 앞의 to부정사 덩어리 전체가 주어입니다.
-2. **The nurse prepared a chart to record the patient's temperature.**  The nurse(주어) / prepared(동사) / a chart(목적어) / to record the patient's temperature(형용사적 용법: 차트를 설명)  간호사는 환자의 체온을 기록할 차트를 준비했다.  명사 뒤의 to부정사는 그 명사의 용도나 내용을 설명합니다.
-3. **The researchers repeated the test to confirm the result.**  The researchers(주어) / repeated(동사) / the test(목적어) / to confirm the result(목적 부사: 반복한 목적)  연구자들은 결과를 확인하기 위해 검사를 반복했다.  왜 반복했는지를 묻는다면 목적의 to입니다.
-4. **I want to read the instructions first.**  I(주어) / want(동사) / to read the instructions first(목적어: 원하는 내용)  나는 먼저 설명서를 읽고 싶다.  want 뒤에는 동사원형이 아니라 to + 동사원형이 옵니다.
-5. **It is difficult for elderly patients to swallow large tablets.**  It(가주어) / is(동사) / difficult(보어) / for elderly patients(의미상 주어) / to swallow large tablets(진짜 내용)  고령 환자들이 큰 정제를 삼키기는 어렵다.  swallow하는 사람은 it이 아니라 patients입니다.
-6. **The pharmacist told the customer to keep the medicine cool.**  The pharmacist(주어) / told(동사) / the customer(목적어) / to keep the medicine cool(목적격보어: 고객이 할 행동)  약사는 고객에게 약을 서늘하게 보관하라고 말했다.  tell + 사람 + to부정사는 명령이나 지시를 나타냅니다.
-7. **The patient came to the clinic not to receive treatment but to ask a question.**  The patient(주어) / came(동사) / to the clinic(장소) / not to receive treatment but to ask a question(목적의 대조)  환자는 치료를 받으러 온 것이 아니라 질문을 하러 병원에 왔다.  not A but B에서 두 to부정사의 형태를 맞춥니다.
-8. **The new vaccine was designed to reduce severe symptoms.**  The new vaccine(주어) / was designed(수동태 동사) / to reduce severe symptoms(목적: 설계된 이유)  새 백신은 심각한 증상을 줄이도록 설계되었다.  be designed to는 의학 지문에서 목적을 읽는 대표 표현입니다.
+:::vs to부정사 단골 함정 O / X
+The doctor told me [not take] the pill on an empty stomach. || The doctor told me [not to take] the pill on an empty stomach. || to부정사를 부정할 때 not이나 never는 항상 to 바로 앞(not to V)에 붙입니다!
+This pill is too bitter for the child [to swallow it]. || This pill is too bitter for the child [to swallow]. || 앞의 주어(This pill)가 이미 swallow의 대상이므로 끝에 it을 또 쓰지 않습니다.
+She needs a chair [to sit]. || She needs a chair [to sit on]. || 의자 '위에(on)' 앉는 것이므로 sit 뒤에 전치사 on까지 있어야 맞습니다.
+:::
 
-## 헷갈리는 포인트 / 자주 하는 실수
-1. to 뒤에 동사원형을 씁니다. She decided **to take** the sample이 맞고, She decided to took the sample은 틀립니다. to가 이미 표시한 기본형 뒤에 과거형을 겹치지 마세요.
-2. 전치사 to와 to부정사를 구별합니다. look forward to **meeting** you에서는 to가 전치사라 동명사가 오지만, plan to **meet** you에서는 to부정사라 동사원형이 옵니다.
-3. 목적어 뒤 행동 주체를 빠뜨리지 않습니다. The doctor advised **the patient to rest**가 맞고, advised to rest는 누구에게 조언했는지가 필요할 때 어색합니다. advise는 advise + 사람 + to부정사 구조를 씁니다.
-4. 사역동사와 비교합니다. The nurse made him **wait**가 맞고 made him to wait는 틀립니다. make + 사람 + 동사원형은 to를 쓰지 않습니다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸에서는 The drug was developed (　　) inflammation 같은 문장이 나오면 developed의 목적을 생각해 to reduce를 고릅니다. 반대로 a device (　　) blood pressure에서는 device를 설명하는 to measure를 찾습니다. 먼저 빈칸 앞 동사와 뒤 명사의 관계를 표시하고, to 뒤에는 동사원형만 가능한지 확인하세요. 정렬 문제에서는 for patients / to take / the tablets처럼 의미상 주어와 행동을 한 덩어리로 묶으면 순서가 빨리 보입니다.
-
-## 3줄 요약
-to + 동사원형은 명사, 형용사, 부사 역할을 할 수 있습니다.
-명사 뒤면 설명, 동사 뒤에서 목적을 나타내면 보통 형용사적 또는 부사적 쓰임입니다.
-for + 사람 + to부정사와 동사 + 사람 + to부정사의 행동 주체를 꼭 확인합니다.
-`,
+:::steps to부정사 문제 3초 풀이법
+1. 앞 동사 확인 | want, decide, expect, allow + O, advise + O가 앞에 있으면 to + 동사원형을 고릅니다. | advised him to rest
+2. 부정 위치 확인 | to부정사의 부정은 to not V가 아니라 무조건 not to V입니다. | not to forget (O)
+3. too ~ to / enough to 구별 | '너무 ~해서 못 하다'는 too 형용사 to V, '~할 만큼 충분히'는 형용사 enough to V입니다. | old enough to understand
+:::`,
   quiz: [
     {
       prompt: "The clinic bought a machine (　　) blood pressure.",

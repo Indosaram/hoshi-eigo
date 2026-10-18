@@ -5,102 +5,50 @@ export const lesson: Lesson = {
   level: 2,
   title: "조동사: can, must, should, may와 have p.p.",
   summary: "조동사 뒤 동사원형과 조동사 + have p.p.를 읽어 가능성, 의무, 조언, 과거 추측을 구별한다.",
-  body: `## 한 줄로 말하면
+  body: `:::analogy 조동사는 동사 앞에 붙는 '확신도·의무 스티커'입니다
+일반 동사(\`take\`) 앞에 \`must\`, \`should\`, \`may\`, \`can\` 같은 스티커를 붙이면 "꼭 해야 한다", "틀림없다", "일지도 모른다"처럼 말하는 사람의 판단이 더해집니다.
+그리고 시간을 과거로 돌리고 싶을 때는 조동사 뒤에 **\`have + p.p.\`** 타임머신을 붙입니다!
+:::
 
-조동사(동사의 뜻을 보태는 말) 뒤에는 동사원형을 놓고, **조동사 + have p.p.**는 과거 일을 판단합니다.
+:::formula 조동사 2대 핵심 공식
+현재·미래: [조동사 (can/must/should/may)] + [동사원형] => 조동사 바로 뒤는 언제나 동사원형!
+과거 추측·후회: [조동사] + [have + p.p.] => 과거에 ~였음에 틀림없다(must) / ~했어야 했는데(should)!
+당위·요구절: [insist / suggest / recommend / demand] + that + 주어 + [(should) 동사원형] => 주어가 3인칭 단수여도 동사원형!
+:::
 
-## 왜 배우나요?
+## 조동사 + 동사원형 vs 조동사 + have p.p. 비교표
 
-星薬科大学 B方式의 빈칸에서는 조동사 하나가 판단을 바꿉니다. *must*는 의무, *should*는 조언, *may*는 가능성, *can*은 능력입니다. *Patients must take the drug with water*는 복용법, *The symptom may disappear*는 가능성입니다. **have p.p.**는 이미 일어난 일을 추측합니다. 오류 찾기에서는 조동사 뒤의 *takes*, *to take*가 함정입니다.
-
-## 개념 설명
-
-조동사(뒤 동사의 의미와 판단을 보여 주는 보조 동사)는 뒤에 동사원형(기본 모양)을 데려옵니다. **can + take**, **must + take**, **should + take**, **may + take**가 맞습니다. *can takes*, *must to take*는 틀립니다. 조동사에 *-s*를 붙이지 않습니다.
-
-*can*은 능력 또는 가능성입니다. *A pharmacist can explain the dosage.*는 약사가 복용량을 설명할 수 있다는 뜻입니다. *must*는 의무 또는 강한 추측, *should*는 조언 또는 예상, *may*는 허가 또는 가능성입니다. *The drug may cause dizziness*는 약이 어지럼증을 일으킬 수도 있다는 뜻입니다.
-
-과거분사(p.p., 동사의 세 번째 모양)는 *taken, tested, gone*처럼 완료에 쓰입니다. **조동사 + have + p.p.**에서 *have*는 *has*로 바뀌지 않습니다. *must have p.p.*는 강한 추측, *may have p.p.*는 가능성, *should have p.p.*는 아쉬움, *cannot have p.p.*는 강한 부정입니다.
-
-## 형태 정리
-
-| 뜻 | 형태 | 의약 예문 | 핵심 해석 |
+| 조동사 | \`+ 동사원형\` (현재·미래) | \`+ have p.p.\` (과거의 일!) | 시험 출제 포인트 |
 |---|---|---|---|
-| 능력, 가능 | 주어 + can + 동사원형 | A nurse can monitor the patient. | 간호사는 관찰할 수 있다 |
-| 의무, 규칙 | 주어 + must + 동사원형 | Patients must wash their hands. | 환자는 반드시 씻어야 한다 |
-| 조언, 예상 | 주어 + should + 동사원형 | You should read the warning. | 경고를 읽는 것이 좋다 |
-| 가능성, 허가 | 주어 + may + 동사원형 | This medicine may cause nausea. | 메스꺼움을 일으킬 수 있다 |
-| 과거의 강한 추측 | must + have + p.p. | He must have forgotten the dose. | 복용량을 잊었음이 틀림없다 |
-| 과거의 가능성 | may + have + p.p. | She may have taken it twice. | 두 번 복용했을지도 모른다 |
-| 과거의 조언, 아쉬움 | should + have + p.p. | You should have called the clinic. | 병원에 전화했어야 했다 |
-| 과거의 불가능 | cannot + have + p.p. | The drug cannot have caused it. | 그 약이 원인일 리 없다 |
+| **must** | ① 꼭 ~해야 한다 ② ~임에 틀림없다 | **\`must have p.p.\`** (~였음에 틀림없다) | 과거의 강한 긍정 추측 |
+| **cannot** | ① ~할 수 없다 ② ~일 리가 없다 | **\`cannot have p.p.\`** (~였을 리가 없다) | \`must\` 추측의 반대말! |
+| **should** | 마땅히 ~해야 한다 | **\`should have p.p.\`** (~했어야 했는데 안 했다) | **과거의 후회·아쉬움 (출제 1순위!)** |
+| **may / might** | ~일지도 모른다 (약한 추측) | **\`may/might have p.p.\`** (~였을지도 모른다) | 과거의 약한 추측 |
 
-*must* 자체는 과거형이 아니므로 과거 추측에는 *must have p.p.*를 씁니다. *The patient should have followed the instructions*도 *should has followed*가 아니라 *should have followed*입니다.
+:::train 문장 블록 기차로 조동사 표현 읽기
+Patients(주어:환자들은) | must follow(조동사+원형:반드시 따라야 한다) | the instructions(목적어:지시 사항을) => 환자들은 반드시 지시 사항을 따라야 한다.
+You(주어:당신은) | should have checked(조동사+have p.p.:확인했어야 했는데) | the label(목적어:라벨을) | before taking it(수식어:복용하기 전에) => 복용하기 전에 라벨을 확인했어야 했다 (확인 안 해서 후회).
+The doctor(주어:의사는) | suggested(제안동사:제안했다) | that he take(should 생략+원형:그가 취해야 한다고) | a rest(목적어:휴식을) => 의사는 그가 휴식을 취해야 한다고 제안했다.
+:::
 
-## 예문으로 익히기
+:::transform used to 동사원형 vs be used to -ing 3총사 구별
+[used to + 동사원형]: He used to smoke. || 예전에는 담배를 피우곤 했다 (지금은 안 함!) || 과거의 습관·상태
+[be used to + 명사/-ing]: He is used to getting up early. || 일찍 일어나는 것에 익숙하다! || to가 전치사라 뒤에 [-ing]가 옴
+[be used to + 동사원형]: This herb is used to treat colds. || 이 약초는 감기를 치료하는 데 사용된다! || 수동태(be used) + 목적(to부정사)
+:::
 
-1. **I can swim after work.**  
-I(주어) / can swim(조동사 + 동사원형) / after work(시간)  
-나는 퇴근 후 수영할 수 있다.  
-*can* 뒤에는 주어와 상관없이 원형 *swim*을 씁니다.
+:::vs 조동사 단골 함정 O / X
+She must [takes] the medicine now. || She must [take] the medicine now. || 조동사 바로 뒤에는 -s나 -ed가 없는 동사원형이 옵니다.
+I have a stomachache. I [must not] have eaten so much last night. || I have a stomachache. I [should not] have eaten so much last night. || '어젯밤 그렇게 많이 먹지 말았어야 했는데'라는 과거 후회는 should not have p.p.를 씁니다.
+The doctor recommended that the patient [takes] two pills. || The doctor recommended that the patient [take] two pills. || recommend, suggest, insist, demand 뒤의 that절(해야 한다)에는 (should) + 동사원형(take)을 씁니다.
+He is used to [work] at night. || He is used to [working] at night. || '~에 익숙하다'는 be used to + -ing(동명사)입니다.
+:::
 
-2. **Patients must keep this medicine away from children.**  
-Patients(주어) / must keep(의무 조동사 + 동사원형) / this medicine(목적어) / away from children(상태)  
-환자들은 이 약을 어린이의 손이 닿지 않는 곳에 보관해야 한다.  
-설명서의 의무는 *must + 원형*으로 나타냅니다.
-
-3. **You should drink water with the tablet.**  
-You(주어) / should drink(조언 조동사 + 동사원형) / water(목적어) / with the tablet(방법)  
-당신은 그 정제와 함께 물을 마시는 것이 좋다.  
-복용 조언이므로 *should*가 알맞습니다.
-
-4. **The new treatment may reduce pain.**  
-The new treatment(주어) / may reduce(가능성 조동사 + 동사원형) / pain(목적어)  
-새 치료법은 통증을 줄일 수도 있다.  
-효과가 확정되지 않아 *may*를 씁니다.
-
-5. **The pharmacist must have checked the prescription.**  
-The pharmacist(주어) / must have checked(과거 강한 추측) / the prescription(목적어)  
-그 약사는 처방전을 확인했음이 틀림없다.  
-과거 일을 강하게 추측하므로 *must have checked*입니다.
-
-6. **The patient may have missed one dose.**  
-The patient(주어) / may have missed(과거 가능성) / one dose(목적어)  
-그 환자는 한 번의 복용을 빠뜨렸을지도 모른다.  
-불확실한 과거 원인이므로 *may have p.p.*를 씁니다.
-
-7. **We should have contacted the doctor sooner.**  
-We(주어) / should have contacted(과거의 아쉬움) / the doctor(목적어) / sooner(더 일찍)  
-우리는 더 일찍 의사에게 연락했어야 했다.  
-지나간 일을 돌아보므로 *should contact*가 아닙니다.
-
-8. **This symptom cannot have resulted from the placebo.**  
-This symptom(주어) / cannot have resulted(과거의 강한 부정 추측) / from the placebo(원인)  
-이 증상이 위약에서 생겼을 리는 없다.  
-과거 원인의 강한 부정에 *cannot have p.p.*를 씁니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. 조동사 뒤에 3인칭 단수 어미를 붙이지 않습니다. **The drug must reduces fever.**가 틀리고 **The drug must reduce fever.**가 맞습니다.
-
-2. 조동사 뒤에 *to*를 넣지 않습니다. **Patients should to rest.**가 아니라 **Patients should rest.**입니다. *have to*는 별도 의무 표현입니다.
-
-3. 과거 추측에서 *have*를 *has*로 바꾸지 않습니다. **She may has taken the pill.**이 아니라 **She may have taken the pill.**입니다. 조동사 뒤에는 항상 원형이 옵니다.
-
-4. *must not*과 *cannot*은 같은 뜻이 아닙니다. **You must not drive**는 운전하면 안 된다는 금지이고, **He cannot be a doctor**는 그가 의사일 수 없다는 판단입니다.
-
-5. *should have p.p.*는 단순 과거가 아닙니다. **You should have reported the fever**는 보고했어야 했다는 아쉬움입니다. 이미 보고했다면 **You reported the fever**입니다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-다음과 같은 빈칸이 나오면 먼저 빈칸 뒤를 봅니다. *The patient (　　) have taken the wrong tablet.* 선택지에 *may, may has, may to, may taking*이 있다면, **may + have + p.p.**라는 뼈대를 찾아 *may*를 고릅니다. *taken*이 이미 과거분사이므로 앞에는 *have*가 필요하다는 점도 확인합니다.
-
-오류 찾기에서는 *The nurse must checks the label*의 *-s*를 찾습니다. 어순 문제에서는 **should / have / reported**를 묶어 “보고했어야 했다”로 읽습니다. 의약 지문에서 *may*는 “일지도 모른다”입니다.
-
-## 3줄 요약
-
-1. **can, must, should, may + 동사원형**이며 조동사 뒤에는 *-s*나 *to*를 붙이지 않습니다.  
-2. **조동사 + have + p.p.**는 과거 일을 현재 관점에서 추측하거나 평가합니다.  
-3. *must*는 강한 의무 또는 추측, *should*는 조언, *may*는 가능성, *can*은 능력과 가능성입니다.`,
+:::steps 조동사 문제 3초 풀이법
+1. 현재인지 과거인지 확인 | 문장에 어제·과거 상황이 있으면 조동사 + have p.p. 보기를 먼저 봅니다. | last night → should have p.p.
+2. 추측(must) vs 후회(should) | '틀림없다(증거 있음)'는 must have p.p., '했어야 했는데(안 함)'는 should have p.p.입니다. | 후회 = should have p.p.
+3. 제안·요구 동사 체크 | suggest, recommend, insist, demand + that 뒤 빈칸이면 동사원형을 고릅니다. | that he take (O)
+:::`,
   quiz: [
     {
       prompt: "Patients (　　) follow the instructions on the label.",

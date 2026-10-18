@@ -14,92 +14,48 @@ export const lesson: Lesson = {
   level: 3,
   title: "관계대명사 who, which, that, whose",
   summary: "앞의 명사를 뒤에서 설명하는 절을 붙여 긴 의약 문장의 뼈대를 찾는다.",
-  body: String.raw`## 한 줄로 말하면
-관계대명사는 앞의 명사인 선행사(뒤에서 설명을 받는 명사)를 뒤의 설명절과 연결하고, 그 절 안에서 선행사의 자리를 대신합니다.
+  body: `:::analogy 관계대명사는 '접착제 + 대명사'가 합쳐진 블록입니다
+짧은 두 문장에 똑같은 사람이나 사물이 겹칠 때, 뒤에 나오는 대명사(\`he\`, \`it\`, \`his\`)를 **\`who\`, \`which\`, \`that\`, \`whose\`**로 바꾸어 앞 명사(선행사) 바로 뒤에 착 붙이는 장치입니다.
+그래서 관계대명사절은 항상 **앞의 명사를 뒤에서 꾸미는 긴 형용사**처럼 해석합니다 ("~하는 명사").
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式 지문은 약물, 환자, 연구를 한 문장에 겹쳐 설명합니다. 관계대명사절의 시작을 찾으면 긴 문장을 “무엇이 어떤 것인지”와 “무슨 동작을 하는지”로 나눌 수 있습니다. 빈칸에서는 사람인지 사물인지, 관계대명사가 주어인지 목적어인지가 정답을 가릅니다. 오류 찾기와 어순 문제도 관계대명사 뒤에 주어와 동사가 갖춰졌는지 확인하면 풀립니다.
+:::formula 관계대명사 선택 공식 (표만 기억하면 끝!)
+[사람 선행사] + [who (주격: 뒤에 동사)] / [who(m) (목적격: 뒤에 주어+동사)]
+[사물·동물 선행사] + [which (주격/목적격)]
+[사람·사물 만능] + [that (주격/목적격)] => 단, 쉼표(,) 뒤나 전치사 바로 뒤에는 that 사용 금지!
+[소유 관계 (~의)] + [whose + 명사] => 사람·사물 모두 가능! (예: a patient whose fever is high)
+:::
 
-## 개념 설명
-관계대명사절(선행사를 자세히 설명하는 작은 문장)은 선행사 뒤에 옵니다. 한국어의 “내가 만난 의사”처럼 영어도 먼저 the doctor를 말하고 뒤에 who I met를 붙입니다. 사람은 who, 사물은 which를 기본으로 하며, 사람과 사물 모두 that을 쓸 수 있습니다. 소유를 나타내는 whose는 사람과 사물 모두에 쓰이고 바로 뒤에 명사가 옵니다.
+## 관계대명사 자리별 선택 표
 
-관계대명사가 절의 주어(동작을 하는 말)이면 생략할 수 없습니다. the nurse who checked the patient에서 who가 checked의 주어입니다. 목적어(동작의 대상)이면 생략할 수 있습니다. the drug which the doctor prescribed에서 the doctor가 주어이고 drug가 prescribed의 대상입니다. 따라서 관계대명사 뒤에 이미 주어와 동사가 있으면 목적격일 가능성이 큽니다.
-
-## 형태 정리
-
-| 선행사 | 관계대명사 | 역할 | 실제 표현 |
+| 앞 명사(선행사) | **주격** (바로 뒤에 동사 옴) | **목적격** (뒤에 주어+동사, 목적어 비어 있음) | **소유격** (뒤에 \`명사\`가 바로 붙음) |
 |---|---|---|---|
-| 사람 | who | 주어·목적어 | the doctor who works here |
-| 사물 | which | 주어·목적어 | the drug which reduced pain |
-| 사람·사물 | that | 주어·목적어 | the test that we used |
-| 사람·사물의 소유 | whose + 명사 | 소유 | the patient whose dose fell |
-| 목적어 | who/which/that 생략 가능 | 목적어 | the sample (that) we tested |
+| **사람** (\`the doctor\`) | **\`who\`** / \`that\` | \`who(m)\` / \`that\` / **(생략 가능)** | **\`whose\`** + 명사 |
+| **사물·동물** (\`the drug\`) | **\`which\`** / \`that\` | \`which\` / \`that\` / **(생략 가능)** | **\`whose\`** + 명사 |
 
-쉼표가 있으면 추가 설명입니다. The drug, which was expensive, was effective.처럼 이미 특정된 약에 정보를 덧붙일 때는 that을 쓰지 않습니다. The drug that was expensive was effective.는 여러 약 중 비싼 약을 골라 말하는 제한적 설명입니다.
+:::train 문장 블록 기차로 관계대명사절 묶어 읽기
+The scientist(주어:과학자는) | who discovered the drug(주격 관계절:그 약을 발견한) | won(본동사:받았다) | a prize(목적어:상을) => 그 약을 발견한 과학자는 상을 받았다.
+The medicine(주어:그 약은) | which the doctor prescribed(목적격 관계절:의사가 처방한) | worked(본동사:효과가 있었다) | quickly(부사:빠르게) => 의사가 처방한 그 약은 빠르게 효과가 나타났다.
+Patients(주어:환자들은) | whose symptoms worsen(소유격 관계절:증상이 악화되는) | should visit(본동사:방문해야 한다) | the hospital(목적어:병원을) => 증상이 악화되는 환자들은 병원을 방문해야 한다.
+:::
 
-## 예문으로 익히기
+:::transform 두 문장이 관계대명사로 합쳐지는 과정
+주격 합체: I know a nurse. + [She] speaks Japanese. || I know a nurse [who] speaks Japanese. || 주어 [She]가 [who]로 변신했으므로 who 바로 뒤에는 동사(speaks)가 옵니다!
+목적격 합체: This is the pill. + I took [it] this morning. || This is the pill [(which/that)] I took this morning. || 목적어 [it]이 [which]로 변신해 앞으로 나갔으므로 took 뒤 목적어 자리가 비어 있습니다!
+전치사 + 관계대명사: the house + He lives [in it]. || the house [in which] he lives (= [where] he lives) || 전치사가 관계대명사 앞으로 오면 [전치사 + which/whom]이 되고 뒤 문장은 완전해집니다!
+:::
 
-1. **The doctor who helped me was kind.**  
-The doctor(선행사·주어) / who helped me(관계대명사절·의사를 설명) / was(동사) / kind(보어)  
-나를 도와준 의사는 친절했다.  
-주의: who가 helped의 주어입니다.
+:::vs 관계대명사 단골 함정 O / X
+The tablet [who] reduces fever is on the table. || The tablet [which / that] reduces fever is on the table. || 선행사(The tablet)가 사물이므로 who가 아니라 which나 that을 씁니다.
+The drug, [that] was approved last year, is safe. || The drug, [which] was approved last year, is safe. || 쉼표(,) 뒤나 전치사(in, of, with) 바로 뒤에는 that을 쓸 수 없습니다!
+This is the pill which I took [it] yesterday. || This is the pill which I took yesterday. || which가 이미 목적어(it)를 대신하고 있으므로 뒤에 it을 또 쓰면 틀립니다!
+:::
 
-2. **I bought the book that you recommended.**  
-I(주어) / bought(동사) / the book(선행사·목적어) / that you recommended(책을 설명)  
-나는 네가 추천한 책을 샀다.  
-주의: you가 주어이므로 that은 목적어입니다.
-
-3. **The pharmacist whose advice was clear answered me.**  
-The pharmacist(주어) / whose advice was clear(약사를 설명) / answered(동사) / me(목적어)  
-조언이 명확했던 약사가 내게 답했다.  
-주의: whose 뒤에는 advice라는 명사가 옵니다.
-
-4. **The vaccine which prevents infection is stored cold.**  
-The vaccine(주어) / which prevents infection(백신을 설명) / is stored(동사) / cold(상태)  
-감염을 예방하는 백신은 차갑게 보관된다.  
-주의: 사물 주격은 which입니다.
-
-5. **The patient that the nurse examined had a fever.**  
-The patient(주어) / that the nurse examined(환자를 설명) / had(동사) / a fever(목적어)  
-간호사가 진찰한 환자는 열이 있었다.  
-주의: that은 examined의 목적어입니다.
-
-6. **The tablet, which is easy to swallow, contains iron.**  
-The tablet(주어) / which is easy to swallow(추가 설명) / contains(동사) / iron(목적어)  
-그 정제는 삼키기 쉽고 철분을 함유한다.  
-주의: 쉼표 뒤 추가 설명에는 that을 쓰지 않습니다.
-
-7. **She visited a clinic that treats chronic pain.**  
-She(주어) / visited(동사) / a clinic(선행사·목적어) / that treats chronic pain(병원을 설명)  
-그녀는 만성 통증을 치료하는 병원을 방문했다.  
-주의: that이 treats의 주어라 생략할 수 없습니다.
-
-8. **Researchers tested a compound whose effects lasted six hours.**  
-Researchers(주어) / tested(동사) / a compound(목적어) / whose effects lasted six hours(화합물을 설명)  
-연구자들은 효과가 6시간 지속된 화합물을 시험했다.  
-주의: compound의 효과라는 소유 관계입니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. 사람에게 which를 쓰지 않습니다. The nurse which helped me가 아니라 The nurse who helped me입니다.
-
-2. 관계대명사와 목적어 대명사를 겹치지 않습니다. The drug that the doctor prescribed it은 틀리고, it을 빼야 합니다.
-
-3. 주격은 생략하지 않습니다. the medicine that treats pain에서 that은 treats의 주어입니다. 반면 the medicine that the doctor prescribed는 목적격이라 생략할 수 있습니다.
-
-4. whose 뒤에는 명사가 필요합니다. the patient whose symptoms improved는 맞지만 whose improved는 틀립니다.
-
-5. 쉼표 뒤 that은 피합니다. The drug, which was tested,가 맞습니다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-B方式 빈칸은 The researcher studied the drug (　　) reduced inflammation.처럼 나옵니다. drug는 사물이고 뒤에 동사 reduced가 바로 오므로 주격 which 또는 that을 고릅니다. The drug (　　) the researcher studied라면 researcher가 주어이므로 목적격 which, that, 또는 생략입니다. 오류 찾기에서는 The patient who the nurse examined him처럼 관계대명사와 him이 같은 자리를 두 번 차지한 문장을 잡습니다.
-
-## 3줄 요약
-
-1. 사람은 who, 사물은 which, 둘 다 that, 소유는 whose + 명사입니다.
-2. 뒤에 동사가 바로 오면 주격이라 생략하지 않고, 주어가 먼저면 목적격이라 생략할 수 있습니다.
-3. 쉼표 뒤에는 that을 쓰지 않고, 관계대명사와 목적어 대명사를 겹치지 않습니다.`,
+:::steps 관계대명사 빈칸 3초 풀이법
+1. 앞 명사(선행사) 확인 | 빈칸 앞 명사가 사람인지 사물인지 먼저 봅니다. | the patient (사람) / the drug (사물)
+2. 빈칸 뒤 구조 확인 | 바로 뒤에 동사가 오면 주격(who/which), 주어+동사(목적어 없음)가 오면 목적격, 무관사 명사가 오면 whose입니다. | (　　) symptoms were mild → whose!
+3. 쉼표·전치사 체크 | 빈칸 앞에 쉼표(,)나 전치사가 있으면 that을 보기에서 지웁니다. | , which (O) / in which (O)
+:::`,
   quiz: [
     { prompt: "The scientist (　　) discovered the new compound received an award.", choices: ["who", "whom", "whose", "what"], answer: 1, explanation: explanations[0], lessonIds: ["g16-relatives"] },
     { prompt: "The medicine (　　) the doctor prescribed reduced the patient's fever.", choices: ["who", "which", "whose", "where"], answer: 2, explanation: explanations[1], lessonIds: ["g16-relatives"] },

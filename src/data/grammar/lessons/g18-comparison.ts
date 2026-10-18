@@ -5,98 +5,51 @@ export const lesson: Lesson = {
   level: 3,
   title: "비교급·최상급·원급 구문",
   summary: "두 대상의 차이는 비교급, 셋 이상 중 하나는 최상급, 같은 정도는 as 원급 as로 나타낸다.",
-  body: String.raw`## 한 줄로 말하면
-두 대상을 견주면 **비교급**, 셋 이상에서 가장 정도가 큰 대상을 고르면 **최상급**, 같은 정도를 말하면 **as + 원급 + as**를 쓴다.
+  body: `:::analogy 키 재기 막대 그래프입니다: 같으면 원급(as~as), 둘이 겨루면 비교급(-er than), 셋 이상 중 1등은 최상급(the -est)
+두 대상을 나란히 세웠을 때 **높이가 같으면 \`as + 원급 + as\`**, **한쪽이 더 높으면 \`비교급 + than\`**, **셋 이상 중에서 제일 높으면 \`the + 최상급\`**을 씁니다.
+비교급 앞을 꾸밀 때는 \`very\`를 못 쓰고 **\`much / even / still / far / a lot\`**을 쓴다는 점이 시험 1순위입니다!
+:::
 
-## 왜 배우나요?
-의약품 설명에서는 약의 효과, 부작용, 용량을 서로 견준다. “새 약은 기존 약보다 효과가 좋다”는 *The new drug is more effective than the old one.*처럼 쓴다. 星薬科大学 B方式에서는 빈칸에 *more*, *most*, *as*를 넣거나, *than* 뒤의 비교 대상을 확인하게 한다. 독해의 *the most common side effect*는 “가장 흔한 부작용”으로 묶어 읽는다.
+:::formula 비교 구문 4대 공식
+원급 (A = B): [as + 형용사/부사 원급 + as] => ~만큼 …한 (부정은 not as/so 원급 as)
+비교급 (A > B): [비교급 (-er / more ~) + than] => ~보다 더 …한
+비교급 강조 ("훨씬 더"): [much / even / still / far / a lot] + [비교급] => **very + 비교급은 절대 불가!**
+비례 구문: [The + 비교급 ~, the + 비교급 …] => ~할수록 더 …하다!
+:::
 
-## 개념 설명
-**비교급(comparative, 둘을 비교하는 형태)**은 “더 …한”이다. 짧은 형용사는 **er**, 긴 형용사는 **more**를 쓴다. *small → smaller*, *effective → more effective*. 비교 대상 앞에는 **than(…보다)**이 온다. *A is safer than B*는 “A는 B보다 안전하다”이다.
+## 원급·비교급·최상급 & 핵심 관용표현 표
 
-**최상급(superlative, 셋 이상에서 가장 …한 형태)**은 **the + 형용사 est** 또는 **the most + 형용사**이다. *the lowest dose*는 “가장 낮은 용량”, *the most serious reaction*은 “가장 심각한 반응”이다. 범위에는 **in**이나 **of**를 쓴다. *the best in the class*, *the oldest of the three*처럼 기억한다.
-
-**원급(positive form, 형용사의 기본형)**은 *safe, useful, large*처럼 사전에 나오는 모습이다. **as + 원급 + as**는 “...만큼 …하다”, **not as 원급 as**는 “...만큼 …하지 않다”이다. 비교급에 **much, far, even**을 붙이면 차이를 강조한다.
-
-형태는 비교 대상의 수로 정한다. 두 개면 비교급, 셋 이상에서 하나를 고르면 최상급, 같은 정도면 원급 구문이다.
-
-## 형태 정리
-
-| 쓰임 | 기본 형태 | 실제 예 | 뜻 |
+| 구분 | 형태 공식 | 시험 빈출 응용 표현 | 뜻 |
 |---|---|---|---|
-| 짧은 말의 비교급 | 형용사 + er + than | This tablet is smaller than that one. | 이 정제가 저것보다 작다 |
-| 긴 말의 비교급 | more + 형용사 + than | The new drug is more effective than the old drug. | 새 약이 기존 약보다 효과적이다 |
-| 불규칙 비교급 | good → better, bad → worse | Her condition is better today. | 그녀의 상태가 오늘 더 좋다 |
-| 최상급 | the + 형용사 est | the fastest response | 가장 빠른 반응 |
-| 긴 말의 최상급 | the most + 형용사 | the most common symptom | 가장 흔한 증상 |
-| 같은 정도 | as + 원급 + as | The cream is as useful as the gel. | 그 크림은 그 젤만큼 유용하다 |
-| 차이가 적음 | slightly + 비교급 | slightly lower pressure | 약간 더 낮은 압력 |
+| **원급** | \`as + 원급 + as\` | \`as 원급 as possible\` (= \`as ~ as 주어 can\`) | 가능한 한 ~하게 |
+| **배수사** | \`배수 + as 원급 as\` | \`twice / three times as large as\` | ~보다 2배 / 3배 더 큰 (**배수사가 맨 앞!**) |
+| **비교급** | \`-er / more + than\` | **\`The 비교급 ~, the 비교급 …\`** | ~할수록 더욱 …하다 |
+| **라틴계 비교** | \`to\`를 쓰는 비교! | \`prefer A to B\`, \`superior to\`, \`prior to\` | \`than\` 대신 전치사 **\`to\`**를 씀! |
+| **최상급** | \`the + -est / most\` | \`one of the + 최상급 + 복수명사\` | 가장 ~한 것들 중 하나 (**끝에 복수명사!**) |
 
-철자도 확인한다. *large → larger*, *big → bigger*, *easy → easier*처럼 변한다. *more safer*와 *most easiest*처럼 규칙을 겹치면 안 된다.
+:::train 문장 블록 기차로 비교 구문 읽기
+Prevention(주어:예방은) | is much better(비교급 강조:훨씬 더 낫다) | than cure(비교 대상:치료보다) => 예방이 치료보다 훨씬 더 낫다.
+The earlier(The+비교급:더 일찍 발견할수록) | we detect the disease(주어+동사:우리가 병을 발견할수록) | the easier(the+비교급:더 쉬워진다) | the treatment becomes(주어+동사:치료가) => 병을 일찍 발견할수록 치료는 더 쉬워진다.
+This is one of(주어+동사:이것은 ~중 하나이다) | the most common side effects(최상급+복수명사:가장 흔한 부작용들) => 이것은 가장 흔한 부작용들 중 하나이다.
+:::
 
-## 예문으로 익히기
+:::transform 최상급 뜻을 원급·비교급으로 똑같이 표현하기
+최상급: Health is [the most important] thing. || 부정어 + 비교급: [Nothing] is [more important than] health. || "그 무엇도 건강보다 더 중요하지 않다" = 건강이 제일 중요하다!
+배수 표현: Pill A is [twice as expensive as] Pill B. || 비교급 배수: Pill A is [twice more expensive than] Pill B. || 배수사(twice, three times)는 항상 [as ~ as] 바로 앞에 놓습니다!
+:::
 
-1. **This bottle is smaller than that bottle.**  
-This bottle(주어) / is(동사) / smaller(비교급 보어) / than that bottle(비교 대상)  
-이 병은 저 병보다 작다.  
-짧은 형용사 small에 er를 붙이고 than으로 대상을 연결한다.
+:::vs 비교 구문 단골 함정 O / X
+The new tablet works [very faster] than the old one. || The new tablet works [much / far / even faster] than the old one. || 비교급(faster)을 강조해 '훨씬'이라고 할 때는 very를 쓸 수 없고 much, even, still, far, a lot을 씁니다.
+This is one of the most effective [drug]. || This is one of the most effective [drugs]. || '가장 ~한 것들 중 하나(one of the 최상급)' 뒤에는 반드시 복수명사(drugs)가 와야 합니다!
+Many patients prefer tablets [than] liquid medicine. || Many patients prefer tablets [to] liquid medicine. || prefer A to B, superior to, inferior to, prior to는 비교 대상 앞에 than이 아니라 to를 씁니다.
+The climate of Tokyo is milder than [Sapporo]. || The climate of Tokyo is milder than [that of Sapporo]. || 비교 대상은 급이 같아야 합니다. 도쿄의 '기후(The climate)'와 비교하므로 삿포로의 기후(that of Sapporo)라고 써야 합니다.
+:::
 
-2. **The new drug is more effective than the old one.**  
-The new drug(주어) / is(동사) / more effective(긴 형용사의 비교급 보어) / than the old one(비교 대상)  
-새 약은 기존 약보다 더 효과적이다.  
-effective는 긴 형용사이므로 more를 앞에 둔다.
-
-3. **Mina runs faster than her brother.**  
-Mina(주어) / runs(동사) / faster(비교급 부사) / than her brother(비교 대상)  
-미나는 남동생보다 더 빨리 달린다.  
-동작 runs를 꾸미므로 형용사 fast가 아니라 부사 faster로 쓴다.
-
-4. **This is the most common side effect of the medicine.**  
-This(주어) / is(동사) / the most common side effect(최상급 보어) / of the medicine(범위)  
-이것은 약의 가장 흔한 부작용이다.
-셋 이상 가능한 부작용 중 하나를 고르므로 the most common을 쓴다.
-
-5. **The patient received the lowest dose in the study.**  
-The patient(주어) / received(동사) / the lowest dose(최상급 목적어) / in the study(범위)  
-그 환자는 연구에서 가장 낮은 용량을 받았다.  
-low의 최상급은 lowest이고, 연구라는 범위 앞에는 in이 자연스럽다.
-
-6. **This test is as accurate as the standard test.**  
-This test(주어) / is(동사) / as accurate as the standard test(원급 비교 보어)  
-이 검사는 표준 검사만큼 정확하다.  
-두 검사의 정확도가 같다는 뜻이므로 accurate 앞뒤에 as를 둔다.
-
-7. **The second treatment was less painful than the first one.**  
-The second treatment(주어) / was(동사) / less painful(덜 …한 보어) / than the first one(비교 대상)  
-두 번째 치료는 첫 번째 치료보다 덜 아팠다.  
-less는 긴 형용사 앞에서 “덜”을 만들며 than과 함께 비교한다.
-
-8. **Among these three medicines, this one has the best taste.**  
-Among these three medicines(범위) / this one(주어) / has(동사) / the best taste(최상급 목적어)  
-이 세 약 중에서는 이것의 맛이 가장 좋다.  
-good의 최상급은 goodest가 아니라 best이다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. 비교급 뒤의 than을 빼먹지 않는다. *The tablet is small than the capsule.*는 틀리고, *The tablet is smaller than the capsule.*가 맞다. “더 작다”는 smaller와 비교 대상 than이 한 세트다.
-
-2. 긴 형용사에 er를 붙이지 않는다. *more safer*와 *effectiver*는 틀리고 *more effective*가 맞다.
-
-3. 최상급에는 보통 the가 필요하다. *This is most common symptom*은 틀리고 *This is the most common symptom*이 맞다.
-
-4. as 사이에는 반드시 원급이 온다. *as more effective as*는 틀리고 *as effective as*가 맞다. “더 효과적인”이 아니라 “만큼 효과적인”을 말하는 구조이기 때문이다.
-
-5. 비교 대상이 둘뿐인데 *the best*를 쓰지 않는다. *Of the two drugs, A is better*가 맞고, 셋 이상에서 하나를 고르면 *the best*가 맞다.
-
-## 星薬 기출에서는 이렇게 나온다
-빈칸 문제는 먼저 **than**, **as**, **of the three** 같은 단서를 찾는다. *The new treatment is (　　) effective than the old one.*은 **more**, *the (　　) common symptom*은 **most**다.
-
-오류 찾기에서는 *more easier*, *the most safest*처럼 표시가 겹치는지 확인한다. 배열에서는 **as accurate as**, **more useful than**, **the best of the three**를 덩어리로 묶는다. 독해에서 비교급은 치료 전후의 차이, 최상급은 대표 수치, as 구문은 동등성 신호다.
-
-## 3줄 요약
-1. 둘을 비교하면 비교급, 짧은 말은 er, 긴 말은 more, 뒤에는 than을 둔다.
-2. 셋 이상 중 하나는 the 최상급, 같은 정도는 as 원급 as이다.
-3. 문제에서는 비교 대상의 수와 than, as, the, 범위 표현을 먼저 찾아 형태를 결정한다.`,
+:::steps 비교 문제 3초 풀이법
+1. 짝꿍 신호 찾기 | 문장에 as가 있으면 원급, than이 있으면 비교급, the + of/in이 있으면 최상급을 고릅니다. | ~ than → 비교급!
+2. 비교급 앞 빈칸 확인 | 비교급 바로 앞 빈칸이면 very를 지우고 much / far / even / still을 고릅니다. | much better (O)
+3. one of 뒤 복수 체크 | one of the 최상급 뒤 명사에 -s(복수)가 붙어 있는지 확인합니다. | one of the best ways (O)
+:::`,
   quiz: [
     {
       prompt: "The new capsule is (　　) effective than the old one.",

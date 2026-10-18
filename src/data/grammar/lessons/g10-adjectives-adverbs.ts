@@ -5,100 +5,51 @@ export const lesson: Lesson = {
   level: 2,
   title: "형용사와 부사",
   summary: "명사를 설명하는 형용사와 동사·형용사·부사를 설명하는 부사의 자리와 형태를 구별한다.",
-  body: String.raw`## 한 줄로 말하면
-형용사는 명사의 상태나 특징을 말하고, 부사는 동작이나 정도를 더 자세히 말한다.
+  body: `:::analogy 형용사는 '명사 전용 옷'이고, 부사는 '동사·형용사 전용 양념'입니다
+**형용사(\`safe\`, \`effective\`)**는 오직 **명사**만 꾸미거나 설명합니다 ("안전한 약", "그 약은 안전하다").
+반면 **부사(\`safely\`, \`quickly\`, \`very\`)**는 명사 빼고 다 꾸밉니다. 주로 **동사**("안전하게 작용한다")나 **형용사**("매우 안전한")에 맛을 더합니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式의 빈칸 문제에서는 같은 어근의 단어가 형용사와 부사로 나뉘어 선택지에 나옵니다. 빈칸 앞뒤를 보고 명사를 꾸미는지, 동사를 꾸미는지 판단하면 *safe*와 *safely*, *complete*와 *completely*를 구별할 수 있습니다. 유의어 문제나 의약 지문에서도 *an effective treatment*와 *treat patients effectively*처럼 품사를 알아야 문장 뼈대가 보입니다. 오류 찾기에서는 *The patient feels happily*처럼 보어 자리에 부사를 넣은 오류가 자주 함정이 됩니다.
+:::formula 형용사 vs 부사 자리 공식
+[관사 a/the] + [형용사] + [명사] => 명사 앞은 형용사 자리 (예: a rapid recovery)
+[be / become / remain / feel] + [형용사] => 2형식 동사 뒤 보어는 형용사! (부사 -ly 금지)
+[부사 -ly] + [형용사 / 분사(p.p.)] => 형용사·분사를 꾸밀 땐 부사! (예: rapidly absorbed)
+[완전한 문장] + [부사 -ly] => 동사(행동 방식)를 꾸밀 땐 부사! (예: reacted seriously)
+:::
 
-## 개념 설명
-형용사(adjective, 명사를 설명하는 말)는 사람이나 물건의 이름표입니다. “어떤 약?”에 답하는 *new medicine*의 *new*가 형용사입니다. 보통 명사 앞에 옵니다. *a serious infection*에서 *serious*는 *infection*을 설명합니다.
+## 헷갈리기 쉬운 형용사·부사 쌍 비교표
 
-형용사는 be동사 뒤에도 옵니다. 이때 보어(주어의 상태를 설명해 동사를 완성하는 말)가 됩니다. *The medicine is effective.*에서 *effective*는 약의 상태를 설명합니다. *feel, look, seem* 뒤에도 형용사를 씁니다.
+| 기본 단어 | 뜻이 같은 \`-ly\` 부사 | **뜻이 완전히 달라지는 \`-ly\` 부사 (시험 1순위!)** |
+|---|---|---|
+| **hard** (단단한 / 열심히) | \`hard\` (형용사·부사 모양 같음!) | **\`hardly\`** = 거의 ~않다 (부정어!) |
+| **late** (늦은 / 늦게) | \`late\` (모양 같음) | **\`lately\`** = 최근에 (\`recently\`) |
+| **near** (가까운 / 가까이) | \`near\` (모양 같음) | **\`nearly\`** = 거의 (\`almost\`) |
+| **high** (높은 / 높이) | \`high\` (물리적 높이) | **\`highly\`** = 매우, 대단히 (\`very\`) |
 
-부사(adverb, 동사·형용사·다른 부사를 설명하는 말)는 행동의 방법이나 정도를 알려 줍니다. *The nurse worked carefully.*의 *carefully*는 일한 방법을, *very useful*의 *very*는 정도를 설명합니다. 많은 부사는 *-ly*로 만들지만 *fast, hard, early*처럼 모양이 같거나 *good*처럼 *well*로 바뀌기도 합니다.
+:::train 문장 블록 기차로 수식 화살표 따라가기
+The new drug(주어:새 약은) | was rapidly absorbed(부사+수동동사:빠르게 흡수되었다) | into the body(수식어:몸속으로) => 새 약은 몸속으로 빠르게 흡수되었다 (rapidly가 absorbed를 꾸밈!).
+The patient(주어:환자는) | felt(감각동사:느꼈다) | dizzy(형용사 보어:어지러운 상태를) | after standing up(수식어:일어선 뒤에) => 환자는 일어선 뒤 어지러움을 느꼈다.
+She(주어:그녀는) | could hardly swallow(빈도부사+동사:거의 삼킬 수 없었다) | solid food(목적어:고형 음식을) => 그녀는 고형 음식을 거의 삼킬 수 없었다.
+:::
 
-자리만 보지 말고 설명받는 말을 찾으세요. 관사 뒤 빈칸 다음에 명사가 오면 형용사, 일반동사 뒤에서 “어떻게?”를 묻는다면 부사일 가능성이 큽니다. *look, feel, seem* 뒤에는 주어를 설명하는 형용사가 자주 옵니다.
+:::transform so + 형용사 vs such + a + 형용사 + 명사
+[so + 형용사/부사 + that]: The pain was [so severe] that he cried. || 뒤에 명사가 없이 형용사만 있으면 [so]를 씁니다!
+[such + (a/an) + 형용사 + 명사 + that]: It was [such a severe pain] that he cried. || 뒤에 핵심 명사(pain)까지 한 덩어리로 있으면 [such]를 씁니다!
+[형용사 + enough to V]: He is [strong enough] to walk. || enough는 형용사·부사 **뒤**에 붙습니다 (enough strong X)!
+:::
 
-## 형태 정리
-| 기능 | 기본 형태 | 예 | 시험에서 확인할 것 |
-|---|---|---|---|
-| 명사 앞 형용사 | adjective + noun | an **effective** drug | 약을 설명하므로 *effectively*가 아님 |
-| be동사 뒤 형용사 | be + adjective | The dose is **safe**. | 상태 설명, 부사 불가 |
-| 상태동사 뒤 형용사 | feel/look/seem + adjective | She feels **ill**. | 행동 방법이 아니라 주어 상태 |
-| 동사 뒤 부사 | verb + adverb | The drug works **quickly**. | “어떻게 작용하는가?” |
-| 형용사 수식 부사 | adverb + adjective | a **highly** effective drug | *highly*가 *effective*를 수식 |
-| -ly형 부사 | adjective + -ly | careful → carefully | 철자 변화: easy → easily |
-| 불규칙 부사 | 별도 형태 | good → well | *well*은 “잘”, *good*은 형용사 |
-| 같은 형태 | adjective = adverb | a fast train / run fast | fastly는 쓰지 않음 |
+:::vs 형용사·부사 단골 함정 O / X
+The patient looked [healthily] after the surgery. || The patient looked [healthy] after the surgery. || look, feel, remain 뒤는 주어(환자)의 상태를 설명하는 보어 자리이므로 형용사(healthy)가 맞습니다.
+The medicine was [quick] absorbed. || The medicine was [quickly] absorbed. || 과거분사(absorbed)를 꾸며 '빠르게 흡수된'을 만들려면 부사(quickly)가 필요합니다.
+He worked [hardly] to pass the exam. || He worked [hard] to pass the exam. || '열심히'는 hard이고, hardly는 '거의 ~않다'라는 뜻입니다.
+It is [enough warm] to go outside. || It is [warm enough] to go outside. || enough가 형용사(warm)를 꾸밀 때는 항상 형용사 뒤에 옵니다.
+:::
 
-## 예문으로 익히기
-1. **The pharmacist prepared the solution carefully.**  
-The pharmacist(주어) / prepared(동사) / the solution(목적어) / carefully(부사: 준비한 방법)  
-약사는 용액을 조심스럽게 준비했다.  
-Note: 동작의 방법이므로 부사다.
-
-2. **This is a safe medicine for children.**  
-This(주어) / is(동사) / a safe medicine(보어: 안전한 약) / for children(대상)  
-이것은 어린이에게 안전한 약이다.  
-Note: 명사 앞에서 명사를 설명한다.
-
-3. **The patient felt weak after the operation.**  
-The patient(주어) / felt(동사) / weak(보어: 환자의 상태) / after the operation(시간)  
-그 환자는 수술 후에 기운이 없었다.  
-Note: 상태동사 뒤에는 형용사를 쓴다.
-
-4. **The new vaccine is highly effective.**  
-The new vaccine(주어) / is(동사) / highly effective(보어: 매우 효과적인 상태)  
-새 백신은 매우 효과적이다.  
-Note: *highly*는 형용사 *effective*를 꾸민다.
-
-5. **Please read the instructions slowly.**  
-Please(부탁) / read(동사) / the instructions(목적어) / slowly(부사: 읽는 방법)  
-설명서를 천천히 읽으세요.  
-Note: 동작의 방법이므로 *slowly*다.
-
-6. **An early diagnosis can improve the patient's outcome.**  
-An early diagnosis(주어) / can improve(동사) / the patient's outcome(목적어)  
-조기 진단은 환자의 결과를 개선할 수 있다.  
-Note: *early*는 형용사와 부사 모양이 같다.
-
-7. **The tablet dissolved quickly in water.**  
-The tablet(주어) / dissolved(동사) / quickly(부사: 녹는 속도) / in water(장소)  
-그 정제는 물에 빠르게 녹았다.  
-Note: 동작의 속도를 설명하는 부사다.
-
-8. **The nurse gave the patient good advice and explained the dose well.**  
-The nurse(주어) / gave(동사) / the patient(간접목적어) / good advice(직접목적어) / and explained(동사) / the dose(목적어) / well(부사: 설명한 방법)  
-간호사는 환자에게 좋은 조언을 하고 복용량을 잘 설명했다.  
-Note: *good*은 형용사, *well*은 부사다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. **be동사 뒤에 부사를 쓰는 오류**  
-Wrong: The treatment is *effectively*.  Right: The treatment is **effective**.  
-be동사 뒤에서 치료의 상태를 설명하므로 형용사가 필요하다. 단, *The treatment works effectively*처럼 일반동사의 방법을 말하면 부사다.
-
-2. **상태동사 뒤에 -ly를 붙이는 오류**  
-Wrong: The patient feels *badly*.  Right: The patient feels **bad**.  
-여기서는 환자의 상태가 나쁘다는 뜻이다. *The patient touched the wound badly*처럼 행동 방법을 말할 때만 부사가 가능하다.
-
-3. **good과 well을 섞는 오류**  
-Wrong: She is *well* at explaining the drug.  Right: She explains the drug **well**.  
-보통 *good*은 명사나 주어의 상태를 설명하는 형용사, *well*은 동작을 설명하는 부사다. 건강하다는 뜻의 *well*은 형용사로도 쓰인다.
-
-4. **-ly를 모든 부사에 붙이는 오류**  
-Wrong: The athlete runs *fastly*.  Right: The athlete runs **fast**.  
-*fast*는 형용사와 부사 모양이 같다. *hard*도 “열심히”라는 부사로 쓰이며 *hardly*는 “거의 ...않다”라는 다른 뜻이다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸에서는 먼저 빈칸 뒤 명사를 찾습니다. 예를 들어 “The researchers developed an (　　) method for detecting the virus.”라면 *method*를 꾸미는 형용사가 필요하므로 *effective*가 정답입니다. “The method detected the virus (　　).”라면 *detected*의 방법을 묻기 때문에 *effectively*를 고릅니다.
-
-오류 찾기에서는 동사 종류를 확인합니다. “The medicine <u>works effective</u> against the infection.”은 **works effectively**가 맞습니다. 반대로 “The medicine <u>seems effectively</u>”는 **seems effective**로 고칩니다. 명사 앞은 형용사, 일반동사 뒤의 “어떻게”는 부사입니다.
-
-## 3줄 요약
-1. 형용사는 명사를 꾸미고, be동사나 상태동사 뒤에서 주어의 상태를 설명한다.
-2. 부사는 동사·형용사·부사를 꾸미며, 많은 경우 형용사에 *-ly*를 붙인다.
-3. 빈칸에서는 꾸밈을 받는 말을 먼저 찾고, *good/well*, *fast*, 상태동사 뒤 형용사를 따로 확인한다.`,
+:::steps 형용사 vs 부사 빈칸 3초 판별법
+1. 수식 대상 화살표 긋기 | 빈칸이 명사를 꾸미는지, 동사·분사·형용사를 꾸미는지 화살표를 긋습니다. | (　　) absorbed → 분사 수식 = 부사!
+2. 앞 동사 확인 | 빈칸 앞 동사가 be, become, remain, feel, look, keep(5형식)이면 형용사 보어를 고릅니다. | felt (　　) → 형용사!
+3. 모양 함정 확인 | hard/hardly, late/lately, so/such, enough의 위치를 마지막으로 확인합니다. | strong enough (O)
+:::`,
   quiz: [
     {
       prompt: "The new drug is (　　) for most adult patients.",

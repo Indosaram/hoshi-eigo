@@ -5,97 +5,50 @@ export const lesson: Lesson = {
   level: 3,
   title: "수일치·시제일치",
   summary: "주어의 수에 맞춰 동사를 고르고, 주절의 시계에 맞춰 종속절의 시제를 읽는다.",
-  body: String.raw`## 한 줄로 말하면
-주어의 수에 동사를 맞추고, 과거 주절 뒤에서는 종속절의 시점을 맞춥니다.
+  body: `:::analogy 동사는 '진짜 주어'의 단수·복수에 맞춰 옷을 갈아입습니다
+주어와 동사 사이에 \`of these pills\` 같은 수식어가 끼어 있으면, 동사 바로 앞 명사에 속기 쉽습니다.
+**수식어를 손으로 가리고 맨 앞 진짜 주어만 보세요.** 단수면 \`is / -s\`, 복수면 \`are / 원형\`입니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式의 빈칸과 오류 찾기에서는 긴 명사구 사이에 주어를 숨기고 동사의 단복수를 묻습니다. 의약 지문에서는 *The results of the experiment show*처럼 주어와 동사가 떨어진 문장이 나옵니다. 과거 보고를 읽을 때는 *The paper stated that the drug was safe*처럼 시제일치로 사건 순서를 확인합니다.
+:::formula 수일치 핵심 공식
+[단수 주어] + (수식어 거품) + [is / was / 동사-s] => 예: The effect of the drugs is strong.
+[복수 주어] + (수식어 거품) + [are / were / 동사원형] => 예: The effects of the drug are strong.
+[The number of + 복수명사] + [단수동사] vs [A number of + 복수명사] + [복수동사]
+[동명사 / to부정사 / 명사절 주어] + [단수동사] => 예: Taking vitamins is helpful.
+:::
 
-## 개념 설명
-수일치(주어의 수와 동사의 형태를 맞추는 규칙)부터 봅니다. 단수 주어이면 현재 일반동사에 보통 **s**, 복수이면 동사 원형을 씁니다. *The patient takes*, *The patients take*처럼 구별합니다. be동사는 단수 현재 **is**, 복수 현재 **are**, 단수 과거 **was**, 복수 과거 **were**입니다.
+## 헷갈리는 주어 정리
 
-전치사구(명사 뒤에 붙어 관계를 알려 주는 말)나 관계대명사절(앞 명사를 설명하는 절)에 속지 마세요. *The level of glucose is high*에서 주어는 level입니다. *The tablets that contain iron are useful*에서는 tablets입니다.
+| 주어 모양 | 동사 | 예 |
+|---|---|---|
+| \`Each / Every + 명사\` | 단수 | \`Every patient has a chart.\` |
+| \`The number of ~\` | 단수 | \`The number of cases is rising.\` |
+| \`A number of ~\` (많은) | 복수 | \`A number of cases are reported.\` |
+| \`Most / Some / Half of + 명사\` | **of 뒤 명사에 맞춤** | \`Most of the water is clean.\` / \`Most of the pills are white.\` |
+| \`-ing / to V / that절\` 주어 | 단수 | \`Sleeping well is important.\` |
 
-집합명사(여러 사람이나 사물을 한 덩어리로 부르는 명사)는 문맥을 봅니다. *The team is ready*처럼 한 조직이면 단수입니다. each, every, either, neither 뒤도 단수입니다. **a number of + 복수명사**는 복수, **the number of + 복수명사**는 단수 동사를 씁니다.
+:::train 문장 블록 기차로 진짜 주어 찾기
+The side effects(진짜 주어:부작용들은) | of this new drug(수식어 거품:이 신약의) | are(복수 동사:이다) | mild(보어:가벼운) => 이 신약의 부작용들은 가볍다.
+One of the patients(진짜 주어:환자들 중 한 명이) | has(단수 동사:가지고 있다) | a high fever(목적어:고열을) => 환자 중 한 명이 고열이 있다.
+Eating vegetables(동명사 주어:채소를 먹는 것은) | is(단수 동사:이다) | good for health(보어:건강에 좋은) => 채소를 먹는 것은 건강에 좋다.
+:::
 
-시제일치(주절과 종속절의 시점을 맞추는 규칙)는 주절이 과거인지 먼저 확인합니다. 주절(문장의 중심 절)이 과거이고 that절(말하거나 생각한 내용을 담은 절)이 당시 사실을 전하면 현재가 과거로 한 칸 물러납니다. *The doctor says that the medicine works*는 *The doctor said that the medicine worked*가 됩니다. 과거완료(과거보다 더 앞선 일, had + 과거분사)는 기준 시점보다 먼저 일어난 일에 씁니다. 지금도 변하지 않는 과학적 사실은 현재형을 유지할 수 있습니다. *The textbook explained that water boils at 100°C*가 그 예입니다.
+:::transform 시제 일치: 주절이 과거면 that절도 한 칸 과거로
+He says that the drug [is] safe. || He said that the drug [was] safe. || 주절이 said(과거)로 바뀌면 that절도 was로 맞춥니다.
+예외: The teacher said that water [boils] at 100°C. || 과학 사실·진리는 언제나 현재형 || 변하지 않는 사실은 주절이 과거여도 현재형을 유지합니다.
+:::
 
-## 형태 정리
+:::vs 수일치 단골 함정 O / X
+The quality of these tablets [are] high. || The quality of these tablets [is] high. || 진짜 주어는 The quality(단수)입니다.
+One of my friends [are] a nurse. || One of my friends [is] a nurse. || One(한 명)이 주어라 단수 동사를 씁니다.
+The number of patients [are] increasing. || The number of patients [is] increasing. || The number(숫자) 하나가 주어입니다.
+:::
 
-| 주어 또는 시점 | 올바른 형태 | 예문 |
-|---|---|---|---|
-| 단수 주어, 현재 일반동사 | 동사 + s | The nurse checks the dose. |
-| 복수 주어, 현재 일반동사 | 동사 원형 | The nurses check the dose. |
-| 단수 be동사 | is / was | The sample is stable. |
-| 복수 be동사 | are / were | The samples are stable. |
-| each, every, neither | 단수 동사 | Each tablet contains zinc. |
-| a number of + 복수명사 | 복수 동사 | A number of patients report pain. |
-| the number of + 복수명사 | 단수 동사 | The number of patients is rising. |
-| 과거 주절 뒤의 과거 사실 | 과거형 | She said that he was ill. |
-| 더 먼저 일어난 일 | had + 과거분사 | She said that he had left. |
-
-## 예문으로 익히기
-
-1. **The pharmacist checks the prescription carefully.**  
-The pharmacist(주어) / checks(동사) / the prescription(목적어) / carefully(부사)  
-약사는 처방전을 주의 깊게 확인한다.  
-한 명인 pharmacist가 주어이므로 check가 아니라 checks입니다.
-
-2. **The effects of this drug are mild.**  
-The effects(주어) / of this drug(전치사구) / are(동사) / mild(보어)  
-이 약의 효과들은 가볍다.  
-of 뒤의 drug가 아니라 주어 effects가 복수라서 are를 씁니다.
-
-3. **Each of the volunteers receives one capsule.**  
-Each(주어) / of the volunteers(전치사구) / receives(동사) / one capsule(목적어)  
-지원자들은 한 명씩 캡슐 하나를 받는다.  
-volunteers는 복수지만 Each가 한 명씩을 가리켜 receives가 됩니다.
-
-4. **A number of patients report nausea after treatment.**  
-A number of patients(주어) / report(동사) / nausea(목적어) / after treatment(시간을 나타내는 말)  
-많은 환자가 치료 후 메스꺼움을 보고한다.  
-a number of는 여러 명이라는 뜻이므로 복수 동사 report를 씁니다.
-
-5. **The study that examines blood pressure is useful.**  
-The study(주어) / that examines blood pressure(관계대명사절: 연구를 설명) / is(동사) / useful(보어)  
-혈압을 검사하는 그 연구는 유용하다.  
-주어 study가 단수라서 is입니다.
-
-6. **The doctor said that the patient had taken the wrong dose.**  
-The doctor(주어) / said(동사) / that the patient had taken the wrong dose(의사가 말한 내용)  
-의사는 환자가 잘못된 용량을 복용했다고 말했다.  
-복용이 먼저 끝났으므로 had taken입니다.
-
-7. **The textbook explains that bacteria can become resistant.**  
-The textbook(주어) / explains(동사) / that bacteria can become resistant(설명 내용)  
-교과서는 세균의 내성을 설명한다.  
-일반적 과학 사실은 현재형이 자연스럽습니다.
-
-8. **The researchers found that the compound was stable at room temperature.**  
-The researchers(주어) / found(동사) / that the compound was stable at room temperature(발견 내용)  
-연구자들은 그 화합물이 실온에서 안정적이었다고 했다.  
-과거에 얻은 결과를 보고하므로 found 뒤의 당시 상태는 was로 한 칸 물립니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **The list of ingredients contain sugar.**는 틀립니다. **The list of ingredients contains sugar.**가 맞습니다. 주어는 ingredients가 아니라 단수인 list입니다.
-
-2. **Each patients receives a label.**는 틀립니다. **Each patient receives a label.**처럼 each 뒤 명사는 단수입니다.
-
-3. **The number of errors are small.**는 틀립니다. **The number of errors is small.**에서 number가 하나의 수입니다. *A number of errors are found*와 구별하세요.
-
-4. **She said that the test is completed yesterday.**는 틀립니다. **She said that the test was completed the day before.**처럼 과거 보고와 yesterday의 기준을 맞춥니다. 단, 변하지 않는 과학 법칙은 현재형을 유지할 수 있습니다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-먼저 주어의 중심 명사를 찾습니다. *The concentration of active ingredients (　　) higher in this sample than in the control.*에서는 ingredients가 아니라 concentration이 주어이므로 **is**입니다. *The researcher reported that the patients (　　) recovered after the treatment.*에서는 회복이 보고보다 먼저라는 단서가 있으면 **had recovered**를 고릅니다. 오류 찾기에서는 each, the number of, 전치사구를 표시하세요.
-
-## 3줄 요약
-
-1. 동사는 주어의 중심 명사와 수를 맞춥니다.
-2. each와 every는 단수, a number of는 복수, the number of는 단수입니다.
-3. 과거 주절 뒤에서는 당시의 사실을 과거로, 그보다 앞선 일은 과거완료로 읽습니다.
-`,
+:::steps 수일치 3초 풀이법
+1. 거품 가리기 | of ~, in ~, with ~, 관계절을 괄호로 묶습니다. | The level (of sugar)
+2. 진짜 주어 확인 | 괄호 밖 맨 앞 명사가 단수인지 복수인지 봅니다. | level = 단수
+3. 동사 맞추기 | 단수면 is/was/-s, 복수면 are/were/원형을 고릅니다. | rises (O)
+:::`,
   quiz: [
     {
       prompt: "The number of patients with asthma (　　) increasing every year.",

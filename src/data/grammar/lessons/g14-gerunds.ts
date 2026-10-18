@@ -5,99 +5,47 @@ export const lesson: Lesson = {
   level: 3,
   title: "동명사와 to부정사 비교",
   summary: "동사에 ing를 붙인 동명사가 명사처럼 쓰이는 자리와 to부정사와의 차이를 익힌다.",
-  body: String.raw`## 한 줄로 말하면
+  body: `:::analogy 동사에 -ing를 붙이면 '명사 모자'를 쓴 동명사가 됩니다
+**동명사(\`V-ing\`)**와 **to부정사(\`to V\`)**는 둘 다 동사를 **"~하는 것(명사)"**으로 바꾼 말입니다.
+하지만 앞의 동사가 **과거·현재 지향 동사(\`enjoy\`, \`avoid\`, \`finish\`)**이면 \`-ing\`만 좋아하고, **미래 지향 동사(\`want\`, \`decide\`, \`plan\`)**이면 \`to V\`만 좋아합니다.
+:::
 
-동명사(동사에 ing를 붙여 명사처럼 만든 말)는 행동을 일로 보고, 주어, 목적어, 보어가 됩니다.
+:::formula 동명사 핵심 공식 3가지
+[-ing만 목적어로 취하는 동사]: enjoy / avoid / finish / mind / give up / put off / suggest / consider + [V-ing]
+[전치사 (in / on / of / for / without / by / instead of)] + [V-ing] => 전치사 뒤 동사는 무조건 -ing!
+[전치사 to 함정!]: look forward to / be used to / lead to / contribute to / object to + [V-ing]
+:::
 
-## 왜 배우나요?
+## 동명사(-ing) vs to부정사 짝꿍 동사 표
 
-의약 지문에는 **Monitoring blood pressure**, **avoiding infection**처럼 행동을 명사로 바꾼 표현이 나옵니다. 빈칸에서는 전치사와 동사 뒤 형태를 묻고, 어순에서는 *Patients should avoid taking the drug with grapefruit juice*의 동명사 덩어리를 찾습니다. to부정사와의 차이가 정답을 가릅니다.
+| 구분 | 대표 동사·표현 | 왜 그럴까요? |
+|---|---|---|
+| **\`-ing\`만 쓰는 동사** | \`enjoy\`, \`finish\`, \`avoid(피하다)\`, \`mind(꺼리다)\`, \`stop\`, \`keep\`, \`consider\`, \`suggest\` | 이미 하고 있거나 경험한 행동을 떠올리는 동사들 |
+| **\`to V\`만 쓰는 동사** | \`want\`, \`hope\`, \`wish\`, \`decide\`, \`plan\`, \`expect\`, \`promise\`, \`refuse\` | 앞으로 할 미래의 행동을 가리키는 동사들 |
+| **뜻이 달라지는 동사** | \`remember / forget / regret / try / stop\` | **\`-ing\` = 이미 한 일(과거)** vs **\`to V\` = 앞으로 할 일(미래)** |
 
-## 개념 설명
+:::train 문장 블록 기차로 동명사 구문 읽기
+Patients(주어:환자들은) | should avoid(동사:피해야 한다) | taking this drug(동명사 목적어:이 약을 복용하는 것을) | with alcohol(수식어:술과 함께) => 환자들은 술과 함께 이 약을 복용하는 것을 피해야 한다.
+Regular exercise(주어:규칙적인 운동은) | contributes to(동사+전치사 to:~에 기여한다) | reducing stress(동명사:스트레스를 줄이는 것에) => 규칙적인 운동은 스트레스를 줄이는 데 기여한다.
+By washing your hands(by+-ing:손을 씻음으로써) | you can prevent(주어+동사:예방할 수 있다) | infection(목적어:감염을) => 손을 씻음으로써 감염을 예방할 수 있다.
+:::
 
-**동명사(gerund, 동사에 ing를 붙여 명사 역할을 하는 말)**는 행동을 물건처럼 다룹니다. *read*는 “읽다”이고 *Reading*은 “읽는 것”입니다. *Reading helps me*에서 주어, *I enjoy reading*에서 목적어가 됩니다. 동사에서 왔으므로 뒤에 목적어도 가질 수 있습니다. *Taking the medicine after meals* 전체가 하나의 주어입니다.
+:::transform 뒤에 -ing가 오는가, to V가 오는가에 따라 뜻이 바뀌는 동사들
+He stopped [smoking]. (담배 피우던 행동을 멈췄다 = 금연!) || He stopped [to smoke]. (담배를 피우기 위해 걸음을 멈췄다!) || [stop -ing]는 하던 일을 그만두다, [stop to V]는 ~하기 위해 멈춰 서다입니다.
+I remember [taking] the pill this morning. (아침에 이미 먹은 것이 기억난다!) || Remember [to take] the pill tonight. (오늘 밤 앞으로 약 먹을 것을 잊지 마라!) || [-ing]는 과거에 한 일, [to V]는 미래에 할 일입니다!
+:::
 
-**to부정사(to + 동사원형)**도 “하는 것”이라는 명사 역할을 합니다. 동명사는 일반적인 활동이나 실제 경험, to부정사는 앞으로 할 일이나 목적을 말하는 느낌이 있습니다. *I stopped smoking*은 담배를 끊었다는 뜻이고, *I stopped to smoke*는 담배를 피우려고 멈췄다는 뜻입니다.
+:::vs 동명사 단골 함정 O / X
+The doctor suggested [to change] the diet. || The doctor suggested [changing] the diet. || suggest, avoid, finish, mind, enjoy 뒤에는 to부정사가 올 수 없고 동명사(-ing)만 옵니다.
+This habit may lead to [develop] diabetes. || This habit may lead to [developing] diabetes. || lead to, contribute to, look forward to, be used to의 to는 전치사이므로 뒤에 동명사(-ing)가 옵니다!
+He left the hospital without [pay] the bill. || He left the hospital without [paying] the bill. || 전치사(without) 뒤에는 동명사(paying)를 씁니다.
+:::
 
-전치사(명사 앞에서 관계를 나타내는 말) 뒤에는 동명사가 옵니다. *before taking*, *without eating*, *by measuring*처럼 전치사 뒤에 동사원형을 놓지 않습니다. *look forward to meeting*의 *to*도 전치사이므로 *meeting*이 맞습니다.
-
-동명사와 잘 붙는 동사도 외워야 합니다. *enjoy, avoid, finish, suggest* 뒤에는 동명사를, *want, decide, hope, plan* 뒤에는 보통 to부정사를 씁니다. *suggest taking*, *decide to take*처럼 구별합니다.
-
-## 형태 정리
-
-| 쓰임 | 실제 형태 | 예문 | 뜻 |
-|---|---|---|---|
-| 주어 | 동명사 + 동사 | **Checking** the label is necessary. | 라벨 확인은 필요하다. |
-| 동사 목적어 | enjoy/avoid/finish + 동명사 | The nurse avoided **touching** the wound. | 간호사는 상처를 만지는 것을 피했다. |
-| 전치사 뒤 | 전치사 + 동명사 | Take it after **eating**. | 식사 후에 그것을 복용하라. |
-| 보어 | be + 동명사 | Her job is **testing** samples. | 그녀의 일은 검체를 검사하는 것이다. |
-| to부정사 목적어 | want/decide/plan + to + 동사원형 | We decided **to test** the sample. | 우리는 검체를 검사하기로 했다. |
-| 의미가 달라지는 쌍 | stop + 동명사 / stop + to부정사 | He stopped **drinking**. / He stopped **to drink**. | 음주를 중단했다 / 마시려고 멈췄다. |
-
-## 예문으로 익히기
-
-1. **Reading the dosage instructions prevents mistakes.**  
-   Reading the dosage instructions(복용량 설명을 읽는 것, 주어) / prevents(동사) / mistakes(목적어)  
-   복용량 설명을 읽는 것은 실수를 막는다.  
-   주어 자리에 동명사구가 왔고, *prevents*는 단수 취급한다.
-
-2. **I enjoy walking to the station after work.**  
-   I(주어) / enjoy(동사) / walking to the station(동명사 목적어) / after work(시간을 나타내는 부사구)  
-   나는 퇴근 후 역까지 걸어가는 것을 즐긴다.  
-   *enjoy* 뒤에는 to부정사가 아니라 동명사가 온다.
-
-3. **The patient avoided eating raw seafood before surgery.**  
-   The patient(주어) / avoided(동사) / eating raw seafood(동명사 목적어) / before surgery(시간 부사구)  
-   그 환자는 수술 전에 날 seafood를 피했다.  
-   *avoid* 뒤의 행동은 동명사로 표현한다.
-
-4. **The pharmacist suggested taking the tablet with water.**  
-   The pharmacist(주어) / suggested(동사) / taking the tablet with water(동명사 목적어)  
-   약사는 그 정제를 물과 함께 복용하라고 제안했다.  
-   *suggest* 뒤에는 *to take*가 아니라 *taking*을 쓴다.
-
-5. **Measuring the patient's temperature is part of the examination.**  
-   Measuring the patient's temperature(동명사구 주어) / is(동사) / part of the examination(보어)  
-   환자의 체온을 재는 것은 검사 과정의 일부이다.  
-   긴 동명사구도 문장 전체의 주어가 될 수 있다.
-
-6. **Wash your hands before handling the medicine.**  
-   Wash(동사) / your hands(목적어) / before(전치사) / handling the medicine(동명사)  
-   약을 다루기 전에 손을 씻어라.  
-   전치사 *before* 뒤라서 *handle*이 아닌 *handling*을 쓴다.
-
-7. **The researcher decided to repeat the experiment.**  
-   The researcher(주어) / decided(동사) / to repeat the experiment(to부정사 목적어)  
-   연구자는 실험을 반복하기로 결정했다.  
-   *decide*는 보통 to부정사를 목적어로 취한다.
-
-8. **The doctor stopped smoking to protect his lungs.**  
-   The doctor(주어) / stopped smoking(동명사 목적어) / to protect his lungs(목적을 나타내는 to부정사)  
-   그 의사는 폐를 보호하려고 흡연을 중단했다.  
-   *stopped smoking*은 흡연 자체를 그만두었다는 뜻이다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. 전치사 뒤에 동사원형을 쓰지 않습니다. *Before take the medicine, eat something.*은 틀리고, **Before taking the medicine, eat something.**이 맞습니다.
-
-2. *enjoy*는 to부정사를 받지 않습니다. *I enjoy to study pharmacology.*는 틀리고, **I enjoy studying pharmacology.**가 맞습니다.
-
-3. *suggest* 뒤에 사람 + to부정사를 바로 쓰지 않습니다. *The nurse suggested me to rest.*는 틀리고, **The nurse suggested that I rest.** 또는 **The nurse suggested resting.**이 맞습니다.
-
-4. *look forward to*의 *to*는 전치사입니다. *I look forward to meet you.*는 틀리고, **I look forward to meeting you.**가 맞습니다.
-
-5. *stop*은 뒤 형태에 따라 뜻이 바뀝니다. **She stopped taking the drug.**는 약 복용을 중단했다는 뜻이고, **She stopped to take the drug.**는 약을 복용하려고 하던 일을 멈췄다는 뜻입니다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-B方式의 문법 빈칸에서는 전치사 뒤 형태와 동사의 짝을 묻습니다. *The doctor recommended (　　) more water after exercise.*라면 **drinking**을 고릅니다. 의약 독해의 *Patients should avoid taking this medicine on an empty stomach*에서는 *avoid*의 목적어인 *taking*을 찾습니다. 어순 문제에서도 *before taking the capsule*처럼 전치사와 동명사를 한 덩어리로 묶습니다.
-
-## 3줄 요약
-
-1. 동명사 = 동사 + ing, “하는 것”이라는 명사 역할을 한다.
-2. 전치사 뒤와 enjoy, avoid, finish, suggest 뒤에는 동명사를 쓴다.
-3. want, decide, plan 뒤에는 to부정사가 많고, stop은 뒤 형태에 따라 뜻이 달라진다.
-`,
+:::steps -ing vs to V 빈칸 3초 풀이법
+1. 앞 단어 확인 | 빈칸 바로 앞이 전치사(of, for, without, by)이면 고민 없이 -ing를 고릅니다. | without thinking
+2. 전치사 to 5총사 체크 | look forward to, be used to(익숙하다), lead to, contribute to, object to 뒤는 -ing입니다. | lead to causing
+3. 본동사 짝꿍 확인 | avoid/enjoy/finish/mind/suggest → -ing, want/decide/plan/expect → to V를 고릅니다. | avoid eating
+:::`,
   quiz: [
     {
       prompt: "The pharmacist recommended (　　) the label carefully.",

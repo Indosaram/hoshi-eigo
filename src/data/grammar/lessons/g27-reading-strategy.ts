@@ -5,91 +5,50 @@ export const lesson: Lesson = {
   level: 4,
   title: "이과·의약 장문 읽기 전략",
   summary: "문장의 뼈대와 연결어를 먼저 잡아 의약 장문의 주장, 근거, 빈칸을 정확히 찾는다.",
-  body: String.raw`## 한 줄로 말하면
-이과·의약 지문은 모든 단어가 아니라 주어와 동사의 뼈대, 연결어, 반복어를 따라 주장과 근거를 찾는 글이다.
+  body: `:::analogy 장문은 '신호등이 있는 도로'입니다: 연결어 신호를 보면 글이 어디로 가는지 보입니다
+\`However\`는 빨간불(방향 전환), \`For example\`은 초록불(같은 방향 예시), \`Therefore\`는 도착 표지(결론)입니다.
+모든 단어를 해석하려 하지 말고 **신호등과 각 문단 첫 문장**만 이어도 글의 뼈대가 보입니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式은 약물, 세포, 질병, 연구 결과처럼 낯선 내용을 짧은 시간에 읽게 한다. 전문용어를 몰라도 주어와 동사, however(반대), therefore(결과), for example(예시)를 잡으면 방향을 놓치지 않는다. 4지선다에서는 빈칸의 품사와 논리, 동의어 문제에서는 바꿔 쓴 표현을 찾는다.
+:::formula 장문 읽기 공식
+[설문 먼저 훑기] => 무엇을 찾아야 하는지 알고 읽기
+[However / But / Yet] 뒤 => 필자의 진짜 주장 (밑줄·빈칸 정답 위치!)
+[For example / For instance] 뒤 => 앞 문장의 구체적 예 (앞 문장이 핵심)
+[Therefore / Thus / As a result] 뒤 => 결론·결과
+[내용일치] => 본문 근거 문장 ↔ 선택지 1:1 대조 (상식으로 고르기 금지!)
+:::
 
-## 개념 설명
-먼저 문장의 뼈대인 주어(행동이나 상태의 주인)와 동사(행동이나 상태를 나타내는 말)를 찾는다. *The effect of the drug on blood pressure was small*에서 주어는 *The effect*, 동사는 *was*이다. of와 on 뒤는 설명이다.
+## 신호등 연결어 표
 
-연결어(앞뒤 생각의 관계를 알려 주는 말)도 찾는다. *however*는 반대, *therefore*는 결과, *although*는 양보, *because*는 이유를 예고한다.
+| 신호 | 연결어 | 다음에 오는 내용 |
+|---|---|---|
+| 방향 전환 | \`However\`, \`But\`, \`Nevertheless\`, \`On the other hand\` | 반대 내용, 진짜 주장 |
+| 예시 | \`For example\`, \`For instance\`, \`such as\` | 앞 내용의 구체적 예 |
+| 추가 | \`In addition\`, \`Moreover\`, \`Also\` | 같은 방향 정보 더하기 |
+| 결과 | \`Therefore\`, \`Thus\`, \`As a result\`, \`Consequently\` | 원인에 따른 결론 |
+| 원인 | \`because\`, \`due to\`, \`since\` | 이유 |
 
-지시어(앞에서 나온 내용을 가리키는 말)도 표시한다. *this result*의 this는 앞의 결과를, *they*는 복수 명사를 가리킨다. *The treatment reduced pain. This suggests that...*에서 This는 통증 감소라는 결과다.
+:::train 신호등 따라 읽기
+Many people believe(통념:많은 사람이 믿는다) | vitamins prevent colds(내용:비타민이 감기를 예방한다고) => 일반적인 생각 (필자 주장 아님)
+However(빨간불:하지만) | recent studies(주어:최근 연구들은) | show little effect(동사+목적어:효과가 거의 없음을 보여 준다) => 진짜 주장: 비타민의 감기 예방 효과는 거의 없다
+Therefore(도착:따라서) | rest and sleep(주어:휴식과 수면이) | matter more(동사:더 중요하다) => 결론: 휴식과 수면이 더 중요하다
+:::
 
-반복어와 바꿔 쓰기도 찾는다. *drug, medicine, treatment*는 같은 대상을 가리키고, *reduce*는 *decrease*로 바뀐다. 빈칸은 뜻과 앞의 관사나 to, 뒤의 형태를 확인한다.
+:::transform 본문 표현 → 선택지 표현 (재진술)
+본문: The drug [may reduce] pain. || 정답 선택지: The drug [can help ease] pain. || 같은 뜻을 다른 단어로 바꾼 선택지가 정답입니다.
+본문: [Some] patients felt dizzy. || 오답 선택지: [All] patients felt dizzy. || some → all처럼 범위를 넓힌 선택지는 오답입니다.
+:::
 
-## 형태 정리
-| 표지 | 기본 뜻 | 읽을 방향 | 의약 지문 예 |
-|---|---|---|---|
-| however | 그러나 | 앞 주장과 반대 | However, the treatment caused nausea. |
-| therefore, thus | 그러므로, 따라서 | 앞 내용의 결과 | Therefore, the dose was reduced. |
-| because, since | 왜냐하면, ...이므로 | 뒤에 이유 | The trial stopped because patients felt dizzy. |
-| although, though | ...이지만 | 뒤에 양보할 내용 | Although the drug was effective, it was costly. |
-| for example | 예를 들어 | 뒤에 구체 사례 | For example, aspirin can reduce fever. |
-| in contrast | 대조적으로 | 앞뒤 차이 | In contrast, the control group improved slowly. |
-| this result | 이 결과 | 앞의 결과를 지시 | This result supports the hypothesis. |
-| lead to, result in | ...을 초래하다 | 원인에서 결과로 | The mutation led to drug resistance. |
+:::vs 내용일치 함정 O / X
+본문에 없는 상식 내용을 고른다 || 본문 근거 문장과 1:1로 대조해서 고른다 || 맞는 상식이어도 본문에 없으면 오답입니다.
+always / never / only / all이 들어간 선택지를 고른다 || 본문의 정도 표현(may, some, often)과 같은 선택지를 고른다 || 과장된 단어는 오답 신호입니다.
+:::
 
-## 예문으로 익히기
-1. **The effect of the drug on blood pressure was small.**
-   구조: The effect(주어: 핵심 명사) / of the drug on blood pressure(주어를 설명) / was(동사) / small(보어: 상태 설명)
-   해석: 그 약물이 혈압에 미친 효과는 작았다.
-   메모: of와 on 뒤가 아니라 effect와 was를 연결한다.
-
-2. **Although the medicine reduced pain, it caused nausea.**
-   구조: Although(양보 연결어) / the medicine(주어) / reduced(동사) / pain(목적어) / it(대명사: medicine) / caused(동사) / nausea(목적어)
-   해석: 그 약은 통증을 줄였지만 메스꺼움을 일으켰다.
-   메모: although 뒤의 좋은 효과와 주절의 부작용을 대조한다.
-
-3. **The student missed the bus; therefore, she arrived late.**
-   구조: The student(주어) / missed(동사) / the bus(목적어) / therefore(결과 연결어) / she(대명사: student) / arrived(동사) / late(부사)
-   해석: 그 학생은 버스를 놓쳤다. 따라서 늦게 도착했다.
-   메모: therefore 뒤는 앞 사건의 결과다.
-
-4. **Researchers examined a new vaccine that protects older adults.**
-   구조: Researchers(주어) / examined(동사) / a new vaccine(목적어) / that protects older adults(관계절: 백신을 설명)
-   해석: 연구자들은 고령자를 보호하는 새 백신을 조사했다.
-   메모: that절은 vaccine을 설명하고 본동사는 examined다.
-
-5. **For example, regular exercise may lower the risk of diabetes.**
-   구조: For example(예시 표지) / regular exercise(주어) / may lower(조동사+동사) / the risk(목적어) / of diabetes(위험의 대상)
-   해석: 예를 들어, 규칙적인 운동은 당뇨병 위험을 낮출 수 있다.
-   메모: for example 뒤는 일반 주장의 사례다.
-
-6. **The trial produced an unexpected result. This result requires further study.**
-   구조: The trial(주어) / produced(동사) / an unexpected result(목적어) / This result(앞 결과를 가리키는 주어) / requires(동사) / further study(목적어)
-   해석: 그 시험은 예상하지 못한 결과를 냈다. 이 결과는 추가 연구를 필요로 한다.
-   메모: This result는 앞 결과를 가리킨다.
-
-7. **In contrast, the control group showed no improvement.**
-   구조: In contrast(대조 표지) / the control group(주어) / showed(동사) / no improvement(목적어)
-   해석: 대조적으로, 대조군은 어떤 개선도 보이지 않았다.
-   메모: 두 집단을 비교.
-
-8. **Because the bacteria became resistant, the treatment no longer worked.**
-   구조: Because(이유 연결어) / the bacteria(주어) / became(동사) / resistant(보어) / the treatment(주어) / no longer worked(동사: 더 이상 효과가 없었다)
-   해석: 세균이 내성을 갖게 되었기 때문에 치료는 더 이상 효과가 없었다.
-   메모: because절은 이유, 주절은 결과다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. 긴 주어의 끝을 본동사로 착각한다. \`The effect of the drug were strong.\`은 틀리고 \`The effect of the drug was strong.\`이 맞다. effect가 단수이므로 was를 쓴다.
-2. however를 추가로 읽는다. \`The drug was cheap. However, it was effective.\`는 앞 내용과 반대되는 새 내용을 예고한다.
-3. this가 가장 가까운 명사만 가리킨다고 단정한다. \`The drug reduced pain, but it caused dizziness. This was unexpected.\`에서 This가 가리키는 범위를 앞뒤 의미로 확인한다.
-4. 예시를 결론으로 고른다. \`For example\` 뒤는 일반 주장의 사례다.
-5. 동의어만 보고 답을 고른다. *reduce*와 *decrease*가 비슷해도 빈칸 뒤 형태를 확인한다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式 독해에서는 약물의 장점 뒤 *However*의 부작용이나, 연구 결과 뒤 *This result*의 지시 대상을 묻는다. “The treatment reduced inflammation. However, it caused stomach pain.”의 핵심은 부작용이다.
-
-빈칸은 먼저 앞뒤를 본다. “The drug was effective, (　　) it caused severe side effects.”라면 반대이므로 *but*이나 *however* 계열을 고른다. 문단 전체에서 지시어를 확인하고 원인, 결과, 대조를 표시한다.
-
-## 3줄 요약
-1. 주어와 동사를 먼저 찾아 문장의 뼈대를 만든다.
-2. however, therefore, because 같은 연결어로 주장과 근거의 방향을 잡는다.
-3. 지시어와 동의어를 앞 문장에 연결하고, 빈칸은 문법과 문맥을 함께 확인한다.
-`,
+:::steps 장문 실전 3단계
+1. 설문 먼저 | 빈칸·밑줄·내용일치 설문을 먼저 훑어 찾을 것을 정합니다. | 빈칸 (A) 연결어
+2. 신호등 표시 | However, Therefore, For example에 동그라미를 칩니다. | However 뒤 = 주장
+3. 근거 대조 | 선택지마다 본문 근거 문장을 찾아 같은 뜻인지 확인합니다. | may reduce = can help ease
+:::`,
   quiz: [
     {
       prompt: "The new drug lowered the fever; (　　), it caused a skin rash.",

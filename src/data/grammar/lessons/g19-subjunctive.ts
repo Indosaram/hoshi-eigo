@@ -5,88 +5,48 @@ export const lesson: Lesson = {
   level: 3,
   title: "가정법",
   summary: "현실과 다른 조건을 말하는 가정법의 시제와 would have p.p.를 구별한다.",
-  body: `## 한 줄로 말하면
-가정법은 실제 사실과 다른 조건을 세워 그 결과를 말하는 문장으로, if절의 시제가 현실과의 거리를 보여 줍니다.
+  body: `:::analogy 가정법은 '현실과 반대로 상상할 때 시계를 한 칸 뒤로 돌리는 것'입니다
+"내가 지금 의사라면..." 실제로는 의사가 아니죠. 영어는 이렇게 **현실과 반대**인 상상을 할 때 동사를 **한 칸 과거**로 물립니다.
+지금 반대 → 과거형, 과거 반대 → \`had p.p.\`. 이 한 줄이 가정법의 전부입니다.
+:::
 
-## 왜 배우나요?
-의약 지문에서는 "만약 환자가 약을 중단했다면"처럼 일어나지 않은 상황의 결과를 설명할 때 가정법이 나옵니다. 빈칸 문제는 if 뒤 동사와 would를 묻고, 오류 찾기는 were와 had p.p.를 묻습니다. "If the drug were effective, ..."에서 현재 효과가 없다는 뜻을 읽으면 독해가 빨라집니다.
+:::formula 가정법 3대 공식
+가정법 과거 (지금 반대): [If + 주어 + 과거동사/were] + [주어 + would/could + 동사원형] => ~라면 …할 텐데
+가정법 과거완료 (과거 반대): [If + 주어 + had p.p.] + [주어 + would/could + have p.p.] => ~였다면 …했을 텐데
+혼합 가정법 (과거 원인 → 지금 결과): [If + had p.p.] + [would + 동사원형 + now] => 그때 ~했다면 지금 …할 텐데
+:::
 
-## 개념 설명
-먼저 조건절(if절, 조건을 세우는 절)과 주절(그 조건의 결과를 말하는 절)을 나눕니다. 가정법 과거는 현재 사실과 반대인 상상입니다. 이름에 과거가 들어가지만 과거 사건이 아니라 현실에서 물러난 표시입니다. ` + "`" + `If I were a doctor, I would help you.` + "`" + `는 내가 의사가 아니라는 뜻입니다. be동사는 누구여도 were를 씁니다.
+## 가정법 한눈에 비교
 
-가정법 과거완료는 과거 사실과 반대인 상상입니다. ` + "`" + `If the patient had taken the medicine, she would have recovered.` + "`" + `는 환자가 약을 먹지 않았다는 의미입니다. if절은 had p.p.(had와 과거분사로 만든 형태), 주절은 would have p.p.입니다. 과거분사(p.p., 동사의 세 번째 형태)는 taken처럼 씁니다.
-
-현재 결과와 과거 조건을 섞는 혼합 가정법도 있습니다. ` + "`" + `If he had followed the advice, he would be healthy now.` + "`" + `는 과거에 조언을 따르지 않아 지금 건강하지 않다는 뜻입니다. now를 보면 would have recovered와 구별됩니다.
-
-## 형태 정리
-
-| 현실과의 관계 | if절 | 주절 | 예시와 의미 |
+| 종류 | 실제 상황 | If절 | 주절 |
 |---|---|---|---|
-| 현재 사실의 반대 | If + 주어 + 과거동사, | 주어 + would + 동사원형 | If the drug were safe, we would use it. 약이 안전하지 않다 |
-| 현재 상상 | If + 주어 + were, | 주어 + would + 동사원형 | If I were you, I would ask a pharmacist. |
-| 과거 사실의 반대 | If + 주어 + had p.p., | 주어 + would have p.p. | If she had rested, she would have improved. |
-| 과거 원인과 현재 결과 | If + 주어 + had p.p., | 주어 + would + 동사원형 | If he had quit smoking, he would breathe better now. |
-| 도치형 | Had + 주어 + p.p., | 주어 + would have p.p. | Had the dose been lower, the reaction would have been mild. |
+| **가정법 과거** | 지금 사실이 아님 | \`If I were / knew\` | \`would + 동사원형\` |
+| **가정법 과거완료** | 과거에 사실이 아니었음 | \`If I had known\` | \`would have p.p.\` |
+| **I wish** | 이루기 어려운 소망 | \`I wish + 과거 / had p.p.\` | — |
+| **as if** | 마치 ~인 것처럼 | \`as if + 과거 / had p.p.\` | — |
 
-## 예문으로 익히기
+:::train 문장 블록 기차로 가정법 읽기
+If I were a doctor(If절:내가 의사라면) | I would help(주절:나는 도울 텐데) | more patients(목적어:더 많은 환자를) => 내가 의사라면 더 많은 환자를 도울 텐데. (실제로는 의사가 아님)
+If she had taken the medicine(If절:그녀가 그 약을 먹었더라면) | she would have recovered(주절:회복했을 텐데) | sooner(수식어:더 빨리) => 그녀가 약을 먹었더라면 더 빨리 회복했을 텐데. (실제로는 안 먹음)
+Without this vaccine(조건:이 백신이 없다면) | many people would die(주절:많은 사람이 죽을 것이다) => 이 백신이 없다면 많은 사람이 죽을 것이다.
+:::
 
-1. **If I were you, I would read the instructions first.**  
-   I(주어) / were(가정법 be동사) / you(보어) / I would read(주절: 읽을 텐데) / the instructions(목적어) / first(부사).  
-   내가 너라면 설명서를 먼저 읽을 텐데.  
-   나는 네가 아니므로 were와 would를 쓴다.
+:::transform If를 빼고 동사를 앞으로 보내는 도치
+If I [were] you, I would rest. || [Were] I you, I would rest. || If를 지우면 were가 주어 앞으로 나옵니다.
+If he [had known], he would have come. || [Had] he known, he would have come. || If를 지우면 Had가 주어 앞으로 나옵니다. 시험에 자주 나오는 모양입니다!
+:::
 
-2. **If it were sunny, we would walk to the station.**  
-   If it were sunny(현재 사실과 반대인 조건) / we(주어) / would walk(가정 결과) / to the station(방향).  
-   날씨가 맑다면 역까지 걸어갈 텐데.  
-   맑지 않다는 숨은 뜻을 찾는다.
+:::vs 가정법 단골 함정 O / X
+If I [know] the answer, I would tell you. || If I [knew] the answer, I would tell you. || 주절이 would + 원형이면 If절은 과거형(knew)입니다.
+If she had studied, she [would pass]. || If she had studied, she [would have passed]. || If절이 had p.p.이면 주절은 would have p.p.입니다.
+I wish I [can] speak Japanese. || I wish I [could] speak Japanese. || I wish 뒤 지금의 소망은 과거형(could)으로 씁니다.
+:::
 
-3. **If the pharmacist had checked the label, he would have prevented the error.**  
-   If the pharmacist(주어) / had checked(과거 반대 조건) / the label(목적어) / he would have prevented(과거 반대 결과) / the error(목적어).  
-   약사가 라벨을 확인했더라면 그 실수를 막았을 텐데.  
-   과거의 확인 여부이므로 had checked와 would have prevented를 짝지운다.
-
-4. **If the patient were allergic to penicillin, the doctor would choose another drug.**  
-   If the patient were allergic(현재 반대 조건) / to penicillin(알레르기 대상) / the doctor(주어) / would choose(결과) / another drug(목적어).  
-   환자가 페니실린에 알레르기가 있다면 의사는 다른 약을 고를 것이다.  
-   실제 알레르기 여부를 단정하지 않고 가정한다.
-
-5. **If the trial had included more participants, its result would have been stronger.**  
-   If the trial(주어) / had included(과거 반대 조건) / more participants(목적어) / its result(주어) / would have been(결과) / stronger(보어).  
-   그 임상시험에 참가자가 더 많았더라면 결과가 더 강력했을 텐데.  
-   끝난 trial을 가정하므로 과거완료다.
-
-6. **If I had taken the vaccine, I would feel safer now.**  
-   If I(주어) / had taken(과거 조건) / the vaccine(목적어) / I would feel(현재 결과) / safer(보어) / now(현재 시점).  
-   내가 백신을 맞았더라면 지금 더 안심할 텐데.  
-   had p.p.와 would 동사원형이 섞인 혼합 가정법이다.
-
-7. **Were the dose lower, the risk of toxicity would decrease.**  
-   Were the dose lower(If the dose were lower의 도치) / the risk(주어) / would decrease(결과) / of toxicity(독성의).  
-   용량이 더 낮다면 독성 위험이 줄어들 것이다.  
-   if를 없애고 were를 문장 맨 앞에 둔 형태다.
-
-8. **Had the nurse recorded the time, the doctor would have known the dose history.**  
-   Had the nurse recorded(If the nurse had recorded의 도치) / the time(목적어) / the doctor(주어) / would have known(과거 결과) / the dose history(목적어).  
-   간호사가 시간을 기록했더라면 의사는 투약 이력을 알았을 텐데.  
-   Had가 보이면 if절의 had p.p. 도치를 복원한다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **were를 was로 쓰기**: 틀림 \`If I was you, I would wait.\` / 맞음 \`If I were you, I would wait.\` 가정법의 be동사는 주어와 관계없이 were다.
-2. **would를 if절에 넣기**: 틀림 \`If the medicine would work, ...\` / 맞음 \`If the medicine worked, ...\` 일반적인 가정에서는 if절에 would를 쓰지 않는다.
-3. **과거 반대에 과거형만 쓰기**: 틀림 \`If she took the tablet, she would have recovered.\` / 맞음 \`If she had taken the tablet, she would have recovered.\` 과거 사실의 반대는 had p.p.다.
-4. **결과 시제 놓치기**: 틀림 \`If he had followed the plan, he would have be safe.\` / 맞음 \`... would have been safe.\` would have 뒤에는 p.p.가 온다.
-
-## 星薬 기출에서는 이렇게 나온다
-4지선다 빈칸에서는 먼저 if절의 시간을 찾습니다. \`If the patient (　　) the prescribed dose, the symptoms would have improved.\`처럼 would have improved가 보이면 과거의 반대이므로 had taken을 고릅니다. 주어가 단수인지보다 가정법의 시제가 우선입니다.
-
-오류 찾기에서는 \`If the compound was stable, it would be suitable for storage.\`의 was를 밑줄로 내고 묻는 식이 가능합니다. 현재 사실과 반대인 가정이므로 was가 아니라 were입니다. 단, 실제 과거 사건을 말하는 직설법이라면 was가 맞으므로 문맥의 now, today, would를 함께 확인합니다.
-
-## 3줄 요약
-1. 현재 사실 반대는 If + 과거형, would + 동사원형이며 be동사는 were다.
-2. 과거 사실 반대는 If + had p.p., would have p.p.다.
-3. now가 결과에 있으면 과거 조건과 현재 결과를 섞은 혼합 가정법을 의심한다.
-`,
+:::steps 가정법 빈칸 3초 풀이법
+1. 짝꿍 찾기 | If절과 주절 중 이미 보이는 쪽의 동사 모양을 봅니다. | would have p.p. 보임
+2. 시간 맞추기 | would + 원형이면 If절 과거형, would have p.p.이면 If절 had p.p. | → had p.p.
+3. now 단서 확인 | 주절에 now가 있으면 혼합 가정법(If had p.p. → would + 원형)입니다. | would be fine now
+:::`,
   quiz: [
     {
       prompt: "If I (　　) a pharmacist, I would explain the dosage carefully.",

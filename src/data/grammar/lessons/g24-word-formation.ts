@@ -5,93 +5,50 @@ export const lesson: Lesson = {
   level: 4,
   title: "접두사·접미사·어근으로 단어 추측",
   summary: "낯선 단어도 어근의 뜻과 접두사, 접미사의 품사를 나누어 보면 문장 속 의미와 정답을 추측할 수 있다.",
-  body: String.raw`## 한 줄로 말하면
-모르는 단어를 통째로 외우려 하지 말고, 앞에 붙은 접두사(뜻을 바꾸는 앞부분), 뒤에 붙은 접미사(품사나 뜻을 바꾸는 뒷부분), 가운데 어근(핵심 뜻)을 분리해 문장에 맞는 뜻을 잡는다.
+  body: `:::analogy 긴 영단어는 레고 블록 3개(앞조각 + 몸통 + 꼬리)로 만들어져 있습니다
+\`unpredictable\` = \`un\`(아님) + \`predict\`(예측하다) + \`able\`(~할 수 있는). 그래서 "예측할 수 없는"입니다.
+**앞조각은 뜻**을, **꼬리는 품사**를 알려 줍니다. 모르는 단어도 조각만 알면 뜻을 추측할 수 있습니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式의 빈칸과 독해에는 *effective*, *ineffective*, *safety*, *dangerous*처럼 같은 어근에서 나온 단어가 자주 보인다. 선택지 네 개가 *safe, safely, safety, unsafe*라면 문장에 필요한 품사와 긍정, 부정 뜻을 동시에 판단해야 한다. 의약 지문에서 *antibiotic*을 처음 만나도 *anti(반대, 대항)*와 *bio(생명)*를 보면 세균을 막는 약이라는 방향을 잡을 수 있다. 단어를 완벽히 번역하는 시험이 아니라, 빈칸 앞뒤의 역할과 단어 조각을 함께 읽는 시험이다.
+:::formula 단어 레고 공식
+[앞조각 (뜻 바꾸기)] + [몸통 (어근)] + [꼬리 (품사 결정)] => 새 단어
+꼬리 → 명사: [-tion / -ment / -ness / -ity / -ance]
+꼬리 → 형용사: [-ive / -ous / -able / -al / -ful / -less]
+꼬리 → 동사: [-ize / -ify / -en] / 꼬리 → 부사: [-ly]
+:::
 
-## 개념 설명
-**어근(root, 단어의 중심 뜻)**은 단어의 뼈대다. *act*는 “하다”, *med*는 “치료하다, 약”이라는 뜻을 품는다. **접두사(prefix, 어근 앞에 붙는 조각)**는 방향이나 부정을 더한다. *un-*은 “반대, 아닌”, *re-*는 “다시”, *pre-*는 “미리”, *anti-*는 “대항”이다. 그래서 *inactive*는 “활동하지 않는”, *recheck*는 “다시 확인하다”가 된다.
+## 의약 지문 필수 앞조각·몸통
 
-**접미사(suffix, 어근 뒤에 붙는 조각)**는 뜻을 넓히거나 품사(명사, 동사, 형용사, 부사처럼 단어의 역할을 나누는 분류)를 알려 준다. *-ness, -tion, -ity*는 대개 명사, *-ful, -less, -ous, -ive*는 대개 형용사, *-ly*는 대개 부사다. *safe → safety*는 “안전함”, *care → careful*은 “주의 깊은”, *quick → quickly*는 “빠르게”다.
+| 조각 | 뜻 | 예 |
+|---|---|---|
+| \`anti-\` | 반대·대항 | \`antibiotic\` 항생제, \`antibody\` 항체 |
+| \`pre-\` | 미리 | \`prevent\` 예방하다, \`prescribe\` 처방하다 |
+| \`re-\` | 다시 | \`recover\` 회복하다, \`relapse\` 재발 |
+| \`over- / under-\` | 지나치게 / 부족하게 | \`overdose\` 과다 복용, \`underweight\` 저체중 |
+| \`un- / in- / dis-\` | 아님·반대 | \`unknown\`, \`insufficient\`, \`disorder\` |
+| \`bio\` / \`cardi\` / \`neur\` | 생명 / 심장 / 신경 | \`biology\`, \`cardiac\`, \`neuron\` |
 
-먼저 빈칸 자리를 본다. 관사 *a, an, the* 뒤에는 보통 명사, 명사 앞에는 형용사, 일반 동사를 꾸미는 자리에는 부사가 온다. 그다음 어근으로 기본 뜻을 잡고 접두사로 방향을, 접미사로 품사를 확인한다. 마지막으로 문장 전체의 긍정, 부정과 의약 문맥을 맞춘다. 조각의 뜻만 더해 기계적으로 번역하면 안 된다. *inflammation*은 단순히 “안 + 형성”이 아니라 “염증”이라는 전문어다.
+:::train 단어 레고 분해하기
+anti(앞조각:대항) | bio(몸통:생명·균) | tic(꼬리:명사/형용사) => antibiotic = 항생제 (균에 대항하는 것)
+in(앞조각:아님) | effect(몸통:효과) | ive(꼬리:형용사) => ineffective = 효과 없는
+over(앞조각:지나치게) | dose(몸통:복용량) => overdose = 과다 복용
+:::
 
-## 형태 정리
+:::transform 꼬리만 바꾸면 품사가 바뀝니다
+effect (명사: 효과) || effective (형용사: 효과적인) → effectively (부사: 효과적으로) || 빈칸 자리에 맞는 꼬리를 고르면 됩니다.
+sufficient (충분한) || insufficient (불충분한) || 앞조각 in-이 붙으면 뜻이 반대가 됩니다.
+:::
 
-| 조각 | 주된 뜻 또는 역할 | 실제 단어 | 문장 속 뜻 |
-|---|---|---|---|
-| un- | 아닌, 반대 | unsafe | 안전하지 않은 |
-| in-, im-, il-, ir- | 아닌, 반대 | ineffective, impossible | 효과 없는, 불가능한 |
-| re- | 다시 | retest | 다시 검사하다 |
-| pre- | 미리, 앞 | preoperative | 수술 전의 |
-| anti- | 대항하는 | antibiotic | 항생제 |
-| -ness, -ity | 형용사를 명사로 | illness, safety | 병, 안전성 |
-| -tion, -ment | 행위나 결과인 명사 | treatment, development | 치료, 개발 |
-| -ful, -less | 가득한, 없는 형용사 | useful, harmless | 유용한, 해롭지 않은 |
-| -ive, -ous | 성질을 가진 형용사 | effective, dangerous | 효과적인, 위험한 |
-| -ly | 동작의 방식인 부사 | carefully | 주의 깊게 |
+:::vs 꼬리 함정 O / X
+The treatment was very [effect]. || The treatment was very [effective]. || be동사 뒤 보어는 형용사 꼬리(-ive)입니다.
+The [prevent] of disease is important. || The [prevention] of disease is important. || The 뒤 주어 자리는 명사 꼬리(-tion)입니다.
+:::
 
-## 예문으로 익히기
-
-1. **The treatment was ineffective for this patient.**  
-The treatment(주어) / was(동사) / ineffective(형용사 보어: 효과 없는) / for this patient(대상)  
-그 치료는 이 환자에게 효과가 없었다.  
-*in-*의 부정과 *effect*의 핵심 뜻을 합치고, be동사 뒤 형용사를 고른다.
-
-2. **The nurse checked the patient's temperature carefully.**  
-The nurse(주어) / checked(동사) / the patient's temperature(목적어) / carefully(부사: 확인 방식을 설명)  
-간호사는 환자의 체온을 주의 깊게 확인했다.  
-동사 *checked*를 꾸미므로 *careful*이 아니라 *carefully*가 온다.
-
-3. **The new medicine is safer than the old one.**  
-The new medicine(주어) / is(동사) / safer(형용사 비교급) / than the old one(비교 대상)  
-새 약은 기존 약보다 더 안전하다.  
-*safe*의 비교급은 *safeer*가 아니라 끝의 e를 없앤 *safer*다.
-
-4. **Researchers retested the sample after storage.**  
-Researchers(주어) / retested(동사) / the sample(목적어) / after storage(시간)  
-연구자들은 보관 후 그 검체를 다시 검사했다.  
-앞의 *re-*가 “다시”라는 뜻을 더해 *test*를 한 번 더 했다는 뜻이 된다.
-
-5. **This drug may cause dangerous side effects.**  
-This drug(주어) / may cause(동사) / dangerous side effects(목적어: 위험한 부작용)  
-이 약은 위험한 부작용을 일으킬 수 있다.  
-명사 *side effects* 앞자리이므로 *danger*의 명사보다 형용사 *dangerous*가 맞다.
-
-6. **The safety of the vaccine was carefully evaluated.**  
-The safety of the vaccine(주어) / was evaluated(수동태 동사) / carefully(부사)  
-그 백신의 안전성은 주의 깊게 평가되었다.  
-전치사 *of* 뒤의 *the vaccine*이 아니라 문장 주어인 *safety*가 명사다.
-
-7. **Antibiotics are used against bacterial infections.**  
-Antibiotics(주어) / are used(수동태 동사) / against bacterial infections(대상)  
-항생제는 세균 감염에 사용된다.  
-*anti-*는 “대항”이고 *bio*는 “생명”과 관련되어 약의 기능을 추측하게 한다.
-
-8. **The patient recovered slowly after the operation.**  
-The patient(주어) / recovered(동사) / slowly(부사: 회복 속도) / after the operation(시간)  
-환자는 수술 후 천천히 회복했다.  
-동사 *recovered*를 설명하는 자리라서 형용사 *slow*가 아니라 부사 *slowly*를 쓴다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **품사를 보지 않는 실수**: The drug is **safety**. 는 틀리다. be동사 뒤 설명 자리에는 형용사가 필요하므로 The drug is **safe**. 가 맞다.
-2. **부정 접두사를 겹치는 실수**: *unpossible*보다 **impossible**이 표준형이다. *in-*은 p 앞에서 *im-*으로 바뀌는 경우가 있다.
-3. **접미사만 보고 뜻을 확정하는 실수**: *-ly*가 항상 부사는 아니다. *friendly*는 “친절한”이라는 형용사이므로 The nurse was **friendly**가 맞다.
-4. **어근의 철자만 보고 선택하는 실수**: *medicine*과 *medical*은 같은 영역이지만, *medical advice*처럼 명사 앞에는 형용사 *medical*이 필요하다.
-5. **부정의 방향을 놓치는 실수**: *harmless*는 “해로운”이 아니라 “해가 없는”이다. *-less*를 보면 어근의 뜻이 없다는 방향으로 읽는다.
-
-## 星薬 기출에서는 이렇게 나온다
-
-B方式의 빈칸은 “The new drug proved highly (　　) in reducing pain.”처럼 문장 안에 품사 단서를 숨긴다. *proved* 뒤에서 상태를 설명하고 *highly*가 형용사를 꾸미므로 *effective*를 고른다. *effectiveness*는 명사라서 맞지 않는다. 또 “The sample was stored (　　) to prevent contamination.”처럼 동사의 방식을 묻기도 한다. *stored*를 꾸미는 부사 자리이므로 *properly*를 고른다. 선택지의 어근이 같으면 먼저 빈칸의 자리, 다음으로 긍정과 부정, 마지막으로 어근 뜻을 확인한다.
-
-## 3줄 요약
-
-1. 앞의 접두사는 부정, 반복, 대항 같은 방향을 더한다.
-2. 뒤의 접미사는 품사와 뜻을 알려 주므로 빈칸의 자리를 먼저 본다.
-3. 어근으로 뜻을 추측한 뒤 문장 전체와 의약 문맥으로 최종 확인한다.`,
+:::steps 모르는 단어 3초 추측법
+1. 꼬리 보고 품사 | -tion이면 명사, -ive면 형용사, -ly면 부사 | -ous → 형용사
+2. 앞조각 보고 방향 | un/in/dis면 반대 뜻, re면 다시, pre면 미리 | dis- → 반대
+3. 몸통 + 문맥 | 아는 몸통과 앞뒤 문장으로 뜻을 정합니다. | disorder = 질서가 깨진 것 = 질환
+:::`,
   quiz: [
     {
       prompt: "The new treatment was highly (　　) in reducing pain.",

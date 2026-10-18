@@ -5,86 +5,50 @@ export const lesson: Lesson = {
   level: 2,
   title: "접속사: 등위·종속",
   summary: "접속사는 단어와 절을 이어 주며, 등위 접속사는 같은 자격을, 종속 접속사는 이유와 조건 같은 관계를 보여 줍니다.",
-  body: `## 한 줄로 말하면
-접속사(conjunction)는 단어, 구, 절을 이어서 문장 사이의 관계를 보여 주는 연결 표지입니다.
+  body: `:::analogy 접속사는 두 문장을 이어 주는 '논리 다리'입니다
+문장 두 개를 그냥 나란히 놓으면 왜 이어지는지 알 수 없습니다.
+사이에 **\`because\`(원인 다리)**, **\`although\`(반대 다리)**, **\`if\`(조건 다리)**를 놓으면 앞 문장과 뒤 문장이 어떤 관계인지 즉시 드러납니다.
+:::
 
-## 왜 배우나요?
-의약 지문에서는 원인, 조건, 대조가 압축됩니다. **because**는 원인, **although**는 대조를 알려 독해 속도를 높입니다. 빈칸은 앞뒤 관계를 먼저 정합니다. 오류에서는 **because ... so** 중복을 확인합니다.
+:::formula 접속사 vs 전치사 1초 판별 공식 (시험 출제 1순위!)
+[접속사 (because / although / while)] + [주어 + 동사] => 뒤에 동사가 있으면 무조건 접속사!
+[전치사 (because of / despite / during)] + [명사 덩어리] => 뒤에 동사가 없으면 무조건 전치사!
+[명령문, and ~ (그러면)] vs [명령문, or ~ (그렇지 않으면)]
+[unless (= if ~ not)] => ~하지 않으면 (이미 not이 들어 있어 뒤에 또 not을 쓰지 않음!)
+:::
 
-## 개념 설명
-절(clause)은 주어와 동사를 갖춘 작은 문장입니다. 접속사는 이 절들을 이어 붙입니다. 등위 접속사(coordinating conjunction, 같은 자격의 요소를 잇는 접속사)는 **and**(그리고), **but**(그러나), **or**(또는), **so**(그래서), **yet**(하지만)를 씁니다. 두 절이 모두 중요하고 나란히 서 있습니다.
+## 시험 최빈출 접속사 vs 전치사 짝꿍 표
 
-종속 접속사(subordinating conjunction, 한 절을 더 중요한 절에 딸리게 하는 접속사)는 시간, 이유, 조건, 양보를 표시합니다. 종속절(subordinate clause, 혼자서는 중심 문장이 되기 어려운 절)은 앞이나 뒤에 오며, 앞에 오면 보통 쉼표를 씁니다. **Because the patient was tired, she rested.**에서 앞 절은 이유, 뒤 절은 중심 내용입니다. “왜냐하면”, “만약”, “비록”을 붙여 관계를 확인하세요.
+| 논리 의미 | **접속사** (+ 주어 + 동사) | **전치사** (+ 명사 / \`-ing\`) |
+|---|---|---|
+| **이유 (~ 때문에)** | \`because\`, \`since\`, \`as\`, \`now that\` | \`because of\`, \`due to\`, \`owing to\`, \`thanks to\` |
+| **양보 (비록 ~이지만)** | \`although\`, \`though\`, \`even though\` | \`despite\`, \`in spite of\` |
+| **시간 (~하는 동안)** | \`while\` (+ 주어 + 동사) | \`during\` (+ 기간 명사) |
+| **조건 (~한다면 / ~않으면)** | \`if\`, \`unless\`(~하지 않으면), \`as long as\` | \`without\` (~ 없이는) |
 
-**because**는 이유, **if**는 조건, **when**은 시간, **although**는 양보를 나타냅니다. **unless**는 “if ... not”, 즉 “~하지 않는 한”입니다. 접속사 뒤에는 보통 주어와 동사가 있는 절이 옵니다. 반면 **because of** 뒤에는 명사가 옵니다.
+:::train 문장 블록 기차로 논리 다리 건너기
+Although(양보 접속사:비록 ~이지만) | the medicine tastes bitter(주어+동사:약이 쓴맛이 나지만) | it works quickly(주절:그것은 빠르게 듣는다) => 비록 약이 쓰지만 빠르게 효과가 나타난다.
+Despite(전치사:~에도 불구하고) | the bitter taste(명사 덩어리:쓴맛에도 불구하고) | the medicine works quickly(주절:약은 빠르게 듣는다) => 쓴맛에도 불구하고 약은 빠르게 효과가 나타난다.
+Take this pill now(명령문:지금 이 알약을 드세요) | or(등위접속사:그렇지 않으면) | the pain will get worse(결과:통증이 더 심해질 것입니다) => 지금 이 알약을 드세요, 그렇지 않으면 통증이 심해질 것입니다.
+:::
 
-## 형태 정리
-| 관계 | 접속사 | 뒤에 오는 형태 | 예문 |
-|---|---|---|---|
-| 추가 | and | 절 / 단어 | The drug is safe **and** effective. |
-| 대조 | but, yet | 절 / 단어 | It is small **but** powerful. |
-| 선택 | or | 절 / 단어 | Take a tablet **or** use the liquid. |
-| 결과 | so | 결과 절 | The dose was high, **so** the doctor changed it. |
-| 이유 | because | 주어 + 동사 | We stopped **because** the patient coughed. |
-| 조건 | if, unless | 주어 + 동사 | **If** pain continues, call us. |
-| 시간 | when, while | 주어 + 동사 | Wash hands **before** you eat. |
-| 양보 | although | 주어 + 동사 | **Although** it is bitter, the medicine works. |
+:::transform 상관접속사 짝꿍과 수일치
+[both A and B] (A와 B 둘 다) => 항상 복수 동사! || Both the doctor and the nurse [are] kind.
+[not only A but also B] / [either A or B] / [neither A nor B] => 동사에서 가까운 [B]에 수일치! || Either the doctor or the nurses [are] coming.
+[so + 형용사 + that 주어 + 동사] => 너무 ~해서 …하다 || The fever was [so] high [that] he could not sleep.
+:::
 
-## 예문으로 익히기
-1. **The nurse checked the dose, and the pharmacist confirmed it.**  
-The nurse(주어) / checked(동사) / the dose(목적어) / and(등위 접속사) / the pharmacist(주어) / confirmed(동사) / it(목적어)  
-간호사는 용량을 확인했고 약사는 그것을 확인했다.  
-두 절이 나란히 이어지므로 **and**입니다.
+:::vs 접속사 vs 전치사 단골 함정 O / X
+[Although] the heavy rain, the clinic opened on time. || [Despite] the heavy rain, the clinic opened on time. || the heavy rain에는 동사가 없으므로 접속사(Although)가 아니라 전치사(Despite)를 씁니다.
+The trial was delayed [because] a lack of patients. || The trial was delayed [because of / due to] a lack of patients. || a lack of patients는 명사 덩어리이므로 전치사 because of나 due to가 맞습니다.
+Unless you [don't take] the medicine, you won't get better. || Unless you [take] the medicine, you won't get better. || unless 안에 이미 부정의 뜻(if ~ not)이 들어 있으므로 뒤에 don't를 중복해서 쓰지 않습니다.
+:::
 
-2. **The tablet is small but easy to swallow.**  
-The tablet(주어) / is(동사) / small(보어) / but(등위 접속사) / easy(보어) / to swallow(수식어)  
-그 정제는 작지만 삼키기 쉽다.  
-작다는 사실과 삼키기 쉽다는 사실의 대조를 **but**이 나타냅니다.
-
-3. **Because the patient had a fever, the doctor ordered a test.**  
-Because(종속 접속사) / the patient(주어) / had(동사) / a fever(목적어) / the doctor(주어) / ordered(동사) / a test(목적어)  
-환자에게 열이 있었기 때문에 의사는 검사를 지시했다.  
-앞 절이 뒤 절의 이유이므로 **because**를 씁니다.
-
-4. **If the label is unclear, ask the pharmacist.**  
-If(조건 접속사) / the label(주어) / is(동사) / unclear(보어) / ask(동사) / the pharmacist(목적어)  
-라벨이 분명하지 않으면 약사에게 물어보라.  
-**If** 뒤의 조건이 성립할 때 뒤의 행동을 합니다.
-
-5. **Although the drug is expensive, it may reduce hospital visits.**  
-Although(양보 접속사) / the drug(주어) / is(동사) / expensive(보어) / it(주어) / may reduce(동사) / hospital visits(목적어)  
-그 약은 비싸지만 병원 방문을 줄일 수도 있다.  
-비싸다는 예상과 좋은 효과를 함께 보여 주는 양보입니다.
-
-6. **The patient rested while the medicine took effect.**  
-The patient(주어) / rested(동사) / while(시간 접속사) / the medicine(주어) / took effect(동사)  
-약효가 나타나는 동안 환자는 쉬었다.  
-**while** 뒤에는 동시에 진행되는 절이 옵니다.
-
-7. **The sample was contaminated, so the laboratory repeated the test.**  
-The sample(주어) / was contaminated(동사) / so(결과 접속사) / the laboratory(주어) / repeated(동사) / the test(목적어)  
-검체가 오염되었으므로 검사실은 검사를 반복했다.  
-앞 절의 결과가 뒤 절에 나오므로 **so**를 고릅니다.
-
-8. **Unless the symptoms improve, the patient should return tomorrow.**  
-Unless(조건 접속사) / the symptoms(주어) / improve(동사) / the patient(주어) / should return(동사) / tomorrow(수식어)  
-증상이 좋아지지 않는 한 환자는 내일 다시 와야 한다.  
-**unless** 자체에 부정 의미가 있어 뒤에 별도의 **not**을 쓰지 않습니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. **because**와 **because of**를 섞지 마세요. Wrong: **Because of the patient was tired, she rested.** Right: **Because the patient was tired, she rested.** **because** 뒤에는 절, **because of** 뒤에는 명사가 옵니다.
-2. **although**와 **but**을 함께 쓰지 않습니다. Wrong: **Although the drug is cheap, but it is effective.** Right: **Although the drug is cheap, it is effective.**
-3. **so**와 **because**는 방향이 다릅니다. Wrong: **Because the sample was contaminated, so we repeated it.** Right: **Because the sample was contaminated, we repeated it.** 또는 **The sample was contaminated, so we repeated it.**
-4. **unless** 뒤에는 보통 긍정형을 씁니다. Wrong: **Unless you do not take the drug, ...** Right: **Unless you take the drug, ...** “복용하지 않는 한”이라고 말하려면 **if you do not take**를 씁니다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸은 앞뒤 절의 논리를 읽게 합니다. **The medicine caused nausea, (　　) the doctor lowered the dose.**는 결과이므로 **so**, **(　　) the medicine caused nausea, the doctor lowered the dose.**는 이유이므로 **Because**입니다. 빈칸 뒤가 완전한 절인지 확인하고 관계를 표시하세요. 오류 문제에서는 **Although A, but B**, **Because A, so B**를 찾습니다.
-
-## 3줄 요약
-1. **and, but, or, so**는 같은 자격의 말이나 절을 잇습니다.
-2. **because, if, when, although, unless**는 이유, 조건, 시간, 양보를 나타냅니다.
-3. 접속사 뒤의 절과 앞뒤 관계를 확인하세요.
-`,
+:::steps 접속사 빈칸 3초 풀이법
+1. 뒤의 동사 유무 스캔 | 빈칸 뒤(쉼표 전까지)에 시제가 있는 동사가 있으면 접속사, 명사만 있으면 전치사를 남깁니다. | 동사 있음 = 접속사
+2. 앞뒤 분위기 화살표 비교 | 앞뒤가 순방향(원인→결과)이면 because, 역방향(칭찬↔단점)이면 although/despite를 고릅니다. | 강하다 ↔ 안전하다 = although
+3. 짝꿍 단어 찾기 | both ~ and, either ~ or, neither ~ nor, not A but B 짝을 확인합니다. | neither A nor B
+:::`,
   quiz: [
     {
       prompt: "The patient felt dizzy, (　　) the nurse helped him sit down.",

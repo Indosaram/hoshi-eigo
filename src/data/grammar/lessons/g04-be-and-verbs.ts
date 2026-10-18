@@ -5,99 +5,50 @@ export const lesson: Lesson = {
   level: 1,
   title: "be동사와 일반동사, 부정문과 의문문",
   summary: "be동사는 상태와 존재를, 일반동사는 행동을 나타내며 부정문과 의문문에서 만드는 방식이 다릅니다.",
-  body: String.raw`
-## 한 줄로 말하면
-영어 문장은 먼저 be동사인지 일반동사인지 구별하고, 일반동사의 부정문과 의문문에는 do, does, did를 빌려 씁니다.
+  body: `:::analogy be동사는 직접 뛰는 선수, 일반동사는 도우미를 부르는 감독입니다
+영어 동사는 딱 두 팀으로 나뉩니다.
+**be동사(am, are, is, was, were)**는 몸이 가벼워 의문문에서 직접 주어 앞으로 뛰어 나가고, 뒤에 \`not\`만 붙이면 부정문이 됩니다.
+반면 **일반동사(take, work, have 등)**는 자리를 비우지 않고 **도우미(do, does, did)**를 앞으로 내보낸 뒤 자기 자신은 **동사원형**으로 돌아갑니다.
+:::
 
-## 왜 배우나요?
-의약품 설명서나 짧은 독해에서 **The tablet is safe.**처럼 상태를 말하는 문장과 **The tablet reduces pain.**처럼 작용을 말하는 문장이 함께 나옵니다. 빈칸에서는 is와 reduces를, 오류 찾기에서는 *does not reduces* 같은 조합을 고르게 합니다.
+:::formula 부정문·의문문 조립 공식
+be동사 부정문: [주어] + [am/are/is/was/were] + [not] => 바로 뒤에 not 부착
+be동사 의문문: [Am/Are/Is/Was/Were] + [주어] + ~ ? => be동사가 맨 앞으로 이동
+일반동사 부정문: [주어] + [do/does/did not] + [동사원형] => 도우미 출동 + 동사원형!
+일반동사 의문문: [Do/Does/Did] + [주어] + [동사원형] ~ ? => 도우미가 맨 앞으로 + 동사원형!
+:::
 
-## 개념 설명
-**be동사**는 사람이나 사물의 상태, 신분, 위치, 존재를 연결해 주는 동사입니다. 현재형은 주어에 따라 **am, is, are**, 과거형은 **was, were**입니다. 뒤에는 **보어(주어가 어떤 것인지 설명하는 말)**가 올 수 있습니다. *The patient is calm.*에서 *calm*은 환자의 상태를 설명합니다. 장소를 말할 때도 *The sample is in the tube.*처럼 씁니다.
+## be동사 vs 일반동사 한눈에 비교
 
-**일반동사**는 먹다, 복용하다, 연구하다처럼 실제 행동이나 작용을 나타내는 동사입니다. *The nurse checks the dose.*에서 *checks*가 행동입니다. 현재형에서 주어가 he, she, it 또는 한 사람이나 한 사물이면 동사 끝에 보통 **s**를 붙입니다. 다만 **do, does, did**가 이미 시제와 주어를 맡으면 뒤의 일반동사는 반드시 기본형으로 돌아갑니다.
+| 구분 | be동사 (\`am / are / is / was / were\`) | 일반동사 (\`take / work / study ...\`) |
+|---|---|---|
+| **뜻** | ~이다, ~에 있다, (어떠)하다 | 먹다, 일하다, 줄이다 등 구체적 동작 |
+| **3인칭 단수 현재** | \`is\` (과거는 \`was\`) | 동사 끝에 \`-s / -es\` (\`takes\`, \`goes\`) |
+| **부정문 만들기** | \`is not\`, \`were not\` | \`does not + 원형\`, \`did not + 원형\` |
+| **의문문 만들기** | \`Is + 주어 ~ ?\` | \`Does/Did + 주어 + 원형 ~ ?\` |
 
-부정문은 “아니다” 또는 “하지 않는다”라고 말합니다. be동사는 뒤에 **not**을 바로 붙이고, 일반동사는 **do not, does not, did not + 기본형**을 씁니다. 의문문은 be동사를 주어 앞에 놓고, 일반동사는 **Do, Does, Did + 주어 + 기본형?**으로 시작합니다. 영어는 질문에서 앞부분의 순서가 바뀝니다.
+:::train 문장 블록 기차로 어순 비교하기
+The clinic(주어:의원은) | is not(be동사+부정:아니다) | open(보어:문 연 상태가) | on Sundays(수식어:일요일에) => 의원은 일요일에 문을 열지 않는다.
+The patient(주어:환자는) | does not(도우미+부정:~하지 않는다) | have(동사원형:가지고 있다) | a fever(목적어:열을) => 환자는 열이 없다.
+Did(과거 도우미:~했나요?) | the medicine(주어:그 약이) | reduce(동사원형:줄이다) | the pain(목적어:통증을) => 그 약이 통증을 줄였나요?
+:::
 
-## 형태 정리
+:::transform 평서문이 부정문·의문문으로 변신할 때
+She [takes] the pill. || She [does not take] the pill. || 3인칭 단수 -s를 도우미(does)가 가져가므로 뒤 동사는 원형(take)이 됩니다!
+The symptom [started] yesterday. || [Did] the symptom [start] yesterday? || 과거 표시(-ed)를 도우미(Did)가 가져가므로 뒤 동사는 원형(start)이 됩니다!
+:::
 
-| 뜻과 문장 종류 | 주어 | 올바른 형태 | 예시 |
-|---|---|---|---|
-| 현재 상태 | I | am | I am ready. |
-| 현재 상태 | he, she, it, 단수 명사 | is | The drug is effective. |
-| 현재 상태 | you, we, they, 복수 명사 | are | The drugs are effective. |
-| 과거 상태 | I, he, she, it, 단수 명사 | was | The patient was stable. |
-| 과거 상태 | you, we, they, 복수 명사 | were | The results were clear. |
-| 현재 일반동사 긍정 | I, you, we, they | 동사 기본형 | They monitor blood pressure. |
-| 현재 일반동사 긍정 | he, she, it, 단수 명사 | 동사+s | The nurse monitors blood pressure. |
-| 현재 일반동사 부정 | he, she, it | does not + 기본형 | The drug does not cause fever. |
-| 과거 일반동사 부정 | 모든 주어 | did not + 기본형 | The study did not show risk. |
-| 현재 일반동사 의문 | he, she, it | Does + 주어 + 기본형? | Does the drug work? |
+:::vs be동사·일반동사 흔한 실수 O / X
+She does not [takes] the medicine. || She does not [take] the medicine. || does에 이미 3인칭 단수가 표시되었으므로 뒤에는 동사원형(take)만 옵니다.
+Did the pain [stopped] last night? || Did the pain [stop] last night? || Did에 과거가 표시되었으므로 뒤에는 동사원형(stop)을 씁니다.
+The patient [is not know] the dose. || The patient [does not know] the dose. || be동사(is)와 일반동사 원형(know)은 나란히 쓸 수 없습니다.
+:::
 
-## 예문으로 익히기
-
-1. **I am a pharmacy student.**  
-   I(주어) / am(be동사) / a pharmacy student(보어)  
-   나는 약학과 학생이다.  
-   신분을 설명하므로 일반동사 study가 아니라 be동사를 씁니다.
-
-2. **The capsules are in the cabinet.**  
-   The capsules(주어) / are(be동사) / in the cabinet(장소를 나타내는 말)  
-   캡슐들은 수납장 안에 있다.  
-   capsules가 복수이므로 is가 아니라 are입니다.
-
-3. **The doctor checks the patient's pulse.**  
-   The doctor(주어) / checks(일반동사) / the patient's pulse(목적어)  
-   의사는 환자의 맥박을 확인한다.  
-   doctor가 한 사람이므로 현재 일반동사 check에 s를 붙입니다.
-
-4. **This medicine does not treat bacterial infections.**  
-   This medicine(주어) / does not treat(부정문: does not + 기본형) / bacterial infections(목적어)  
-   이 약은 세균 감염을 치료하지 않는다.  
-   does가 있으므로 treats가 아니라 treat를 써야 합니다.
-
-5. **Are the test results reliable?**  
-   Are(be동사) / the test results(주어) / reliable(보어)  
-   검사 결과는 신뢰할 만한가?  
-   be동사 문장은 be동사를 주어 앞으로 옮겨 의문문을 만듭니다.
-
-6. **Does the patient take the tablet after meals?**  
-   Does(의문 조동사) / the patient(주어) / take(일반동사 기본형) / the tablet(목적어) / after meals(시간을 나타내는 말)  
-   환자는 식후에 그 정제를 복용하는가?  
-   does 뒤에서는 takes가 아닌 take를 사용합니다.
-
-7. **The researcher was not at the clinic yesterday.**  
-   The researcher(주어) / was not(be동사 과거 부정) / at the clinic(장소) / yesterday(과거 시간)  
-   연구자는 어제 병원에 있지 않았다.  
-   과거의 단수 주어 researcher에는 was not을 씁니다.
-
-8. **The volunteers did not report serious side effects.**  
-   The volunteers(주어) / did not report(과거 일반동사 부정) / serious side effects(목적어)  
-   지원자들은 심각한 부작용을 보고하지 않았다.  
-   did가 과거를 표시하므로 reported가 아니라 report입니다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. be동사와 일반동사를 한 문장에 겹쳐 쓰지 않습니다. **The patient is take the medicine.**은 틀리고 **The patient takes the medicine.** 또는 **The patient is taking the medicine.**이 맞습니다.
-
-2. does 뒤에 s를 또 붙이지 않습니다. **The drug does not reduces pain.**은 틀리고 **The drug does not reduce pain.**이 맞습니다. does가 이미 단수 현재의 표시를 맡습니다.
-
-3. 일반동사 의문문에서 be동사를 쓰지 않습니다. **Is the nurse check the dose?**는 틀리고 **Does the nurse check the dose?**가 맞습니다. check가 행동이므로 does를 사용합니다.
-
-4. 주어 수에 맞춰 be동사를 고릅니다. **The tablets is safe.**는 틀리고 **The tablets are safe.**가 맞습니다. tablets가 복수이기 때문입니다.
-
-5. 과거 부정문에는 did not 뒤 기본형을 씁니다. **The trial did not showed improvement.**은 틀리고 **The trial did not show improvement.**이 맞습니다.
-
-## 星薬 기출에서는 이렇게 나온다
- B方式의 빈칸은 길게 설명하지 않고 주어와 동사를 멀리 떨어뜨려 놓습니다. 예를 들어 *The new tablets (　　) effective in patients with mild asthma.*라면 tablets가 복수이고 상태를 말하므로 **are**를 고릅니다. *The treatment (　　) not reduce the symptom.*이라면 treatment가 단수인 일반동사 문장이므로 **does**를 고르고, 뒤에는 reduce 기본형이 옵니다.
-
-오류 찾기에서는 밑줄 부분을 따로 보지 말고 조합 전체를 확인합니다. *The nurse / does not / checks / the patient's temperature*라면 does not과 checks가 충돌합니다. 정답은 **check**입니다. 단어 배열은 먼저 *Does the drug work*처럼 조동사, 주어, 기본형 동사의 뼈대를 만든 뒤 목적어와 장소를 붙입니다.
-
-## 3줄 요약
-1. be동사는 상태, 신분, 위치를 말하고 주어에 따라 am, is, are, was, were를 고릅니다.
-2. 행동을 나타내는 일반동사는 현재 단수 주어에서 s를 붙이지만, do, does, did 뒤에서는 기본형을 씁니다.
-3. be동사는 앞으로 보내고 일반동사는 do, does, did를 앞에 세워 부정문과 의문문을 만듭니다.
-`,
+:::steps 동사 자리 오류 3초 점검법
+1. 동사 종류 구별 | 문장의 본동사가 상태(be동사)인지 동작(일반동사)인지 먼저 봅니다. | know = 일반동사
+2. 도우미 뒤 원형 확인 | do / does / did 뒤에는 반드시 -s나 -ed가 없는 동사원형인지 확인합니다. | did not stop (O)
+3. 주어 수 확인 | 현재시제에서 주어가 he/she/it/단수명사이면 is 또는 동사+s인지 확인합니다. | The drug works (O)
+:::`,
   quiz: [
     {
       prompt: "The new vaccine (　　) safe for most adults.",

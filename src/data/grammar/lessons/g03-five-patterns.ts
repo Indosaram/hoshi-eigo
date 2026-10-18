@@ -5,87 +5,53 @@ export const lesson: Lesson = {
   level: 1,
   title: "문장의 5형식",
   summary: "동사의 뒤에 무엇이 필요한지 보고 영어 문장의 뼈대를 읽는다.",
-  body: `## 한 줄로 말하면
-영어 문장은 동사가 요구하는 자리를 기준으로 1형식부터 5형식까지 나뉘며, 동사 뒤에 목적어가 있는지와 목적어를 설명하는 말이 있는지를 먼저 확인하면 된다.
+  body: `:::analogy 동사마다 뒤에 데리고 다니는 기차 칸 수가 다릅니다
+어떤 동사는 혼자서도 말이 끝나고(1형식), 어떤 동사는 뒤에 대상을 꼭 붙여야 하며(3형식), 어떤 동사는 대상과 그 대상의 상태까지 두 칸을 붙여야 합니다(5형식).
+즉 **동사가 문장의 설계도**를 결정합니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式의 빈칸 문제에서는 동사 뒤에 명사 하나가 필요한지, 목적어 뒤에 설명하는 말이 필요한지를 알아야 선택지를 좁힐 수 있다. 의약 지문에서도 \`The drug reduced pain\`처럼 약이 무엇을 줄였는지 읽고, \`The drug made patients sleepy\`처럼 환자를 어떤 상태로 만들었는지 읽어야 한다. 단어를 하나씩 번역하기보다 문장의 뼈대를 먼저 잡으면 긴 문장의 주체와 영향을 받는 대상을 놓치지 않는다.
+:::formula 5형식 기차 설계도
+1형식: [주어 S] + [동사 V] => 주어 혼자 움직임 (예: Pain disappeared.)
+2형식: [주어 S] + [동사 V] + [보어 C] => 주어 = 보어 상태 (예: The pill tastes bitter.)
+3형식: [주어 S] + [동사 V] + [목적어 O] => 주어 ≠ 목적어 대상 (예: She took the pill.)
+4형식: [주어 S] + [동사 V] + [누구에게 IO] + [무엇을 DO] => 주는 동사 (예: He gave me a chart.)
+5형식: [주어 S] + [동사 V] + [목적어 O] + [목적격보어 C] => 목적어 = 보어 상태 (예: It makes me sleepy.)
+:::
 
-## 개념 설명
-문장 성분은 문장 안에서 맡은 자리이다. 주어(동작이나 상태의 주인), 동사(동작이나 상태를 나타내는 말), 목적어(동작의 대상), 보어(주어 또는 목적어를 설명해 완성하는 말)를 찾는다. 수식어(시간, 장소, 방법처럼 뼈대에 덧붙는 말)는 5형식의 핵심 자리에 들어가지 않는다.
+## 1형식~5형식 핵심 동사 표
 
-1형식은 주어와 동사만으로 끝난다. \`The patient slept.\`에서 환자가 잔다는 뜻이 완성된다. 2형식은 주어, 동사, 주격보어의 순서이다. 주격보어(주어가 무엇인지 설명하는 말)는 주어와 같은 대상을 가리킨다. \`The tablet is small.\`에서 tablet과 small은 같은 대상을 설명한다.
+| 형식 | 어순 구조 | 구별 비법 | 星薬 시험 단골 동사 |
+|---|---|---|---|
+| **1형식** | \`S + V\` (+ 수식어) | 뒤에 명사 목적어가 없음 | \`appear\`, \`disappear\`, \`happen\`, \`occur\`, \`work(효과가 있다)\` |
+| **2형식** | \`S + V + C(형용사)\` | **주어 = 보어** (\`-ly\` 부사 금지!) | \`be\`, \`become\`, \`remain\`, \`stay\`, \`feel\`, \`look\`, \`sound\` |
+| **3형식** | \`S + V + O\` | 전치사 없이 바로 목적어! | \`discuss(~을 논의하다)\`, \`enter\`, \`reach\`, \`mention\` |
+| **4형식** | \`S + V + 사람 + 물건\` | 누구에게 + 무엇을 연달아 두 개 | \`give\`, \`offer\`, \`show\`, \`tell\`, \`teach\`, \`prescribe\` |
+| **5형식** | \`S + V + O + C\` | **목적어 = 보어** (상태·행동) | \`make/keep/find + O + 형용사\`, \`allow/advise/cause + O + to V\` |
 
-3형식은 주어, 동사, 목적어이다. 목적어는 동작을 받으므로 주어와 다른 대상이다. \`The nurse checked the label.\`에서 간호사가 확인한 대상은 label이다. 4형식은 주어, 동사, 간접목적어, 직접목적어이다. 간접목적어(무엇을 받는 사람)와 직접목적어(전달되는 것)가 함께 온다. \`The pharmacist gave the patient advice.\`에서 patient가 받는 사람이고 advice가 전달되는 내용이다.
+:::train 5형식 문장 블록 기차로 비교하기
+The symptom(주어:증상이) | disappeared(1형식 동사:사라졌다) | within an hour(수식어:1시간 안에) => 증상이 1시간 안에 사라졌다.
+The patient(주어:환자는) | remained(2형식 동사:유지되었다) | calm(보어:차분한 상태로) => 환자는 차분한 상태를 유지했다.
+The doctor(주어:의사는) | gave(4형식 동사:주었다) | the child(간접목적어:아이에게) | warm water(직접목적어:따뜻한 물을) => 의사는 아이에게 따뜻한 물을 주었다.
+The doctor(주어:의사는) | advised(5형식 동사:권했다) | the patient(목적어:환자에게) | to rest(목적격보어:쉬라고) => 의사는 환자에게 쉬라고 권했다.
+:::
 
-5형식은 주어, 동사, 목적어, 목적격보어의 순서이다. 목적격보어(목적어가 어떤 것인지 설명하는 말)는 목적어를 설명한다. \`The medicine made him sleepy.\`에서 him과 sleepy는 같은 사람을 가리킨다. 한국어로는 조사와 어순이 비교적 자유롭지만, 영어는 동사 뒤 자리의 순서가 의미를 결정한다. 따라서 먼저 동사를 동그라미 치고, 뒤의 명사가 목적어인지 보어인지 묻는다.
+:::transform 시험에 잘 나오는 형식 변신
+4형식: The nurse gave [the patient] [a mask]. || 3형식: The nurse gave [a mask] [to the patient]. || 물건(a mask)을 먼저 쓰면 사람 앞에 전치사(to/for)가 생깁니다.
+사역동사: The medicine made the pain [disappear]. || 일반 5형식: The medicine caused the pain [to disappear]. || make/let/have 뒤에는 동사원형, cause/allow/advise 뒤에는 [to + 동사원형]을 씁니다.
+:::
 
-## 형태 정리
-| 형식 | 뼈대 | 뒤의 자리 | 핵심 질문 | 예문 |
-|---|---|---|---|---|
-| 1형식 | S + V | 없음, 수식어는 가능 | 누가 무엇을 했나? | The patient recovered. |
-| 2형식 | S + V + C | 주격보어 | 주어는 어떤가, 무엇인가? | The sample is pure. |
-| 3형식 | S + V + O | 목적어 | 동작의 대상은 무엇인가? | We measured the dose. |
-| 4형식 | S + V + IO + DO | 받는 사람 + 전달물 | 누구에게 무엇을 주나? | She sent me the report. |
-| 5형식 | S + V + O + OC | 목적어 설명 | 목적어를 어떤 상태로 만드나? | The drug kept him calm. |
+:::vs 5형식 단골 함정 O / X
+The medicine tastes [bitterly]. || The medicine tastes [bitter]. || 감각동사(taste, feel, look, sound) 뒤에는 주어 상태를 설명하는 형용사(bitter)가 옵니다.
+We discussed [about] the treatment. || We discussed the treatment. || discuss, enter, reach, marry는 3형식 동사라 전치사(about, into, to, with)를 붙이지 않습니다.
+Caffeine keeps people [awaken / awakefully]. || Caffeine keeps people [awake]. || keep + 목적어 + 형용사(보어) 구조이므로 형용사 awake가 맞습니다.
+The doctor let the patient [to go] home. || The doctor let the patient [go] home. || 사역동사 make, have, let 뒤 목적격보어는 to 없는 동사원형입니다.
+:::
 
-여기서 S는 주어(subject), V는 동사(verb), O는 목적어(object), C는 보어(complement)라는 약자이다. 전치사(명사 앞에서 관계를 보여 주는 말)가 있는지도 살핀다. \`She gave the report to me.\`는 \`to me\`가 전치사구이므로 학교 문법에서는 3형식으로 보는 경우가 많고, \`She gave me the report.\`는 4형식이다.
-
-## 예문으로 익히기
-1. **The patient recovered quickly.**  
-The patient(주어) / recovered(동사) / quickly(수식어)  
-환자는 빠르게 회복했다.  
-Note: quickly를 빼도 문장의 뼈대가 남으므로 1형식이다.
-
-2. **The capsule is safe.**  
-The capsule(주어) / is(동사) / safe(주격보어: 캡슐 설명)  
-그 캡슐은 안전하다.  
-Note: safe는 행동의 대상이 아니라 capsule의 상태를 설명한다.
-
-3. **The researcher recorded the temperature.**  
-The researcher(주어) / recorded(동사) / the temperature(목적어)  
-연구자는 온도를 기록했다.  
-Note: recorded의 대상이 the temperature이므로 3형식이다.
-
-4. **The pharmacist gave the customer a receipt.**  
-The pharmacist(주어) / gave(동사) / the customer(간접목적어: 받는 사람) / a receipt(직접목적어: 전달물)  
-약사는 고객에게 영수증을 주었다.  
-Note: 사람 뒤에 물건이 오면 누구에게 무엇을 주는지 확인한다.
-
-5. **The treatment made the patient comfortable.**  
-The treatment(주어) / made(동사) / the patient(목적어) / comfortable(목적격보어: 환자 설명)  
-그 치료는 환자를 편안하게 했다.  
-Note: comfortable은 treatment가 아니라 patient의 상태를 설명한다.
-
-6. **The doctor found the result unusual.**  
-The doctor(주어) / found(동사) / the result(목적어) / unusual(목적격보어: 결과 설명)  
-의사는 그 결과가 특이하다고 판단했다.  
-Note: find가 여기서 발견하다가 아니라 목적어를 어떤 상태라고 판단하다라는 5형식이다.
-
-7. **The nurse opened the window after lunch.**  
-The nurse(주어) / opened(동사) / the window(목적어) / after lunch(수식어)  
-간호사는 점심 식사 후에 창문을 열었다.  
-Note: 시간 표현은 뼈대에 덧붙은 수식어이며 목적격보어가 아니다.
-
-8. **The study showed that the drug reduced inflammation.**  
-The study(주어) / showed(동사) / that the drug reduced inflammation(목적어인 명사절: 연구가 보여 준 내용)  
-그 연구는 그 약물이 염증을 줄였다는 것을 보여 주었다.  
-Note: 목적어가 한 단어가 아니라 절이어도 동사의 대상이면 3형식이다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. 보어와 목적어를 바꾸지 않는다. **The medicine is effective**에서 effective는 주어 설명인 보어이다. **The medicine affected the liver**에서 the liver는 영향을 받은 목적어이다.
-2. 4형식의 두 목적어 순서를 지킨다. **The nurse gave the patient the dose**는 맞지만 **The nurse gave the dose the patient**는 틀리다. 물건을 먼저 쓰면 **gave the dose to the patient**처럼 to가 필요하다.
-3. 5형식의 보어는 목적어를 설명한다. **The news made the patient worried**가 맞고, worried가 news를 설명하는 것으로 읽으면 안 된다.
-4. 수식어를 보어로 세지 않는다. **The patient stayed in bed**의 in bed는 장소 수식어이다. stay는 여기서 환자가 침대에 있었다는 1형식으로 읽는다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸에서는 먼저 주어와 동사를 찾은 뒤, 동사 뒤 명사의 수를 세면 된다. 예를 들어 **The new drug made the symptoms (　　).**에서는 symptoms가 목적어이고, made가 목적어 뒤 설명을 요구하므로 **less severe** 같은 목적격보어가 들어간다. **The pharmacist gave the patient (　　).**에서는 patient가 받는 사람이므로 그 뒤에는 a leaflet처럼 전달물이 온다. 선택지의 품사를 보기 전에 이 자리부터 정하면 해석 실수가 줄어든다.
-
-## 3줄 요약
-1. 1형식은 S+V, 2형식은 S+V+C, 3형식은 S+V+O이다.
-2. 4형식은 누구에게 무엇을, 5형식은 목적어를 어떤 상태로이다.
-3. 동사 뒤 명사를 찾고, 뒤의 말이 목적어인지 설명인지 확인한다.
-`,
+:::steps 동사 뒤 빈칸 3초 판별법
+1. 동사 종류 확인 | 빈칸 앞 동사가 감각동사(feel), 유지동사(keep), 권유동사(advise), 사역동사(make)인지 봅니다. | advised the patient (　　)
+2. 주어·목적어 관계 확인 | 빈칸이 주어/목적어의 상태 설명이면 형용사, 행동 지시이면 to V / 동사원형을 고릅니다. | advise + 목적어 + to V
+3. 전치사 함정 체크 | discuss, reach, enter 뒤에 불필요한 전치사가 붙어 있으면 오답으로 지웁니다. | discussed about (X)
+:::`,
   quiz: [
     {
       prompt: "The medicine (　　) the patient's pain.",

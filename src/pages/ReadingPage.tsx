@@ -1,10 +1,11 @@
-import { ArrowLeft, BookOpen, Microscope, PencilLine } from "lucide-react";
+import { ArrowLeft, BookOpen, Microscope, PencilLine, Sparkles } from "lucide-react";
 import { Segmented, btn } from "../components/ui";
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { readings } from "../data";
 import { Md } from "../components/Md";
 import { QuizCard } from "../components/Quiz";
+import { SlashPlayer } from "../components/VisualBlocks";
 
 export default function ReadingPage() {
   const { id } = useParams();
@@ -44,9 +45,14 @@ export default function ReadingPage() {
             <details key={i + String(openAll)} open={openAll} className="group rounded-xl bg-white border border-slate-200 p-4 shadow-sm">
               <summary className="flex cursor-pointer list-none gap-3 en text-[16px]"><span className="mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-md bg-stone-100 font-sans text-xs font-bold text-slate-500 tnum group-open:bg-slate-900 group-open:text-white">{i + 1}</span><span className="flex-1">{b.en}</span></summary>
               <div className="reveal mt-3 space-y-3 border-t border-slate-200 pt-3 text-sm sm:pl-9">
-                <p><span className="font-semibold text-indigo-700">끊어 읽기</span><br /><span className="en">{b.slash}</span></p>
-                <p><span className="font-semibold text-indigo-700">해석</span><br />{b.ko}</p>
-                <div><span className="font-semibold text-indigo-700">문법 구조</span><Md text={b.grammar} /></div>
+                <SlashPlayer slash={b.slash} ko={b.ko} />
+                <div className="rounded-xl border border-indigo-200 bg-indigo-50/60 p-3.5">
+                  <p className="flex items-center gap-1.5 text-xs font-bold text-indigo-800 mb-1">
+                    <Sparkles aria-hidden className="size-3.5" />
+                    문법 구조 한눈에 보기
+                  </p>
+                  <Md text={b.grammar} />
+                </div>
               </div>
             </details>
           ))}

@@ -1,117 +1,246 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { ArrowRight, Clock, FileCheck2, Target, Trophy, Users } from "lucide-react";
 import { papers } from "../data";
-import { Md } from "../components/Md";
 import { PageTitle } from "../components/ui";
 
-const KIND: Record<string, string> = { grammar: "빈칸 문법·어휘", paraphrase: "의미가 가까운 표현", error: "틀린 곳 찾기", relation: "단어 관계", ordering: "정렬(並べ替え)", dialogue: "회화문", reading: "장문독해" };
+const KIND: Record<string, string> = { grammar: "빈칸 문법·어휘", paraphrase: "의미가 가까운 표현", error: "틀린 곳 찾기", relation: "단어 관계", ordering: "정렬", dialogue: "회화문", reading: "장문독해" };
+const KIND_COLOR: Record<string, string> = {
+  grammar: "bg-indigo-600",
+  paraphrase: "bg-sky-500",
+  error: "bg-rose-500",
+  relation: "bg-violet-500",
+  ordering: "bg-amber-500",
+  dialogue: "bg-teal-500",
+  reading: "bg-emerald-600",
+};
 
-const BASICS = `
-## 1. B방식은 어떤 시험인가?
+function useInView<T extends HTMLElement>() {
+  const ref = useRef<T>(null);
+  const [seen, setSeen] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => e.isIntersecting && setSeen(true), { threshold: 0.3 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  return { ref, seen };
+}
 
-| 항목 | 내용 |
-|---|---|
-| 대상 | 薬学部 **薬学科(6년제)** · 創薬科学科(4년제) — 영어 문제는 두 학과 **공통** |
-| 시험 과목 | 영어 100점 · 수학 100점 · 화학 100점 (3과목 동일 배점) |
-| 영어 시험 시간 | **70분** (2026년도: 14:40~15:50) |
-| 답안 방식 | 전부 **마크시트**(번호 고르기) — 영작·서술형 없음 |
-| 출제 범위 | 英語コミュニケーションⅠ·Ⅱ·Ⅲ, 論理・表現Ⅰ·Ⅱ·Ⅲ (= 고교 영어 전 범위) |
-| 대문(大問) 수 | 최근 3년 모두 **I~IX, 9개** |
-| 합격선(참고) | 학원 분석으로는 **65% 전후** 득점이면 합격권 |
+function Section({ n, title, lead, children }: { n: number; title: string; lead?: string; children: React.ReactNode }) {
+  return (
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm">
+      <div className="flex items-center gap-2.5">
+        <span className="inline-flex size-7 items-center justify-center rounded-lg bg-slate-900 text-sm font-bold text-white tnum">{n}</span>
+        <h2 className="text-lg sm:text-xl font-bold text-slate-900">{title}</h2>
+      </div>
+      {lead && <p className="mt-1.5 text-sm text-slate-600">{lead}</p>}
+      <div className="mt-5">{children}</div>
+    </section>
+  );
+}
 
-> **B방식은 대학 독자 시험만으로 뽑는 방식**이고 정원도 가장 많습니다. A방식(共通テスト만), S방식(共通テスト+독자 화학)에서는 영어 독자 시험이 없습니다. 즉, **星薬 독자 영어 시험을 보는 일반선발은 B방식뿐**입니다.
+const FACTS = [
+  { icon: Clock, k: "시험 시간", v: "70분", s: "영어만 따로" },
+  { icon: FileCheck2, k: "답안", v: "전부 마크시트", s: "번호만 고르면 끝" },
+  { icon: Target, k: "배점", v: "100점", s: "영어·수학·화학 같은 비중" },
+  { icon: Trophy, k: "목표선", v: "약 65%", s: "학원 분석 기준" },
+];
 
-## 2. 실제 경쟁률 (대학 공식 「最近3ヵ年の入試結果」)
+const RESULTS = [
+  { y: 2026, apply: 1337, take: 1296, pass: 437, rate: "3.0" },
+  { y: 2025, apply: 1361, take: 1308, pass: 371, rate: "3.5" },
+  { y: 2024, apply: 1287, take: 1246, pass: 413, rate: "3.0" },
+];
 
-一般選抜 **B方式 · 薬学科(6년제)**
+function CompetitionChart() {
+  const { ref, seen } = useInView<HTMLDivElement>();
+  const max = 1400;
+  return (
+    <div ref={ref} className="space-y-4">
+      {RESULTS.map((r) => (
+        <div key={r.y}>
+          <div className="flex items-baseline justify-between text-sm">
+            <span className="font-bold text-slate-900 tnum">{r.y}년</span>
+            <span className="text-slate-600">경쟁률 <b className="text-lg text-indigo-700 tnum">{r.rate}배</b></span>
+          </div>
+          <div className="mt-1.5 space-y-1">
+            <div className="relative h-6 rounded-md bg-stone-100 overflow-hidden">
+              <div className="h-full rounded-md bg-slate-300 transition-[width] duration-700 ease-spring" style={{ width: seen ? `${(r.take / max) * 100}%` : "0%" }} />
+              <span className="absolute inset-y-0 left-2 flex items-center text-xs font-semibold text-slate-800 tnum">응시 {r.take.toLocaleString()}명</span>
+            </div>
+            <div className="relative h-6 rounded-md bg-stone-100 overflow-hidden">
+              <div className="h-full rounded-md bg-emerald-300 transition-[width] duration-700 delay-150 ease-spring" style={{ width: seen ? `${(r.pass / max) * 100}%` : "0%" }} />
+              <span className="absolute inset-y-0 left-2 flex items-center text-xs font-semibold text-emerald-950 tnum">합격 {r.pass}명</span>
+            </div>
+          </div>
+        </div>
+      ))}
+      <div className="flex items-center gap-3 rounded-xl bg-indigo-50 p-3.5">
+        <div className="flex shrink-0 gap-1" aria-hidden>
+          <Users className="size-6 text-emerald-600" />
+          <Users className="size-6 text-slate-300" />
+          <Users className="size-6 text-slate-300" />
+        </div>
+        <p className="text-sm text-indigo-950">정원은 120명이지만 합격자는 약 400명입니다. <b>시험 본 사람 3명 중 1명</b>이 붙는다고 보면 됩니다.</p>
+      </div>
+    </div>
+  );
+}
 
-| 연도 | 모집인원 | 지원자 | 응시자 | 합격자 | 경쟁률(응시/합격) |
-|---|---|---|---|---|---|
-| 2026 | 120 | 1,337 | 1,296 | 437 | **3.0배** |
-| 2025 | 120 | 1,361 | 1,308 | 371 | **3.5배** |
-| 2024 | 120 | 1,287 | 1,246 | 413 | **3.0배** |
+function Blueprint() {
+  const [year, setYear] = useState(papers[0].year);
+  const p = papers.find((x) => x.year === year) ?? papers[0];
+  const total = p.sections.reduce((a, s) => a + s.questions.length, 0);
+  const [hover, setHover] = useState<string | null>(null);
+  const cur = p.sections.find((s) => s.roman === hover);
+  return (
+    <div>
+      <div className="inline-flex rounded-xl bg-stone-100 p-1 text-xs mb-4" role="group" aria-label="연도 선택">
+        {papers.map((x) => (
+          <button key={x.year} type="button" aria-pressed={year === x.year} onClick={() => setYear(x.year)} className={"rounded-lg px-3 py-1.5 font-bold tnum " + (year === x.year ? "bg-white text-slate-900 shadow-2xs" : "text-slate-600")}>
+            {x.year}
+          </button>
+        ))}
+      </div>
+      <div key={year} className="spring-pop flex h-16 w-full overflow-hidden rounded-xl">
+        {p.sections.map((s) => (
+          <button
+            key={s.roman}
+            type="button"
+            onMouseEnter={() => setHover(s.roman)}
+            onFocus={() => setHover(s.roman)}
+            onClick={() => setHover(s.roman)}
+            style={{ width: `${(s.questions.length / total) * 100}%` }}
+            className={"flex flex-col items-center justify-center border-r-2 border-white text-white transition " + KIND_COLOR[s.kind] + (hover && hover !== s.roman ? " opacity-50" : "")}
+          >
+            <span className="font-serif text-sm font-bold">{s.roman}</span>
+            <span className="text-[10px] tnum">{s.questions.length}</span>
+          </button>
+        ))}
+      </div>
+      <p className="mt-3 min-h-10 rounded-lg bg-stone-50 px-3 py-2 text-sm text-slate-700">
+        {cur ? (
+          <><b className="font-serif">{cur.roman}</b> · {KIND[cur.kind]} · <span className="tnum">{cur.questions.length}문항</span> — {cur.instructionKo}</>
+        ) : (
+          <>막대 칸 하나가 대문 하나입니다. 칸 너비는 문항 수에 비례합니다. 칸을 눌러 보세요. (총 <span className="tnum">{total}</span>문항)</>
+        )}
+      </p>
+      <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-slate-600">
+        {Object.entries(KIND).map(([k, v]) => (
+          <span key={k} className="inline-flex items-center gap-1.5"><span className={"size-2.5 rounded-sm " + KIND_COLOR[k]} />{v}</span>
+        ))}
+      </div>
+      <Link to={`/papers/${year}`} className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-indigo-700 hover:underline">{year}년 기출 풀러 가기 <ArrowRight aria-hidden className="size-3.5" /></Link>
+    </div>
+  );
+}
 
-> 정원은 120명이지만 합격자는 400명 전후입니다(다른 대학과 병행 지원하는 사람이 많기 때문). 즉 **응시자 3명 중 1명**이 붙는 시험입니다. 합격 최저점은 대학이 공표하지 않으며, 학원 분석으로는 3과목 합계 **65% 전후**가 목표선으로 알려져 있습니다.
+const TIME = [
+  { label: "I~III 문법·어휘·오류", min: 15, color: "bg-indigo-600", tip: "1문제 1분. 모르면 찍고 넘어가기" },
+  { label: "IV 짧은 글 빈칸", min: 12, color: "bg-sky-500", tip: "빈칸 앞뒤 + 역접·인과 확인" },
+  { label: "V 정렬", min: 6, color: "bg-amber-500", tip: "동사 먼저, 덩어리로 묶기" },
+  { label: "VI~IX 장문", min: 32, color: "bg-emerald-600", tip: "설문 먼저 보고 본문 읽기" },
+  { label: "검토", min: 5, color: "bg-slate-400", tip: "마킹 누락·밀림 확인" },
+];
 
-## 3. 문제 구성 (최근 3개년 공통 흐름)
+function TimeBar() {
+  const { ref, seen } = useInView<HTMLDivElement>();
+  const [i, setI] = useState(3);
+  let acc = 0;
+  return (
+    <div ref={ref}>
+      <div className="flex h-12 w-full overflow-hidden rounded-xl bg-stone-100">
+        {TIME.map((t, k) => (
+          <button
+            key={t.label}
+            type="button"
+            onClick={() => setI(k)}
+            aria-pressed={i === k}
+            className={"flex items-center justify-center border-r-2 border-white text-xs font-bold text-white transition-[width,opacity] duration-700 ease-spring " + t.color + (i !== k ? " opacity-60" : "")}
+            style={{ width: seen ? `${(t.min / 70) * 100}%` : "0%", transitionDelay: `${k * 90}ms` }}
+          >
+            <span className="tnum">{t.min}분</span>
+          </button>
+        ))}
+      </div>
+      <div className="mt-1 flex justify-between text-[11px] text-slate-500 tnum">
+        {[0, ...TIME.map((t) => (acc += t.min))].map((m) => <span key={m}>{m}</span>)}
+      </div>
+      <div key={i} className="spring-pop mt-3 flex items-start gap-3 rounded-xl border border-slate-200 bg-stone-50 p-3.5">
+        <span className={"mt-1 size-3 shrink-0 rounded-full " + TIME[i].color} />
+        <div>
+          <p className="font-bold text-slate-900">{TIME[i].label} <span className="tnum text-indigo-700">{TIME[i].min}분</span></p>
+          <p className="text-sm text-slate-600">{TIME[i].tip}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-| 대문 | 형식 | 문항 수 | 이 사이트에서 공부할 곳 |
-|---|---|---|---|
-| I | 빈칸에 들어갈 단어·문법 4지선다 | 약 9 | 문법 1~3단계, 어휘 |
-| II | 밑줄 친 단어·숙어와 의미가 가장 가까운 것 | 3~4 | 어휘·숙어 |
-| III | 문법적으로 틀린 곳 찾기 | 약 3 | 제26강 오류 찾기 전략 |
-| IV | 짧은 의학·과학 글 3개, 빈칸 채우기 | 약 12 | 의약 장문, 제12강 접속사 |
-| V | 정렬(並べ替え): 일본어 뜻에 맞게 단어 배열 | 약 3 | 제25강 정렬 전략 |
-| VI~IX | 장문독해(의약·생명과학), 빈칸·내용일치 | 각 2~5 | 의약 장문, 제27강 |
-
-※ 연도별 정확한 구성은 아래 표(사이트 수록 데이터에서 자동 집계)를 보세요. 年에 따라 대문 순서·문항 수가 조금씩 바뀝니다.
-
-## 4. 출제 경향 핵심 5가지
-
-1. **문법은 기초~표준 레벨의 전형 문제.** 고교 문법 문제집을 3회독 하면 충분하다는 분석이 많습니다. 다만 *단어 뜻*을 묻는 문제(I번 상당수)가 섞여 있어 어휘력이 중요합니다.
-2. **숙어(구동사)가 자주 나온다.** turn in(자러 가다), see eye to eye(의견이 일치하다), more often than not(대개) 처럼 **단어 하나하나 뜻으로는 알 수 없는 표현**을 통째로 외워야 합니다.
-3. **장문은 짧지만 개수가 많다.** 1편당 150~300단어 정도의 의학·약학·생명과학 글이 여러 편. 전문 용어에는 **주석(注)이 달려 있으므로** 어려운 전문 단어를 따로 외울 필요는 적습니다.
-4. **내용일치 문제의 비중이 커지는 중.** "본문에 쓰여 있는 것은?" 형태 — 반드시 본문의 근거 문장과 1:1로 대조해야 합니다.
-5. **시간 배분이 승부.** 대문이 9개나 되므로 앞쪽 문법에서 고민하다 시간을 날리면 뒤쪽 장문을 못 풉니다.
-
-## 5. 추천 시간 배분 (70분)
-
-| 구간 | 목표 시간 | 요령 |
-|---|---|---|
-| I~III (문법·어휘·오류) | 15분 | 1문제 1분 이내. 모르면 찍고 표시 후 넘어가기 |
-| IV (짧은 글 빈칸) | 12분 | 빈칸 앞뒤 + 문장 전체 논리(역접·인과) 확인 |
-| V (정렬) | 6분 | 먼저 주어+동사를 찾고 덩어리로 묶기 |
-| VI~IX (장문) | 32분 | 설문을 먼저 훑고 본문을 읽기 |
-| 검토 | 5분 | 마크 누락·밀림 확인 |
-
-## 6. 문법 0인 사람의 합격 로드맵 (요약)
-
-1. **1~2개월차**: 문법 1·2단계(제1~12강) + 필수동사 60개. 이 단계에서는 "문장을 주어/동사/목적어로 쪼갤 수 있다"가 목표.
-2. **3~4개월차**: 문법 3단계(제13~22강) + 숙어 70개 + 의약 장문 1~3편.
-3. **5개월차**: 문법 4단계(실전 전략) + 의약 장문 4~6편 + 의약·과학 어휘.
-4. **6개월차~**: 기출 2024 → 2025 → 2026 순서로 **70분 타이머 실전**, 틀린 문제는 "관련 문법 강의" 링크로 복습.
-
-자세한 주 단위 계획은 [학습 로드맵](#/plan) 페이지를 보세요.
-`;
+const TRENDS = [
+  { t: "문법은 기본 수준", d: "고교 문법 문제집 수준의 전형 문제가 나옵니다.", to: "/grammar" },
+  { t: "숙어가 자주 나온다", d: "turn in, see eye to eye처럼 통째로 외워야 하는 표현이 나옵니다.", to: "/vocab" },
+  { t: "장문은 짧고 많다", d: "150~300단어 의학·생명과학 글이 여러 편. 전문 용어에는 주석이 붙습니다.", to: "/reading" },
+  { t: "내용일치가 늘고 있다", d: "본문 근거 문장과 선택지를 1:1로 대조해야 합니다.", to: "/grammar/g27-reading-strategy" },
+  { t: "시간 배분이 승부", d: "대문이 9개라 앞에서 시간을 쓰면 뒤 장문을 못 풉니다.", to: "/papers" },
+];
 
 export default function Guide() {
   return (
-    <div className="mx-auto max-w-4xl">
-      <PageTitle kicker="시험 분석" title="星薬科大学 一般選抜B方式 英語 완전 분석" />
-      <div className="rounded-2xl bg-white border border-slate-200 p-5 sm:p-8 shadow-sm">
-        <Md text={BASICS} />
-        <h2 className="text-xl font-bold text-slate-900 mt-9 mb-3 pb-2 border-b border-slate-200">7. 연도별 실제 구성 (사이트 수록 기출 기준)</h2>
-        <div className="grid gap-4 md:grid-cols-3">
-          {papers.map((p) => (
-            <div key={p.year} className="rounded-xl border border-slate-200 bg-stone-50 p-4">
-              <Link to={`/papers/${p.year}`} className="font-bold text-indigo-700">{p.year}年度 →</Link>
-              <table className="w-full text-sm mt-2">
-                <tbody>
-                  {p.sections.map((s) => (
-                    <tr key={s.roman} className="border-t">
-                      <td className="py-1 pr-2 font-semibold">{s.roman}</td>
-                      <td className="py-1">{KIND[s.kind]}</td>
-                      <td className="py-1 text-right text-slate-500">{s.questions.length}</td>
-                    </tr>
-                  ))}
-                  <tr className="border-t font-bold">
-                    <td colSpan={2} className="py-1">합계</td>
-                    <td className="py-1 text-right">{p.sections.reduce((a, s) => a + s.questions.length, 0)}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+    <div className="mx-auto max-w-4xl space-y-6">
+      <PageTitle kicker="시험 분석" title="星薬科大学 一般選抜B方式 英語, 그림으로 한눈에">
+        薬学科(6년제) B방식은 대학이 직접 만든 시험으로 뽑습니다. 영어 문제는 6년제·4년제 공통입니다.
+      </PageTitle>
+
+      <div className="grid gap-3 grid-cols-2 lg:grid-cols-4">
+        {FACTS.map((f, i) => (
+          <div key={f.k} className="spring-pop rounded-2xl border border-slate-200 bg-white p-4" style={{ animationDelay: `${i * 60}ms` }}>
+            <f.icon aria-hidden className="size-5 text-indigo-700" />
+            <p className="mt-2 text-xs text-slate-500">{f.k}</p>
+            <p className="text-xl font-bold text-slate-900">{f.v}</p>
+            <p className="text-xs text-slate-500">{f.s}</p>
+          </div>
+        ))}
+      </div>
+
+      <Section n={1} title="몇 명 중 몇 명이 붙나?" lead="대학 공식 「最近3ヵ年の入試結果」 薬学科 B방식">
+        <CompetitionChart />
+      </Section>
+
+      <Section n={2} title="시험지는 이렇게 생겼다" lead="실제 기출을 그대로 집계한 대문 구성 지도입니다.">
+        <Blueprint />
+      </Section>
+
+      <Section n={3} title="70분, 이렇게 나눠 쓰자" lead="칸을 눌러 구간별 요령을 보세요.">
+        <TimeBar />
+      </Section>
+
+      <Section n={4} title="출제 경향 5가지">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {TRENDS.map((t, i) => (
+            <Link key={t.t} to={t.to} className="group rounded-xl border border-slate-200 bg-stone-50 p-4 transition hover:-translate-y-0.5 hover:bg-white hover:shadow-md motion-reduce:hover:translate-y-0">
+              <span className="font-serif text-2xl text-slate-300 tnum">{i + 1}</span>
+              <p className="mt-1 font-bold text-slate-900">{t.t}</p>
+              <p className="mt-1 text-sm text-slate-600">{t.d}</p>
+              <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-indigo-700">공부하러 가기 <ArrowRight aria-hidden className="size-3 transition group-hover:translate-x-0.5" /></span>
+            </Link>
           ))}
         </div>
-        <h2 className="text-xl font-bold text-slate-900 mt-9 mb-3 pb-2 border-b border-slate-200">출처</h2>
-        <ul className="text-sm list-disc pl-5 space-y-1">
+      </Section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 text-sm">
+        <h2 className="font-bold text-slate-900 mb-2">출처</h2>
+        <ul className="list-disc pl-5 space-y-1">
           <li><a className="text-indigo-700 underline" href="https://www.hoshi.ac.jp/admission/nyushi/exam/" target="_blank" rel="noreferrer">星薬科大学 入学試験過去問題</a> (공식 기출 PDF)</li>
           <li><a className="text-indigo-700 underline" href="https://www.hoshi.ac.jp/admission/nyushi/" target="_blank" rel="noreferrer">星薬科大学 入学試験概要</a></li>
           <li><a className="text-indigo-700 underline" href="https://www.hoshi.ac.jp/admission/nyushi/3yearly/" target="_blank" rel="noreferrer">星薬科大学 最近3ヵ年の入試結果</a> (경쟁률)</li>
           <li><a className="text-indigo-700 underline" href="https://www.topedu.jp/high-school_list/hoshi/" target="_blank" rel="noreferrer">Topedu 星薬科大学対策</a> / <a className="text-indigo-700 underline" href="https://pharmassist-edu.com/post/mitehosii/hosiyakkakaisetsu26/" target="_blank" rel="noreferrer">PharmAssist 星薬科大学徹底解説</a></li>
-          <li><a className="text-indigo-700 underline" href="https://jyuke-labo.com/daigakujyukentaisaku/hoshiyakkadaigaku/kamokubetsu/" target="_blank" rel="noreferrer">じゅけラボ 星薬科大学 科目別対策</a> (70분·100점·마크시트, 출제 범위)</li>
-          <li><a className="text-indigo-700 underline" href="https://logicalteacher.com/post-3744/3744/" target="_blank" rel="noreferrer">ロジティー 星薬科大学 英語 過去問分析</a> (대문 구성, 65% 전후 합격)</li>
+          <li><a className="text-indigo-700 underline" href="https://jyuke-labo.com/daigakujyukentaisaku/hoshiyakkadaigaku/kamokubetsu/" target="_blank" rel="noreferrer">じゅけラボ 星薬科大学 科目別対策</a></li>
+          <li><a className="text-indigo-700 underline" href="https://logicalteacher.com/post-3744/3744/" target="_blank" rel="noreferrer">ロジティー 星薬科大学 英語 過去問分析</a> (65% 전후 합격)</li>
         </ul>
-      </div>
+      </section>
     </div>
   );
 }

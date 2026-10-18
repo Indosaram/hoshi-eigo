@@ -5,52 +5,50 @@ export const lesson: Lesson = {
   level: 2,
   title: "전치사",
   summary: "전치사는 장소, 시간, 방향과 관계를 짧은 말로 연결한다.",
-  body: `## 한 줄로 말하면
-전치사는 명사 앞에 붙어 장소, 시간, 방향, 대상 사이의 관계를 표시하는 연결표지다.
+  body: `:::analogy 전치사는 명사 앞에 붙이는 '위치·시간·방향 꼬리표'입니다
+\`the hospital(병원)\`이라는 명사만 있으면 병원에서 일하는지, 병원으로 가는지 알 수 없습니다.
+앞에 **\`in\`(안에서)**, **\`to\`(~로)**, **\`near\`(근처에)** 같은 짧은 꼬리표를 붙여야 비로소 시간·장소·방향 관계가 생깁니다.
+:::
 
-## 왜 배우나요?
-전치사를 알면 의약품 설명서의 관계가 보인다. \`The drug is stored at 4°C\`에서 at은 보관 온도를 가리키고, \`effects on the liver\`에서 on은 간에 미치는 대상을 가리킨다. 星薬科大学 B方式에서는 빈칸에 in, on, at, for, by 같은 말을 넣게 하거나, 전치사 뒤에 목적격을 쓰는지, 동사와 맞는 표현인지 묻는다. 전치사 하나를 잘못 읽으면 \`medicine for pain\`을 통증을 위한 약이 아니라 통증이 약을 위한 것으로 거꾸로 해석할 수 있다.
+:::formula 전치사 절대 규칙 3가지
+[전치사 (in / on / at / for / by / without)] + [명사 / 대명사 / 동명사(-ing)] => 전치사 뒤에 동사원형이나 주어+동사(절)는 절대 못 옴!
+시간 삼각형: [at + 콕 찍은 시각 (at 9:00)] < [on + 특정 날·요일 (on Monday)] < [in + 달·연도·계절 (in May, in 2026)]
+기간 비교: [for + 숫자 기간 (for 3 days)] vs [during + 사건 이름 (during the exam)]
+:::
 
-## 개념 설명
-전치사(preposition)는 명사나 대명사 앞에서 다른 말과의 관계를 보여 주는 말이다. 전치사 뒤에 오는 명사구를 목적어(object, 전치사의 대상을 나타내는 말)라고 한다. \`in the bottle\`에서 in이 전치사이고 the bottle이 목적어다. 전치사와 목적어를 합친 전치사구(prepositional phrase)는 문장에서 시간, 장소, 방향, 이유 같은 정보를 덧붙인다.
+## 시간·장소·이유 핵심 전치사 표
 
-한국어의 조사와 비슷하지만 위치가 반대다. 한국어는 병 안에처럼 명사 뒤에 조사를 붙이고, 영어는 in the bottle처럼 관계표지를 명사 앞에 둔다. 장소는 상자 안의 넓은 공간이면 in, 표면에 닿으면 on, 한 점이나 정확한 시각이면 at을 먼저 떠올린다. 시간도 같은 그림이다. in July는 달처럼 넓은 기간, on Monday는 날짜, at noon은 한 시점이다. 단, 모든 전치사를 그림 하나로 해결할 수는 없으므로 동사와 함께 쓰이는 덩어리도 익혀야 한다.
-
-## 형태 정리
-| 관계 | 대표 전치사 | 실제 표현 | 뜻과 판단 |
+| 구분 | 전치사 | 쉬운 그림 의미 | 대표 예문 조각 |
 |---|---|---|---|
-| 장소 안 | in | in the laboratory | 실험실 안에 |
-| 표면 접촉 | on | on the table | 탁자 위에 |
-| 한 지점 | at | at the pharmacy | 약국이라는 지점에서 |
-| 방향 | to | deliver the sample to the lab | 샘플을 실험실로 |
-| 출발 | from | from the hospital | 병원에서부터 |
-| 기간 | for | for three hours | 세 시간 동안 |
-| 행위자, 수단 | by | tested by researchers; by train | 연구자에 의해, 기차로 |
-| 목적, 대상 | for | a drug for asthma | 천식 치료용 약 |
+| **시각·지점** | **\`at\`** | 바늘로 콕 찍은 한 점 | \`at 8:00\`, \`at night\`, \`at the desk\` |
+| **날짜·표면** | **\`on\`** | 달력의 하루 / 표면에 딱 붙음 | \`on Friday\`, \`on May 5\`, \`on the skin\` |
+| **긴 범위·공간 안** | **\`in\`** | 상자 안 / 달·연도·계절 | \`in 2026\`, \`in winter\`, \`in the blood\` |
+| **숫자 기간 vs 사건** | **\`for\`** vs **\`during\`** | 숫자 길이 vs 사건 기간 동안 | \`for two weeks\` vs \`during the surgery\` |
+| **완료 기한 vs 계속** | **\`by\`** vs **\`until\`** | ~까지(한 번 끝) vs ~까지(계속) | \`finish by Friday\` vs \`wait until Friday\` |
+| **둘 사이 vs 셋 이상** | **\`between\`** vs **\`among\`** | A와 B 둘 사이 vs 여럿 한가운데 | \`between the two pills\` vs \`among elderly patients\` |
 
-## 예문으로 익히기
-1. **The keys are in my bag.** The keys(주어) / are(동사) / in my bag(전치사구: 장소) . 열쇠는 내 가방 안에 있다. 안쪽 공간이므로 in을 쓴다.
-2. **The meeting starts at nine on Monday.** The meeting(주어) / starts(동사) / at nine(정확한 시각) / on Monday(날짜) . 회의는 월요일 9시에 시작한다. 시각은 at, 날짜는 on이다.
-3. **She walked to the station from her office.** She(주어) / walked(동사) / to the station(도착 방향) / from her office(출발점) . 그녀는 사무실에서 역까지 걸었다. to와 from은 방향의 양끝을 보여 준다.
-4. **The pharmacist put the tablets on the counter.** The pharmacist(주어) / put(동사) / the tablets(목적어) / on the counter(놓인 표면) . 약사는 정제를 조리대 위에 놓았다. 표면 접촉은 on이다.
-5. **The drug is stored at 4°C.** The drug(주어) / is stored(수동태 동사) / at 4°C(보관 조건) . 그 약은 4도에서 보관된다. 정확한 온도와 시점에는 at이 자주 온다.
-6. **This cream is used for dry skin.** This cream(주어) / is used(동사) / for dry skin(사용 대상) . 이 크림은 건성 피부에 사용된다. for는 목적이나 대상을 나타낸다.
-7. **The sample was examined by a technician.** The sample(주어) / was examined(수동태 동사) / by a technician(행위자) . 그 샘플은 기술자에 의해 검사되었다. 수동태에서 실제 행동 주체는 by 뒤에 둔다.
-8. **The patient took the medicine after dinner.** The patient(주어) / took(동사) / the medicine(목적어) / after dinner(시간) . 환자는 저녁 식사 후 약을 복용했다. after는 기준 시점 뒤를 뜻하며 뒤에 명사가 온다.
+:::train 문장 블록 기차로 전치사구 묶어 읽기
+Take this medicine(명령문:이 약을 드세요) | with a glass of water(전치사구:물 한 컵과 함께) | after meals(전치사구:식사 후에) => 식사 후에 물 한 컵과 함께 이 약을 드세요.
+The clinic is open(주어+동사:의원은 문을 연다) | from 9 a.m.(출발점:오전 9시부터) | to 5 p.m.(도착점:오후 5시까지) | on weekdays(요일:평일에) => 의원은 평일 오전 9시부터 오후 5시까지 문을 연다.
+Wash your hands(명령문:손을 씻으세요) | before touching(전치사+동명사:만지기 전에) | your eyes(목적어:눈을) => 눈을 만지기 전에 손을 씻으세요.
+:::
 
-## 헷갈리는 포인트 / 자주 하는 실수
-1. 장소와 시간의 in, on, at을 섞지 않는다. X: The test is at Monday. O: The test is on Monday. 날짜는 on이다.
-2. 전치사 뒤에 주격 대명사를 쓰지 않는다. X: between you and I. O: between you and me. 전치사의 목적어는 목적격이다.
-3. by와 with를 구별한다. X: The drug was prepared with the pharmacist. O: The drug was prepared by the pharmacist. 행위자는 by, 도구는 with다.
-4. 동사와 어울리는 전치사를 바꾸지 않는다. X: We discussed about the dosage. O: We discussed the dosage. discuss는 목적어를 바로 받는다.
+:::transform 헷갈리는 짝꿍 전치사 비교
+숫자 기간: He stayed in bed [for] three days. || 사건 기간: He felt pain [during] the night. || 숫자가 나오면 [for], 사건·기간 명사(the night, the vacation)가 나오면 [during]을 씁니다.
+기한(한 번 동작): Submit the form [by] tomorrow. (내일까지 제출 끝!) || 지속(계속 상태): Stay in bed [until] tomorrow. (내일까지 쭉 누워 있기!) || 한 번에 끝나는 마감은 [by], 쭉 이어지는 동작은 [until]입니다.
+:::
 
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸 문제는 \`The vaccine should be kept (　　) a refrigerator.\`처럼 보관 장소를 묻고, 문장 전체를 읽게 한다. refrigerator 안에 있으므로 in이 정답이다. 수동태 독해에서는 \`The compound was isolated (　　) the solution.\`처럼 출발이나 분리를 from으로 묻기도 한다. 먼저 빈칸 뒤 명사가 장소, 날짜, 행위자인지 표시하고, 앞 동사와 함께 자연스러운 덩어리인지 확인한다.
+:::vs 전치사 단골 함정 O / X
+Thank you for [help] the patient. || Thank you for [helping] the patient. || 전치사(for, without, before, after, by) 바로 뒤에는 동사원형이 올 수 없고 동명사(-ing)가 옵니다.
+She slept [for] the lecture. || She slept [during] the lecture. || the lecture(강의)는 숫자가 아니라 사건 기간이므로 during을 씁니다.
+Please return the book [until] Monday. || Please return the book [by] Monday. || 반납(return)은 월요일까지 한 번 완료하면 되는 행동이므로 마감 전치사 by가 맞습니다.
+:::
 
-## 3줄 요약
-1. 전치사는 명사 앞에서 장소, 시간, 방향과 관계를 표시한다.
-2. 장소와 시간은 in, on, at의 범위를 비교하고, 방향은 to, from을 본다.
-3. 수동태의 행위자는 by, 도구는 with이며, 동사별 결합도 통째로 확인한다.`,
+:::steps 전치사 문제 3초 풀이법
+1. 뒤 단어 확인 | 빈칸 뒤에 명사(-ing)만 있는지, 주어+동사가 있는지 먼저 봅니다. | 명사만 = 전치사 자리!
+2. 시간·장소 크기 비교 | 점(at) < 날·표면(on) < 달·연도·상자 안(in) 순서로 크기를 맞춥니다. | on Monday / in July
+3. 짝꿍 동사·형용사 확인 | depend on, result in, prevent A from -ing처럼 앞 단어와 세트로 외운 전치사를 고릅니다. | prevent A from -ing
+:::`,
   quiz: [
     {
       prompt: "The capsules are stored (　　) a cool, dry place.",

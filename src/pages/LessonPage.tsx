@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, PencilLine } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { lessons, levelNames } from "../data";
+import { GrammarLab } from "../components/GrammarLab";
 import { Md } from "../components/Md";
 import { QuizCard, useScore } from "../components/Quiz";
 import { Bar, btn } from "../components/ui";
@@ -19,6 +20,7 @@ export default function LessonPage() {
       <p className="mt-4 text-sm font-semibold text-indigo-700">{levelNames[l.level]} · 제{idx + 1}강</p>
       <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mt-1">{l.title}</h1>
       <p className="mt-2 text-slate-600 leading-relaxed">{l.summary}</p>
+      <GrammarLab id={l.id} />
       <div className="mt-6 rounded-2xl bg-white border border-slate-200 p-5 sm:p-8 shadow-sm">
         <Md text={l.body} />
       </div>

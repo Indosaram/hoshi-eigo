@@ -5,91 +5,52 @@ export const lesson: Lesson = {
   level: 4,
   title: "구동사와 숙어",
   summary: "동사와 전치사 또는 부사가 붙어 새 뜻이 되는 구동사와 숙어를 문맥으로 판별한다.",
-  body: String.raw`## 한 줄로 말하면
-구동사(phrasal verb)는 동사에 부사나 전치사가 붙어 원래 동사와 다른 뜻을 만드는 표현이고, 숙어(idiom)는 여러 단어가 한 덩어리의 특별한 뜻을 내는 표현이다.
+  body: `:::analogy 구동사는 '동사 + 방향 화살표'가 합쳐져 새 뜻이 된 단어입니다
+\`give\`(주다) + \`up\`(끝까지) = \`give up\`(포기하다). 두 단어 뜻을 더한 것과 다른 새 뜻이 생깁니다.
+그래서 구동사는 **화살표(up, off, out)의 기본 그림**을 알고, 나머지는 **통째로 외우는 것**이 가장 빠릅니다.
+:::
 
-## 왜 배우나요?
-의약품 설명과 연구 지문에는 *carry out a study*(연구를 실시하다), *deal with side effects*(부작용을 다루다), *result in complications*(합병증을 초래하다)가 나온다. 단어를 하나씩 번역하면 문장이 이상해진다. B方式에서는 이런 덩어리의 뜻, 목적어 위치, 전치사의 짝을 묻는다.
+:::formula 화살표(입자) 기본 그림
+[up] => 위로 · 끝까지 · 완전히 (use up 다 써 버리다, give up 포기하다)
+[off] => 떨어져 나감 · 멈춤 · 미룸 (put off 미루다, call off 취소하다)
+[out] => 밖으로 · 바닥남 · 알아냄 (run out of 다 떨어지다, figure out 알아내다)
+[down] => 아래로 · 줄어듦 · 기록 (calm down 진정하다, turn down 거절하다)
+:::
 
-## 개념 설명
-구동사는 동사(행동이나 상태를 나타내는 말)와 particle(동사 뒤에서 뜻을 바꾸는 부사 또는 전치사)의 결합이다. *look*은 보다지만 *look for*는 찾다, *look after*는 돌보다가 된다. 전체를 한 단어처럼 읽고 목적어(동작의 대상)의 위치도 확인한다.
+## 星薬 기출·빈출 구동사와 숙어
 
-분리 가능한 구동사(separable phrasal verb)는 목적어를 가운데에 넣을 수 있다. *turn off the light*와 *turn the light off*가 모두 가능하다. 목적어가 대명사(pronoun, 명사를 대신하는 말)면 반드시 가운데에 둔다. *turn it off*는 맞지만 *turn off it*은 틀리다. 반대로 분리할 수 없는 구동사는 *look after the patient*처럼 덩어리를 유지한다.
+| 표현 | 뜻 | 바꿔 쓰기 |
+|---|---|---|
+| \`turn in\` | 자러 가다 / 제출하다 | \`go to bed\` / \`submit\` |
+| \`put off\` | 미루다 | \`postpone\` |
+| \`look into\` | 조사하다 | \`investigate\` |
+| \`carry out\` | 실행하다 | \`conduct\`, \`perform\` |
+| \`come up with\` | 생각해 내다 | \`think of\` |
+| \`see eye to eye\` | 의견이 일치하다 | \`agree\` |
+| \`more often than not\` | 대개 | \`usually\`, \`most of the time\` |
+| \`drive ~ up the wall\` | ~를 몹시 짜증 나게 하다 | \`annoy\` |
 
-숙어는 단어 뜻을 더해도 전체 뜻이 나오지 않는 고정 표현이다. *under the weather*는 날씨 아래가 아니라 몸이 좋지 않다는 뜻이다. 앞뒤의 주어, 목적어, 결과로 의미를 좁힌다. *bring about a reduction*은 감소를 초래하다이다.
+:::train 문장 블록 기차로 구동사 읽기
+Researchers(주어:연구자들은) | carried out(구동사:실시했다) | a clinical trial(목적어:임상 시험을) => 연구자들은 임상 시험을 실시했다.
+The hospital(주어:병원은) | ran out of(구동사:다 떨어졌다) | masks(목적어:마스크가) => 병원에 마스크가 다 떨어졌다.
+Don't put off(구동사 부정:미루지 마세요) | seeing a doctor(동명사 목적어:진찰받는 것을) => 진찰받는 것을 미루지 마세요.
+:::
 
-## 형태 정리
-| 표현 | 뜻 | 목적어 위치 또는 짝 | 의약 문맥 예 |
-|---|---|---|---|
-| carry out | 실시하다 | carry out a trial | Researchers carried out a trial. |
-| give up | 포기하다 | give it up, 대명사는 가운데 | The patient gave up smoking. |
-| put off | 미루다 | put off the test / put the test off | Do not put off treatment. |
-| look into | 조사하다 | look into the cause | The team looked into the error. |
-| look after | 돌보다 | 분리 불가 | Nurses look after patients. |
-| deal with | 다루다, 처리하다 | deal with a symptom | This drug deals with inflammation. |
-| result in | 초래하다 | result in an effect | The interaction resulted in nausea. |
-| result from | ...에서 생기다 | result from a cause | Nausea resulted from the interaction. |
-| bring about | 초래하다 | bring about a change | The policy brought about change. |
-| be based on | ...에 근거하다 | on을 빼지 않음 | The guideline is based on evidence. |
+:::transform 구동사 ↔ 한 단어 동사 바꿔 쓰기 (II번 유형 대비)
+The meeting was [put off] until Friday. || The meeting was [postponed] until Friday. || II번 '의미가 가까운 것' 문제는 이렇게 한 단어로 바꾸는 형태로 나옵니다.
+Police are [looking into] the case. || Police are [investigating] the case. || look into = investigate
+:::
 
-## 예문으로 익히기
-1. **The researchers carried out a clinical trial in Osaka.**
-   구조: The researchers(주어) / carried out(구동사: 실시했다) / a clinical trial(목적어) / in Osaka(장소 부사구)
-   해석: 연구자들은 오사카에서 임상시험을 실시했다.
-   메모: carry out은 연구, 실험, 계획을 실제로 실행할 때 쓴다.
+:::vs 구동사 단골 함정 O / X
+Please turn [off it]. || Please turn [it off]. || 목적어가 대명사(it, them)이면 동사와 입자 사이에 넣습니다.
+I look forward to [see] you. || I look forward to [seeing] you. || look forward to의 to는 전치사라 -ing가 옵니다.
+:::
 
-2. **Please turn off the monitor before you leave.**
-   구조: Please(부탁) / turn off(구동사: 끄다) / the monitor(목적어) / before you leave(시간 부사절)
-   해석: 나가기 전에 모니터를 꺼 주세요.
-   메모: *turn the monitor off*도 가능하지만 대명사는 *turn it off*처럼 쓴다.
-
-3. **The nurse looked after the child during the examination.**
-   구조: The nurse(주어) / looked after(분리 불가 구동사: 돌보았다) / the child(목적어) / during the examination(시간 부사구)
-   해석: 간호사는 검사 중에 그 아이를 돌보았다.
-   메모: look after는 뒤의 목적어와 갈라놓지 않는다.
-
-4. **The patient gave up smoking after the diagnosis.**
-   구조: The patient(주어) / gave up(구동사: 그만두었다) / smoking(동명사 목적어) / after the diagnosis(시점)
-   해석: 그 환자는 진단을 받은 뒤 흡연을 그만두었다.
-   메모: give up 뒤에는 명사나 동명사 smoking이 올 수 있다.
-
-5. **The new compound may bring about a reduction in inflammation.**
-   구조: The new compound(주어) / may bring about(조동사+구동사: 초래할 수 있다) / a reduction(목적어) / in inflammation(감소의 대상)
-   해석: 그 신화합물은 염증 감소를 초래할 수 있다.
-   메모: bring about은 변화나 결과를 일으킨다는 뜻이다.
-
-6. **The team looked into the cause of the unexpected reaction.**
-   구조: The team(주어) / looked into(구동사: 조사했다) / the cause(목적어) / of the unexpected reaction(원인 설명)
-   해석: 연구팀은 예상하지 못한 반응의 원인을 조사했다.
-   메모: look into는 look at보다 깊이 조사한다는 뜻이다.
-
-7. **A lack of sleep can result in poor concentration.**
-   구조: A lack of sleep(원인 주어) / can result in(구동사: 초래할 수 있다) / poor concentration(결과)
-   해석: 수면 부족은 집중력 저하를 초래할 수 있다.
-   메모: result in은 원인에서 결과로 향하고, result from은 결과가 원인에서 생긴다는 반대 방향이다.
-
-8. **The guideline is based on data from older patients.**
-   구조: The guideline(주어) / is based on(수동 표현: ...에 근거한다) / data(근거 자료) / from older patients(자료의 출처)
-   해석: 그 지침은 고령 환자들의 자료에 근거한다.
-   메모: be based on에서 on을 생략하면 안 된다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. 대명사 위치: \`Turn off it.\`은 틀리고 \`Turn it off.\`가 맞다.
-2. 분리 가능성 혼동: \`The nurse looked the child after.\`는 틀리고 \`The nurse looked after the child.\`가 맞다. look after는 분리하지 않는다.
-3. 방향 혼동: \`The headache resulted in the infection\`은 감염이 결과라는 뜻이 되어 문맥상 이상하다. 감염이 두통의 원인이면 \`The headache resulted from the infection.\`이라고 한다.
-4. 전치사 누락: \`The conclusion is based evidence\`는 틀리고 \`The conclusion is based on evidence.\`가 맞다.
-5. 숙어의 직역: \`under the weather\`는 몸이 좋지 않다는 뜻이다. 직역하지 않는다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式 빈칸은 앞뒤 의미와 동사의 목적어를 함께 준다. 예를 들어 “The researchers (　　) a survey to examine medication use.”의 선택지가 carried out, gave up, looked after, put off라면 survey를 실시한다는 뜻이므로 carried out을 고른다. 먼저 빈칸 뒤 명사와 어울리는 표현을 찾고, 그다음 시제와 주어 수를 확인한다.
-
-오류 찾기에서는 “The patient turned off it after the test.”처럼 대명사 위치나 in과 from의 방향을 묻는다. 어순 문제에서 대명사는 \`turn / it / off\`, 명사는 두 위치를 후보로 생각한다.
-
-## 3줄 요약
-1. 구동사는 동사와 particle의 전체 뜻을 한 덩어리로 읽는다.
-2. 대명사는 분리 가능한 구동사의 가운데에 두고, look after 같은 표현은 분리하지 않는다.
-3. result in은 결과를 초래하고 result from은 원인에서 생기며, 문맥과 목적어로 판별한다.
-`,
+:::steps 처음 보는 구동사 3초 추측법
+1. 입자 그림 떠올리기 | up=끝까지, off=떨어짐, out=밖으로/바닥 | run out
+2. 문맥에 넣기 | 앞뒤 상황(병원에 물건이 없다)에 맞는 뜻을 고릅니다. | 다 떨어지다
+3. 보기와 바꿔 넣기 | 보기 단어를 넣어 문장 뜻이 그대로인지 확인합니다. | exhausted the supply
+:::`,
   quiz: [
     {
       prompt: "The hospital (　　) a study on drug interactions last year.",

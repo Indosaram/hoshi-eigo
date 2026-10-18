@@ -5,95 +5,47 @@ export const lesson: Lesson = {
   level: 4,
   title: "정렬 문제 푸는 법",
   summary: "동사와 덩어리를 먼저 찾아 영어 문장의 뼈대를 세운 뒤, 남은 말을 알맞은 자리에 넣는다.",
-  body: String.raw`## 한 줄로 말하면
-단어를 한국어 순서로 하나씩 옮기지 말고, **동사 중심의 뼈대와 붙어 다니는 덩어리**를 먼저 찾아 문장을 완성한다.
+  body: `:::analogy 정렬 문제는 '퍼즐 맞추기'입니다: 모서리(동사)부터 끼우고, 붙어 다니는 조각을 먼저 묶습니다
+단어 6~8개를 처음부터 한 개씩 끼우면 반드시 꼬입니다.
+**① 동사 찾기 → ② 짝꿍 덩어리 묶기 → ③ 덩어리 순서 맞추기** 순서로 하면 조각이 2~3개로 줄어듭니다.
+:::
 
-## 왜 배우나요?
-星薬科大学 B方式의 정렬 문제는 주어진 단어를 모두 사용해 자연스러운 영어 문장을 만드는 문제다. 단어 뜻을 전부 몰라도 주어와 동사, 전치사 뒤의 명사, to부정사 같은 고정 덩어리를 찾으면 선택지를 빠르게 줄일 수 있다. 의약 문장에서는 *patients with asthma*, *should be taken after meals*처럼 긴 명사 덩어리와 수동태가 자주 이어진다. 정렬 감각은 빈칸 문제의 앞뒤 판단과 짧은 의학 지문 해석에도 그대로 쓰인다.
+:::formula 정렬 3단계 공식
+1단계: [일본어 뜻에서 주어 + 동사] 먼저 확정 => 문장의 뼈대
+2단계: [짝꿍 덩어리] 묶기 => 관사+명사, 전치사+명사, to+동사원형, 숙어(take care of)
+3단계: [주어 → 동사 → 목적어/보어 → 수식어] 순서로 배치 => 남은 조각 0개 확인
+:::
 
-## 개념 설명
-영어 문장은 먼저 **주어(행동하는 사람이나 대상)**와 **동사(행동이나 상태를 나타내는 말)**를 세운다. 예를 들어 *The nurse checks the dose.*에서 *The nurse*가 주어이고 *checks*가 동사다. 주어와 동사를 찾으면 문장의 중심 기둥이 생긴다.
+## 자주 묶이는 짝꿍 덩어리
 
-그다음 **목적어(동작의 대상)**와 **보어(주어나 목적어의 상태를 설명하는 말)**를 붙인다. *The nurse checks the dose*에서 *the dose*가 목적어다. 영어의 기본 순서는 보통 주어, 동사, 목적어다. 한국어처럼 목적어를 동사 앞에 두면 안 된다.
+| 덩어리 종류 | 예 |
+|---|---|
+| 관사 + (형용사) + 명사 | \`a new drug\`, \`the side effects\` |
+| 전치사 + 명사 | \`in the morning\`, \`for patients\` |
+| 동사 + 목적어 + to V | \`advise A to V\`, \`allow A to V\` |
+| 비교 | \`as ~ as\`, \`more ~ than\` |
+| 숙어 | \`take care of\`, \`be likely to\`, \`it takes 시간 to V\` |
 
-단어 몇 개가 하나처럼 움직이는 **덩어리(문장에서 함께 쓰이는 말의 묶음)**도 통째로 찾는다. *after meals*는 식후라는 전치사구(전치사와 그 뒤 명사가 합쳐진 수식 덩어리)이고, *to reduce pain*은 통증을 줄이기 위해라는 to부정사(to와 동사원형의 묶음)다. *patients with diabetes*는 당뇨병이 있는 환자들이라는 명사구(명사를 중심으로 한 묶음)다.
+:::train 정렬 예시: "의사는 나에게 휴식을 취하라고 권했다"
+The doctor(주어:의사는) | advised(동사:권했다) | me(목적어:나에게) | to take a rest(덩어리:휴식을 취하라고) => The doctor advised me to take a rest.
+It takes(숙어 시작:시간이 걸린다) | two weeks(시간:2주가) | for the wound(의미상 주어:상처가) | to heal(to V:낫는 데) => It takes two weeks for the wound to heal.
+:::
 
-정렬 순서는 다음처럼 잡으면 된다. 첫째, 동사원형 또는 조동사 뒤의 동사를 표시한다. 둘째, 그 동사의 주어를 찾는다. 셋째, 동사 뒤에 목적어와 보어를 놓는다. 넷째, 전치사구와 부사(동사나 문장 전체를 꾸미는 말)를 의미가 맞는 위치에 붙인다. 마지막으로 시제, 수일치, 관사와 대문자를 확인한다. 한국어 번역을 먼저 만들면 영어 어순이 뒤집히기 쉬우므로, 뼈대를 세운 뒤 번역한다.
+:::transform 흩어진 조각 → 덩어리 → 완성
+[ to / the doctor / take / advised / me / a rest ] || [The doctor advised me] + [to take a rest] || 6조각이 2덩어리로 줄었습니다.
+[ is / what / important / most / health / is ] || [What is most important] + [is health] || what절 덩어리가 주어가 됩니다.
+:::
 
-## 형태 정리
-| 확인할 덩어리 | 실제 형태 | 문장 속 역할 | 정렬 때 확인할 점 |
-|---|---|---|---|
-| 주어 + 동사 | The doctor / explains | 문장 뼈대 | 명사 뒤에 동사가 오는지 |
-| 동사 + 목적어 | measures / blood pressure | 행동과 대상 | 목적어를 동사 뒤에 둠 |
-| be + 보어 | The result / is reliable | 상태 설명 | be 뒤에 형용사나 명사 |
-| 조동사 + 동사원형 | Patients should / rest | 가능, 의무, 조언 | should 뒤에 rests를 쓰지 않음 |
-| 수동태 | The tablet / is taken | 대상 중심 행동 | be + 과거분사 뒤에 목적어를 두지 않음 |
-| 전치사 + 명사 | after / meals | 시간, 장소, 관계 | after 뒤에 meals처럼 명사 |
-| to + 동사원형 | to / prevent infection | 목적 | to 뒤에 prevents를 쓰지 않음 |
-| 명사 + 전치사구 | patients / with asthma | 명사 구체화 | with asthma를 patients 뒤에 붙임 |
+:::vs 정렬 단골 실수 O / X
+I don't know [where is he]. || I don't know [where he is]. || 문장 속 의문사절은 주어 + 동사 순서입니다.
+He is [enough old] to drive. || He is [old enough] to drive. || enough는 형용사 뒤에 옵니다.
+:::
 
-## 예문으로 익히기
-1. **The doctor / who helped me / was / kind.**  
-The doctor(주어) / who helped me(관계대명사절: 의사를 설명) / was(동사) / kind(보어)  
-그 의사는 나를 도와준 분이 친절했다.  
-관계대명사절은 설명받는 명사 바로 뒤에 둔다.
-
-2. **My sister / takes / this medicine / after meals.**  
-My sister(주어) / takes(동사) / this medicine(목적어) / after meals(시간 전치사구)  
-내 여동생은 식후에 이 약을 복용한다.  
-동사 뒤에 약을 놓고, 복용 시점은 뒤에 붙인다.
-
-3. **The pharmacist / explained / the dosage / to the patient.**  
-The pharmacist(주어) / explained(동사) / the dosage(목적어) / to the patient(설명 대상)  
-약사는 환자에게 용량을 설명했다.  
-explain은 보통 설명할 내용을 먼저, 사람은 to 뒤에 둔다.
-
-4. **Patients / with asthma / should avoid / this inhaler.**  
-Patients(주어) / with asthma(환자를 설명하는 전치사구) / should avoid(조동사와 동사) / this inhaler(목적어)  
-천식이 있는 환자들은 이 흡입제를 피해야 한다.  
-with asthma는 patients 뒤에 붙어 어느 환자인지 좁힌다.
-
-5. **The tablet / is stored / in a cool place.**  
-The tablet(주어) / is stored(수동태 동사) / in a cool place(장소 전치사구)  
-그 정제는 서늘한 곳에 보관된다.  
-수동태는 be와 과거분사를 한 덩어리로 먼저 찾는다.
-
-6. **The nurse / checked / whether the patient / had a fever.**  
-The nurse(주어) / checked(동사) / whether the patient had a fever(목적어인 명사절)  
-간호사는 환자에게 열이 있는지 확인했다.  
-whether가 이끄는 절은 checked의 목적어이므로 checked 뒤에 온다.
-
-7. **We / visited / a clinic / to receive / a vaccine.**  
-We(주어) / visited(동사) / a clinic(목적어) / to receive a vaccine(방문 목적)  
-우리는 백신을 맞기 위해 병원을 방문했다.  
-to receive는 병원을 방문한 목적을 설명하므로 기본 문장 뒤에 둔다.
-
-8. **The study / found / that the new drug / reduced / pain.**  
-The study(주어) / found(동사) / that the new drug reduced pain(목적어인 명사절)  
-그 연구는 새 약이 통증을 줄였다는 것을 밝혀냈다.  
-that 뒤에도 주어와 동사가 있는 완전한 절이 온다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-1. 목적어를 동사 앞에 두지 않는다. *The dose the nurse checked.*는 질문에 따라 가능한 관계절이지만, 단순히 간호사가 용량을 확인했다는 뜻이면 **The nurse checked the dose.**가 맞다.
-
-2. 조동사 뒤에는 동사원형을 쓴다. 틀린 문장 *Patients should takes water.*를 **Patients should take water.**로 고친다. should가 이미 조언의 기능을 맡으므로 takes를 쓰지 않는다.
-
-3. 전치사 뒤에 동사를 바로 두지 않는다. *after take the medicine*은 틀리고 **after taking the medicine** 또는 **after you take the medicine**이 맞다. after 뒤에 명사 덩어리나 주어와 동사가 필요하다.
-
-4. 수동태를 능동태처럼 배열하지 않는다. *The drug was prescribed the doctor*는 틀리고 **The drug was prescribed by the doctor.**가 맞다. 처방받은 대상 뒤에는 행위자를 by로 표시한다.
-
-5. 명사를 꾸미는 말은 대체로 명사 뒤에 붙인다. *with diabetes patients*는 뜻이 달라지거나 부자연스럽고, **patients with diabetes**가 당뇨병 환자라는 정확한 덩어리다.
-
-## 星薬 기출에서는 이렇게 나온다
-B方式에서는 괄호 안 단어를 알맞게 배열하고, 네 번째 단어를 답으로 고르는 유형을 생각하면 된다. 예를 들어 (A) **should** (B) **be** (C) **taken** (D) **after meals**처럼 주어 뒤에 조동사, be, 과거분사를 세우면 수동태 뼈대가 보인다. 먼저 *The medicine (　　) meals.*에서 **should be taken after**를 만들고, 답을 고른 뒤 약은 식후에 복용해야 한다고 확인한다.
-
-또 다른 문장인 *The doctor (A) patients (B) advised (C) to rest (D) the*에서는 사람이 조언하는 구조인 **The doctor advised the patients to rest.**를 만든다. 동사 advised 뒤에 사람 목적어, 그 뒤에 to부정사가 온다는 순서를 이용하면 단어 뜻을 모두 몰라도 풀 수 있다. 답을 정한 뒤 주어, 동사, 목적어가 모두 있는지 소리 내어 점검한다.
-
-## 3줄 요약
-1. 주어와 동사를 먼저 찾아 영어 문장의 기둥을 세운다.
-2. 조동사 뒤 동사원형, be와 과거분사, 전치사 덩어리는 통째로 붙인다.
-3. 목적어와 수식어를 넣은 뒤 수일치, 시제, 의미를 마지막에 확인한다.
-`,
+:::steps 정렬 실전 3단계
+1. 동사 찾기 | 조각 중 시제가 있는 동사를 찾고 주어를 앞에 둡니다. | advised
+2. 짝꿍 묶기 | to+원형, 전치사+명사, 숙어를 먼저 묶습니다. | to take a rest
+3. 검산 | 남은 조각이 없는지, 물어본 번호 위치 단어가 무엇인지 확인합니다. | 3번째 = me
+:::`,
   quiz: [
     {
       prompt: "Choose the correct order. The medicine (　　) before breakfast.\n(A) should (B) taken (C) be (D) by the patient",

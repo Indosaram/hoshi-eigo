@@ -5,95 +5,47 @@ export const lesson: Lesson = {
   level: 2,
   title: "현재완료·과거완료·미래완료",
   summary: "완료형은 어떤 일이 끝났다는 사실보다 그 일이 기준 시점과 어떻게 이어지는지를 보여 준다.",
-  body: `## 한 줄로 말하면
-완료형은 **have + 과거분사(p.p.)**로 만들며, 기준 시점보다 먼저 일어난 일을 현재, 과거, 미래와 연결해 말하는 문법이다.
+  body: `:::analogy 과거시제는 '점', 완료형은 두 시점을 잇는 '선'입니다
+"어제 열이 났다(과거시제)"는 어제 일만 말하므로 지금 열이 나는지는 알 수 없습니다.
+하지만 **"어제부터 지금까지 계속 열이 난다(현재완료 \`have + p.p.\`)"**는 과거의 점과 지금(현재)을 하나의 선으로 쭉 이어서 보여 줍니다.
+:::
 
-## 왜 배우나요?
-의약품 설명서와 논문에서는 “이미 관찰했다”, “그때까지 투여했다”처럼 사건의 순서를 표시해야 한다. 星薬科大学 B方式에서는 **has/have/had/will have**와 과거분사를 묻는다.
+:::formula 완료형 3종류 공식
+현재완료: [have / has + p.p.] => 과거에 시작된 일이 지금(현재)까지 이어짐 (since, for, already, ever)
+과거완료: [had + p.p.] => 과거의 기준 시점보다 한 칸 더 먼저(대과거) 일어난 일
+미래완료: [will have + p.p.] => 미래의 어느 시점이 되면 완료될 일 (by next year)
+:::
 
-## 개념 설명
-먼저 **기준 시점(사건을 바라보는 시간)**을 정한다. 현재완료는 과거의 일이 지금까지 이어지거나 결과가 남을 때 쓴다. *The patient has recovered.*는 지금도 회복된 상태라는 뜻이다. 과거완료는 과거의 기준점보다 먼저 일어난 일이다. *The nurse had recorded the dose before the doctor arrived.*에서는 기록이 먼저다. 미래완료는 미래의 특정 시점까지 끝날 일이다.
+## 과거시제 vs 현재완료 vs 과거완료 구분표
 
-**과거분사(p.p., 동사의 완료형에 쓰이는 세 번째 형태)**는 규칙동사라면 보통 \`+ed\`로 만들고, *take, write, begin*처럼 불규칙한 동사는 따로 외운다. 핵심은 **have**의 시제다. 현재완료는 *have/has p.p.*, 과거완료는 *had p.p.*, 미래완료는 *will have p.p.*이다.
+| 시제 | 모양 | 함께 쓰는 짝꿍 단서 | 절대 같이 못 쓰는 말 |
+|---|---|---|---|
+| **과거시제** | \`V-ed\` (\`took\`) | \`yesterday\`, \`~ ago\`, \`last night\`, \`in 2020\`, \`when\` | — |
+| **현재완료** | \`have/has + p.p.\` | \`since + 시작점\`, \`for + 기간\`, \`recently\`, \`so far\`, \`already\`, \`yet\` | **과거 점 단서(\`yesterday\`, \`ago\`, \`in 2020\`, \`when\`)와 결합 금지!** |
+| **과거완료** | \`had + p.p.\` | \`before + 과거동사\`, \`by the time + 과거동사\` | — |
 
-현재완료는 경험, 계속, 완료, 결과로 해석된다. *I have visited the pharmacy twice.*는 경험, *She has worked here since 2022.*는 계속이다. **since(시작점부터)**와 **for(기간 동안)**는 계속의 단서다. 정확한 과거 시점이면 단순과거다.
+:::train 문장 블록 기차로 완료형 선 연결 읽기
+She(주어:그녀는) | has worked(현재완료:쭉 일해 왔다) | at this pharmacy(장소:이 약국에서) | since 2021(시작점:2021년부터 지금까지) => 그녀는 2021년부터 지금까지 이 약국에서 일해 왔다.
+The swelling(주어:부기가) | had already gone down(과거완료:이미 가라앉아 있었다) | when the doctor arrived(과거 기준점:의사가 도착했을 때) => 의사가 도착했을 때 부기는 (그보다 먼저) 이미 가라앉아 있었다.
+Researchers(주어:연구자들은) | have developed(현재완료:개발해 왔다) | new treatments(목적어:새 치료법들을) | over the past decade(기간:지난 10년 동안) => 연구자들은 지난 10년 동안 새 치료법들을 개발해 왔다.
+:::
 
-## 형태 정리
+:::transform since(시작점) vs for(기간의 길이) 구별
+시작 시점: has lived here [since] 2022 (2022년이라는 시작점 이래로) || 기간 길이: has lived here [for] four years (4년이라는 시간 길이 동안) || 숫자로 된 기간(for three days)에는 [for], 출발 시점(since yesterday / since he was young)에는 [since]를 씁니다.
+과거의 점: He [entered] the hospital two days ago. || 대과거(과거보다 더 전): He said he [had lost] the pill before he came. || 과거(came)보다 더 먼저 일어난 일은 [had + p.p.]로 표시합니다.
+:::
 
-| 종류 | 기본 형태 | 주어가 3인칭 단수일 때 | 대표 단서 | 예문 |
-|---|---|---|---|---|
-| 현재완료 | have + p.p. | has + p.p. | since, for, already, yet, ever | The drug has reduced pain. |
-| 과거완료 | had + p.p. | 주어와 무관하게 had | before, after, by the time | The test had started before noon. |
-| 미래완료 | will have + p.p. | 주어와 무관하게 will have | by Friday, by then, by 2030 | We will have completed the trial by June. |
-| 부정 | have not + p.p. | has not + p.p. | not yet, never | She has not taken the tablet. |
-| 의문 | Have/Has + 주어 + p.p.? | Has he + p.p.? | ever, yet | Have you read the label? |
+:::vs 완료형 단골 함정 O / X
+She [has taken] the medicine three hours ago. || She [took] the medicine three hours ago. || ago, yesterday, last night, in 2020처럼 이미 끝난 과거 시점 단어는 현재완료(have p.p.)와 함께 쓸 수 없습니다!
+When [have you started] taking this pill? || When [did you start] taking this pill? || 의문사 When은 특정 과거 시점을 묻는 말이므로 현재완료 대신 과거시제(did)를 씁니다.
+The train [left] before we arrived at the station. || The train [had left] before we arrived at the station. || 도착한 과거(arrived)보다 기차가 떠난 것이 더 먼저이므로 had left가 정확합니다.
+:::
 
-불규칙 과거분사도 확인하자. *go, went, gone*, *take, took, taken*, *give, gave, given*은 과거형과 다르다.
-
-## 예문으로 익히기
-
-1. **I have already taken the medicine.**  
-I(주어) / have taken(현재완료 동사) / the medicine(목적어) / already(이미)  
-나는 이미 약을 먹었다.  
-현재완료와 already가 만나 완료된 행동과 현재의 관련성을 보여 준다.
-
-2. **The pharmacist has worked at this store since 2021.**  
-The pharmacist(주어) / has worked(현재완료 동사) / at this store(장소) / since 2021(시작점)  
-그 약사는 2021년부터 이 가게에서 일해 왔다.  
-since 뒤에는 시작 시점이 오며 지금까지 계속된다는 뜻이다.
-
-3. **Have you ever read a clinical trial report?**  
-Have(현재완료 의문) / you(주어) / ever(언젠가) / read(과거분사) / a clinical trial report(목적어)  
-임상시험 보고서를 읽어 본 적이 있나요?  
-ever가 경험을 물을 때 현재완료를 사용한다.
-
-4. **The patient has not experienced any side effects yet.**  
-The patient(주어) / has not experienced(현재완료 부정) / any side effects(목적어) / yet(아직)  
-그 환자는 아직 어떤 부작용도 경험하지 않았다.  
-yet은 부정문 끝에서 “아직”이라는 미완료 상태를 나타낸다.
-
-5. **The doctor had checked the allergy history before prescribing the drug.**  
-The doctor(주어) / had checked(과거완료) / the allergy history(목적어) / before prescribing the drug(더 늦은 사건)  
-의사는 그 약을 처방하기 전에 알레르기 병력을 확인했었다.  
-과거의 처방보다 확인이 먼저이므로 had checked가 맞다.
-
-6. **By the time the ambulance arrived, the nurse had stopped the infusion.**  
-By the time the ambulance arrived(기준이 되는 과거) / the nurse(주어) / had stopped(과거완료) / the infusion(목적어)  
-구급차가 도착했을 때까지 간호사는 주입을 중단한 상태였다.  
-by the time 뒤의 과거 사건보다 앞선 사건에 과거완료를 쓴다.
-
-7. **By next March, researchers will have completed the safety study.**  
-By next March(미래 기준 시점) / researchers(주어) / will have completed(미래완료) / the safety study(목적어)  
-내년 3월까지 연구자들은 안전성 연구를 끝냈을 것이다.  
-미래의 마감 시점인 by가 있으므로 will have p.p.를 선택한다.
-
-8. **The new vaccine will have protected many people by the end of the year.**  
-The new vaccine(주어) / will have protected(미래완료) / many people(목적어) / by the end of the year(미래 기준)  
-그 새 백신은 연말까지 많은 사람을 보호했을 것이다.  
-미래 시점까지의 완료를 나타내며 will 뒤에 has가 아니라 have를 쓴다.
-
-## 헷갈리는 포인트 / 자주 하는 실수
-
-1. **과거분사 자리에 과거형을 쓰지 않는다.** *The patient has took the drug.*는 틀리고 *The patient has taken the drug.*가 맞다. have 뒤에는 p.p.가 온다.
-
-2. **정확한 과거 시점과 현재완료를 섞지 않는다.** *I have met him yesterday.*는 틀리고 *I met him yesterday.*가 맞다. yesterday가 이미 끝난 과거를 가리키기 때문이다.
-
-3. **since와 for를 바꾸지 않는다.** *She has studied for 2020.*는 틀리고 *She has studied since 2020.*가 맞다. since 뒤에는 시점이 온다.
-
-4. **미래완료의 have를 has로 바꾸지 않는다.** *The trial will has ended.*는 틀리고 *The trial will have ended.*가 맞다. will 뒤에는 원형을 쓴다.
-
-5. **과거의 순서를 놓치지 않는다.** *When the doctor arrived, the patient had left.*는 환자가 먼저 떠났다는 뜻이다. 도착이 먼저라면 단순과거를 쓴다.
-
-## 星薬 기출에서는 이렇게 나온다
-빈칸 앞뒤에 **by the time, before, since, already**를 먼저 표시한다. 예를 들어 *By the time the researcher returned, the assistant (　　) the samples.*에서는 returned가 과거의 기준점이고, 그 전에 끝난 일이므로 **had labeled**를 고른다. *The patient (　　) this medication since April.*에서는 since와 현재까지의 계속을 보고 **has taken**을 고른다.
-
-오류 찾기에서는 밑줄 속 조동사와 과거분사를 확인한다. *The company will has completed the trial by July.*라면 will 뒤의 has가 문제다. 정답은 **will have completed**이다.
-
-## 3줄 요약
-1. 현재완료는 have/has p.p.
-2. 과거완료는 과거 기준점보다 먼저, 미래완료는 미래 기준점까지의 완료를 말한다.
-3. by, since, for, already, yet와 과거 시점을 보고 시제와 과거분사를 정한다.
-`,
+:::steps 완료형 문제 3초 풀이법
+1. ago / yesterday 찾기 | 문장에 ago, yesterday, last ~, in + 과거연도가 있으면 have p.p.를 지우고 과거형을 고릅니다. | two days ago → took
+2. since / for / so far 찾기 | 과거부터 지금까지의 기간 단서가 있으면 have/has + p.p.를 고릅니다. | since last month → has improved
+3. 과거 동사와 순서 비교 | 기준이 되는 과거 동사(arrived, found)보다 더 먼저 일어난 일이면 had + p.p.를 고릅니다. | before he arrived → had finished
+:::`,
   quiz: [
     {
       prompt: "The patient (　　) the medicine since Monday.",
